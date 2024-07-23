@@ -4,6 +4,7 @@
 @import "checkbox";
 @import "slider";
 @import "picker";
+@import "viewer";
 @import "props";
 
 * {
@@ -13,4 +14,15 @@
 
 body {
     background-color: $white;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+h1 {
+    font-size: 35px;
 }

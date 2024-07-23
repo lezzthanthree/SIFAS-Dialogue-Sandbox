@@ -232,6 +232,29 @@ input[type=color] {
   width: 40px;
 }
 
+#content {
+  width: 100%;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #fa8291 0%, #c96975 100%);
+  width: 300px;
+  height: 100vh;
+  padding: 25px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.group {
+  margin-bottom: 16px;
+}
+
+.setting {
+  margin: 8px 0;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -251,6 +274,10 @@ input[type=color] {
   justify-content: center;
 }
 
+.white {
+  color: #f8f8f8;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -258,6 +285,17 @@ input[type=color] {
 
 body {
   background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+h1 {
+  font-size: 35px;
 }
 
 /*# sourceMappingURL=main.css.map */
