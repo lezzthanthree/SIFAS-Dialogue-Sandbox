@@ -46,4 +46,32 @@
 
 .hide {
     display: none !important;
+    width: 0;
+    opacity: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top-right {
+    right: 0;
+    top: 0;
+    padding: inherit;
+}
+
+.bottom-right {
+    right: 0;
+    bottom: 0;
+    padding: inherit;
+}
+
+.bottom-left {
+    left: 0;
+    bottom: 0;
+    padding: inherit;
 }

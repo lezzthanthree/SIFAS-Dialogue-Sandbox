@@ -234,6 +234,9 @@ input[type=color] {
 
 #content {
   width: 100%;
+  height: 100vh;
+  padding: 25px;
+  box-sizing: border-box;
 }
 
 #sidebar {
@@ -270,6 +273,16 @@ input[type=color] {
 
 .color-select {
   margin: 4px 0;
+}
+
+.button-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-canvas {
+  width: 80%;
+  border: 2px #fa8291 solid;
 }
 
 .w-100 {
@@ -320,11 +333,40 @@ input[type=color] {
 
 .hide {
   display: none !important;
+  width: 0;
+  opacity: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-right {
+  right: 0;
+  top: 0;
+  padding: inherit;
+}
+
+.bottom-right {
+  right: 0;
+  bottom: 0;
+  padding: inherit;
+}
+
+.bottom-left {
+  left: 0;
+  bottom: 0;
+  padding: inherit;
 }
 
 * {
   margin: 0px;
   padding: 0px;
+  transition: all 0.2s;
 }
 
 body {

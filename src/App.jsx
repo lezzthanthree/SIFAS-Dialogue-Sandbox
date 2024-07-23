@@ -1,14 +1,19 @@
-import Sidebar from "./components/Sidebar";
-import Canvas from "./components/Canvas";
-import "./css/main.css";
 import { useState } from "react";
+import Sidebar from "./components/Sidebar";
+import Content from "./components/Content";
+import "./css/main.css";
 
 function App() {
     const [hideState, setHideState] = useState(false);
     const [tabState, setTabState] = useState("background");
     return (
         <main>
-            <Canvas></Canvas>
+            <Content
+                tabState={tabState}
+                hideState={hideState}
+                setHideState={setHideState}
+                setTabState={setTabState}
+            ></Content>
             <Sidebar hideState={hideState} tabState={tabState}></Sidebar>
         </main>
     );

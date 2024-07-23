@@ -1,5 +1,8 @@
 #content {
     width: 100%;
+    height: 100vh;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 #sidebar {
@@ -31,9 +34,19 @@
     height: 250px;
     width: 250px;
     border-radius: 10px;
-    border: 2px $white solid
+    border: 2px $white solid;
 }
 
 .color-select {
     margin: 4px 0;
+}
+
+.button-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-canvas {
+    width: 80%;
+    border: 2px $pink solid;
 }
