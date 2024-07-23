@@ -4,6 +4,7 @@
 @import "checkbox";
 @import "slider";
 @import "picker";
+@import "textarea";
 @import "dialogue";
 @import "props";
 
@@ -31,4 +32,5 @@ h1 {
 img {
     box-shadow: none;
     border: 0px;
+    object-fit: cover;
 }

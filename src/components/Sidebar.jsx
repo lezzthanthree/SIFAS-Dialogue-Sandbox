@@ -1,4 +1,16 @@
-const Sidebar = ({ hideState, tabState }) => {
+import data from "../characters.json";
+
+const Sidebar = ({
+    hideState,
+    tabState,
+    background,
+    setBackground,
+    nameTag,
+    setNameTag,
+    text,
+    setText,
+}) => {
+    console.log(data);
     return (
         <div id="sidebar" className={hideState ? "hide" : ""}>
             <div
@@ -7,7 +19,11 @@ const Sidebar = ({ hideState, tabState }) => {
             >
                 <div className="group">
                     <h1 className="white">Background</h1>
-                    <img src="t.png" alt="" className="image-picker setting" />
+                    <img
+                        src={background ? background.src : ""}
+                        alt=""
+                        className="image-picker setting"
+                    />
                     <button className="btn-small btn-white w-100 setting">
                         Upload Image
                     </button>
@@ -19,9 +35,15 @@ const Sidebar = ({ hideState, tabState }) => {
             >
                 <div className="group">
                     <h1 className="white">Text</h1>
-                    <button className="btn-small btn-white w-100 setting">
+                    <textarea
+                        className="btn-small btn-white w-100 setting"
+                        onChange={(e) => {
+                            setText(e.target.value);
+                        }}
+                        value={text}
+                    >
                         Edit Text
-                    </button>
+                    </textarea>
                 </div>
                 <div className="group">
                     <h1 className="white">Name Tag</h1>
@@ -32,16 +54,84 @@ const Sidebar = ({ hideState, tabState }) => {
                                 name="primary"
                                 id="primary"
                                 className="color-select"
+                                value={nameTag.primary}
+                                onChange={(e) => {
+                                    setNameTag({
+                                        ...nameTag,
+                                        primary: e.target.value,
+                                    });
+                                    document.getElementById(
+                                        "default-color"
+                                    ).value = "custom";
+                                }}
                             />
                             <input
                                 type="color"
                                 name="secondary"
                                 id="secondary"
                                 className="color-select"
+                                value={nameTag.secondary}
+                                onChange={(e) => {
+                                    setNameTag({
+                                        ...nameTag,
+                                        secondary: e.target.value,
+                                    });
+                                    document.getElementById(
+                                        "default-color"
+                                    ).value = "custom";
+                                }}
                             />
                         </div>
-                        <select className="sel-small w-100">
+                        <select
+                            id="default-color"
+                            className="sel-small w-100"
+                            onChange={(e) => {
+                                let value = e.target.value;
+                                switch (value) {
+                                    case "muse":
+                                        setNameTag({
+                                            ...nameTag,
+                                            primary: "#ff79cd",
+                                            secondary: "#ffcdec",
+                                        });
+                                        break;
+                                    case "aqours":
+                                        setNameTag({
+                                            ...nameTag,
+                                            primary: "#7bc8ff",
+                                            secondary: "#cdeaff",
+                                        });
+                                        break;
+                                    case "niji":
+                                        setNameTag({
+                                            ...nameTag,
+                                            primary: "#ffed45",
+                                            secondary: "#fff8b7",
+                                        });
+                                        break;
+                                    case "you":
+                                        setNameTag({
+                                            ...nameTag,
+                                            primary: "#c6cee5",
+                                            secondary: "#ebebf3",
+                                        });
+                                        break;
+                                    case "others":
+                                        setNameTag({
+                                            ...nameTag,
+                                            primary: "#bcecab",
+                                            secondary: "#e5f8df",
+                                        });
+                                        break;
+                                }
+                            }}
+                        >
                             <option value="muse">μ&apos;s</option>
+                            <option value="aqours">Aqours</option>
+                            <option value="niji">Nijigasaki</option>
+                            <option value="you">You</option>
+                            <option value="others">Others</option>
+                            <option value="custom">Custom</option>
                         </select>
                     </div>
                     <div className="setting row center">
@@ -50,7 +140,16 @@ const Sidebar = ({ hideState, tabState }) => {
                         </div>
                         <select className="sel-small w-100"></select>
                     </div>
-                    <button className="btn-small btn-white w-100 setting">
+                    <button
+                        className="btn-small btn-white w-100 setting"
+                        onClick={() => {
+                            let name = prompt("Provide a name");
+                            setNameTag({
+                                ...nameTag,
+                                name: name,
+                            });
+                        }}
+                    >
                         Edit Name
                     </button>
                     <div className="checkbox-form setting center">
@@ -59,6 +158,12 @@ const Sidebar = ({ hideState, tabState }) => {
                             name="name-tag-hide"
                             id="name-tag-hide"
                             className="right-10"
+                            onInput={(e) => {
+                                setNameTag({
+                                    ...nameTag,
+                                    hidden: e.target.checked,
+                                });
+                            }}
                         />
                         <label
                             htmlFor="name-tag-hide"

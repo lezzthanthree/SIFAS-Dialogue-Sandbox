@@ -1,4 +1,30 @@
-const Content = ({ tabState, hideState, setTabState, setHideState }) => {
+import Canvas from "./Canvas";
+import drawNameTag from "../js/drawNameTag";
+import drawBackground from "../js/drawBackground";
+import drawText from "../js/drawText";
+
+const Content = ({
+    tabState,
+    hideState,
+    setTabState,
+    setHideState,
+    background,
+    nameTag,
+    text,
+}) => {
+    const drawCanvas = (ctx) => {
+        ctx.canvas.width = 1820;
+        ctx.canvas.height = 1024;
+
+        ctx.shadowBlur = 2;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
+
+        drawBackground(ctx, background);
+        drawText(ctx, text);
+        drawNameTag(ctx, nameTag);
+    };
+
     return (
         <div id="content" className="center relative">
             <div
@@ -53,11 +79,16 @@ const Content = ({ tabState, hideState, setTabState, setHideState }) => {
                 <button className="btn-small btn-green btn-192 bottom-20">
                     Save
                 </button>
-                <button className="btn-small btn-white btn-192">
+                <button
+                    className="btn-small btn-white btn-192"
+                    onClick={() => {
+                        console.log("Canvas rerendered");
+                    }}
+                >
                     Rerender
                 </button>
             </div>
-            <canvas id="main-canvas" width="1820" height="1024"></canvas>
+            <Canvas draw={drawCanvas}></Canvas>
         </div>
     );
 };
