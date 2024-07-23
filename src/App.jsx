@@ -1,11 +1,8 @@
 import "./css/main.css";
+import data from "./characters.json";
 
 function App() {
-    return (
-        <>
-            <input type="range" name="" id="" className="pink"/>
-        </>
-    );
+    return <></>;
 }
 
 export default App;
