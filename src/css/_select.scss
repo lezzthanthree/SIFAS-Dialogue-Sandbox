@@ -1,0 +1,49 @@
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='50' width='50' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'><path d='M7 9l5 8 5-8z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    border-radius: 8px;
+    border: 0px none;
+    filter: $shadow;
+    text-align: left;
+    font-style: normal;
+    line-height: normal;
+    color: $black;
+    background-color: $white;
+}
+
+select.sel-small {
+    padding: 10px 20px;
+    font-size: 30px;
+    height: 60px;
+}
+
+select.sel-large {
+    padding: 15px;
+    font-size: 40px;
+    height: 80px;
+}
+
+select.sel-512 {
+    width: 512px;
+}
+
+select.sel-384 {
+    width: 384px;
+}
+
+select.sel-288 {
+    width: 288px;
+}
+
+select.sel-256 {
+    width: 256px;
+}
+
+select.sel-192 {
+    width: 192px;
+}

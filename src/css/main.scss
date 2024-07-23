@@ -1,0 +1,16 @@
+@import "theme";
+@import "button";
+@import "select";
+@import "checkbox";
+@import "slider";
+@import "picker";
+@import "props";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $white;
+}

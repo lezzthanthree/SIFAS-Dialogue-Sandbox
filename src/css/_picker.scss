@@ -1,0 +1,11 @@
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 3px $white solid;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}

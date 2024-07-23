@@ -1,0 +1,68 @@
+button {
+    border-radius: 8px;
+    border: 0px none;
+    filter: $shadow;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+}
+
+button.btn-white {
+    color: $black;
+    background-color: $white;
+}
+button.btn-pink {
+    color: $white;
+    background-color: $pink;
+}
+button.btn-green {
+    color: $white;
+    background-color: $green;
+}
+button.btn-orange {
+    color: $white;
+    background-color: $orange;
+}
+
+button.btn-small {
+    padding: 10px;
+    font-size: 30px;
+    height: 60px;
+}
+
+button.btn-large {
+    padding: 15px;
+    font-size: 40px;
+    height: 80px;
+}
+
+button.btn-512 {
+    width: 512px;
+}
+
+button.btn-384 {
+    width: 384px;
+}
+
+button.btn-288 {
+    width: 288px;
+}
+
+button.btn-256 {
+    width: 256px;
+}
+
+button.btn-192 {
+    width: 192px;
+}
+
+button.icon {
+    height: 80px;
+    width: 80px;
+    padding: 15px;
+}
+
+i.icon-btn {
+    font-size: 50px;
+    line-height: 0;
+}
