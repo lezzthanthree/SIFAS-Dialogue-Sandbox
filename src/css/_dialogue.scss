@@ -11,6 +11,7 @@
     padding: 25px;
     box-sizing: border-box;
     flex-shrink: 0;
+    overflow: auto;
 }
 
 .group {
@@ -18,5 +19,21 @@
 }
 
 .setting {
-    margin: 8px 0
+    margin: 8px 0;
+}
+
+#icon {
+    height: 40px;
+    width: 40px;
+}
+
+.image-picker {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px $white solid
+}
+
+.color-select {
+    margin: 4px 0;
 }

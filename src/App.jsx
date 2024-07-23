@@ -1,20 +1,15 @@
+import Sidebar from "./components/Sidebar";
+import Canvas from "./components/Canvas";
 import "./css/main.css";
-import data from "./characters.json";
+import { useState } from "react";
 
 function App() {
+    const [hideState, setHideState] = useState(false);
+    const [tabState, setTabState] = useState("background");
     return (
         <main>
-            <div id="content"></div>
-            <div id="sidebar">
-                <div className="group">
-                    <h1 className="white">Text</h1>
-                    <button className="btn-small w-100 setting">Edit Text</button>
-                </div>
-                <div className="group">
-                    <h1 className="white">Name Tag</h1>
-                    <button className="btn-small w-100 setting">Edit Text</button>
-                </div>
-            </div>
+            <Canvas></Canvas>
+            <Sidebar hideState={hideState} tabState={tabState}></Sidebar>
         </main>
     );
 }

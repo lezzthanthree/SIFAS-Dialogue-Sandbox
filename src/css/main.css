@@ -245,6 +245,7 @@ input[type=color] {
   padding: 25px;
   box-sizing: border-box;
   flex-shrink: 0;
+  overflow: auto;
 }
 
 .group {
@@ -255,27 +256,70 @@ input[type=color] {
   margin: 8px 0;
 }
 
+#icon {
+  height: 40px;
+  width: 40px;
+}
+
+.image-picker {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  border: 2px #f8f8f8 solid;
+}
+
+.color-select {
+  margin: 4px 0;
+}
+
 .w-100 {
   width: 100%;
 }
 
 .row {
-  display: "flex";
+  display: flex;
   flex-direction: row;
 }
 
 .column {
-  display: "flex";
+  display: flex;
   flex-direction: column;
 }
 
 .center {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .white {
   color: #f8f8f8;
+}
+
+.right-10 {
+  margin-right: 10px;
+}
+
+.right-20 {
+  margin-right: 20px;
+}
+
+.bottom-10 {
+  margin-bottom: 10px;
+}
+
+.bottom-20 {
+  margin-bottom: 20px;
+}
+
+.label-checkbox,
+.label-slider {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.hide {
+  display: none !important;
 }
 
 * {
@@ -296,6 +340,11 @@ main {
 
 h1 {
   font-size: 35px;
+}
+
+img {
+  box-shadow: none;
+  border: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

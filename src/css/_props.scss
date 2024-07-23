@@ -3,20 +3,47 @@
 }
 
 .row {
-    display: "flex";
+    display: flex;
     flex-direction: row;
 }
 
 .column {
-    display: "flex";
+    display: flex;
     flex-direction: column;
 }
 
 .center {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .white {
     color: $white;
+}
+
+.right-10 {
+    margin-right: 10px;
+}
+
+.right-20 {
+    margin-right: 20px;
+}
+
+.bottom-10 {
+    margin-bottom: 10px;
+}
+
+.bottom-20 {
+    margin-bottom: 20px;
+}
+
+.label-checkbox,
+.label-slider {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.hide {
+    display: none !important;
 }

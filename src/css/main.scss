@@ -4,7 +4,7 @@
 @import "checkbox";
 @import "slider";
 @import "picker";
-@import "viewer";
+@import "dialogue";
 @import "props";
 
 * {
@@ -25,4 +25,9 @@ main {
 
 h1 {
     font-size: 35px;
+}
+
+img {
+    box-shadow: none;
+    border: 0px;
 }
