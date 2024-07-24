@@ -4,9 +4,6 @@ import Content from "./components/Content";
 import loadImage from "./js/loadImage";
 import "./css/main.css";
 
-const defaultBG = new Image();
-defaultBG.src = "/img/background/6olyyw_0.jpg";
-
 function App() {
     const [hideState, setHideState] = useState(false);
     const [tabState, setTabState] = useState("background");
@@ -20,7 +17,7 @@ function App() {
     const [text, setText] = useState("kyou no pan ga umai!");
     const [sprites, setSprites] = useState({
         "sprite-layer-1": {
-            "layer-name": "Sprite 1: Honoka",
+            "layer-name": "Honoka",
             character: "honoka",
             costume: "3c2bnw",
             expression: {
@@ -54,18 +51,20 @@ function App() {
                 nameTag={nameTag}
                 text={text}
             ></Content>
-            <Sidebar
-                hideState={hideState}
-                tabState={tabState}
-                background={background}
-                setBackground={setBackground}
-                nameTag={nameTag}
-                setNameTag={setNameTag}
-                text={text}
-                setText={setText}
-                sprites={sprites}
-                setSprites={setSprites}
-            ></Sidebar>
+            {hideState === false && (
+                <Sidebar
+                    hideState={hideState}
+                    tabState={tabState}
+                    background={background}
+                    setBackground={setBackground}
+                    nameTag={nameTag}
+                    setNameTag={setNameTag}
+                    text={text}
+                    setText={setText}
+                    sprites={sprites}
+                    setSprites={setSprites}
+                ></Sidebar>
+            )}
         </main>
     );
 }
