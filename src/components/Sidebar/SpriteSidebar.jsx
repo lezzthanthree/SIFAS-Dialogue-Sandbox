@@ -192,7 +192,7 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                         ></i>
                     </div>
                 </div>
-                <div className="setting row center">
+                <div className="setting row center"> 
                     <div className="column right-20">
                         <i className="bi bi-emoji-smile-fill white icon-expression"></i>
                     </div>
@@ -260,7 +260,7 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                             htmlFor="X-offset"
                             className="label-slider white bottom-10"
                         >
-                            X Offset
+                            X Offset ({sprites[currentLayer].options.x}px)
                         </label>
                         <input
                             type="range"
@@ -290,7 +290,7 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                             htmlFor="Y-offset"
                             className="label-slider white bottom-10"
                         >
-                            Y Offset
+                            Y Offset ({sprites[currentLayer].options.y}px)
                         </label>
                         <input
                             type="range"
@@ -320,7 +320,7 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                             htmlFor="Scale"
                             className="label-slider white bottom-10"
                         >
-                            Scale
+                            Scale ({sprites[currentLayer].options.scale}px)
                         </label>
                         <input
                             type="range"
