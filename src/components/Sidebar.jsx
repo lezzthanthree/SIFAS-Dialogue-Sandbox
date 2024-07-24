@@ -16,13 +16,13 @@ const Sidebar = ({
 }) => {
     return (
         <div id="sidebar" className={hideState ? "hide" : ""}>
-            {tabState === "background" && (
+            {tabState === "background" && background && (
                 <BackgroundSidebar
                     background={background}
                     setBackground={setBackground}
                 />
             )}
-            {tabState === "text" && (
+            {tabState === "text" && text && nameTag && (
                 <TextSidebar
                     text={text}
                     setText={setText}
@@ -30,9 +30,10 @@ const Sidebar = ({
                     setNameTag={setNameTag}
                 />
             )}
-            {tabState === "sprite" && (
+            {tabState === "sprite" && sprites && (
                 <SpriteSidebar sprites={sprites} setSprites={setSprites} />
             )}
+            {(!background || !text || !nameTag || !sprites ) && <div className="center white font-20">Please wait</div>}
         </div>
     );
 };
