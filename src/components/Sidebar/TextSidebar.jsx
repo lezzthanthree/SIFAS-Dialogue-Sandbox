@@ -19,6 +19,18 @@ const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
             </div>
             <div className="group">
                 <h1 className="white">Name Tag</h1>
+                <input
+                    type="text"
+                    className="txt-small txt-white setting w-100"
+                    placeholder="Name"
+                    value={nameTag.name}
+                    onInput={(e) => {
+                        setNameTag({
+                            ...nameTag,
+                            name: e.target.value,
+                        });
+                    }}
+                />
                 <div className="setting row center">
                     <div className="column right-20">
                         <input
@@ -137,18 +149,6 @@ const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
                             })}
                     </select>
                 </div>
-                <button
-                    className="btn-small btn-white w-100 setting"
-                    onClick={() => {
-                        let name = prompt("Provide a name");
-                        setNameTag({
-                            ...nameTag,
-                            name: name,
-                        });
-                    }}
-                >
-                    Edit Name
-                </button>
                 <div className="checkbox-form setting center">
                     <input
                         type="checkbox"
