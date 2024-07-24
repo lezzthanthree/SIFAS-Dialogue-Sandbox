@@ -2,7 +2,6 @@ import data from "../../characters.json";
 import loadImage from "../../js/loadImage";
 
 const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
-    console.log(nameTag);
     return (
         <div id="text-sidebar">
             <div className="group">
@@ -118,7 +117,10 @@ const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
                 </div>
                 <div className="setting row center">
                     <div className="column right-20">
-                        <img src={nameTag.icon.src} id="icon" />
+                        <img
+                            src={nameTag.icon ? nameTag.icon.src : ""}
+                            id="icon"
+                        />
                     </div>
                     <select
                         className="sel-small w-100"
@@ -126,6 +128,14 @@ const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
                         id="char-icon"
                         onChange={async (e) => {
                             const newValue = e.target.value;
+                            if (newValue == "default") {
+                                setNameTag({
+                                    ...nameTag,
+                                    iconValue: newValue,
+                                    icon: null,
+                                });
+                                return
+                            }
                             const image = await loadImage(
                                 `img/char_icon/${newValue}.png`
                             );
@@ -136,6 +146,9 @@ const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
                             });
                         }}
                     >
+                        <option key="default" value="default">
+                            --Default--
+                        </option>
                         {Object.keys(data)
                             .sort((a, b) => a.localeCompare(b))
                             .map((c) => {
