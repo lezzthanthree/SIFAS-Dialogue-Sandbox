@@ -12,6 +12,7 @@ function App() {
         primary: "#ff79cd",
         secondary: "#ffcdec",
         name: "Honoka",
+        icon: "honoka",
         hidden: false,
     });
     const [text, setText] = useState("kyou no pan ga umai!");

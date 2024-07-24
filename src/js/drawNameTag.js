@@ -1,6 +1,8 @@
+import loadImage from "./loadImage";
+
 async function drawNameTag(ctx, nameTagProp) {
     if (nameTagProp.hidden) {
-        console.warn("Name Tag is hidden.")
+        console.warn("Name Tag is hidden.");
         return;
     }
     ctx.shadowColor = "rgba(0,0,0,0.4)";
@@ -50,6 +52,12 @@ async function drawNameTag(ctx, nameTagProp) {
     ctx.fillText(nameTagProp.name, 290, 770);
 
     ctx.shadowColor = "rgba(0,0,0,0)";
+
+    const iconSrc = `/img/char_icon/${nameTagProp.icon}.png`;
+    const icon = await loadImage(iconSrc);
+
+    ctx.drawImage(icon, 0, 0, icon.width, icon.height, 230, 730, 50, 40);
+
     console.info("Name Tag drawn!");
 }
 

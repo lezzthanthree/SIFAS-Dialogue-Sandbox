@@ -1,3 +1,5 @@
+import data from "../../characters.json";
+
 const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
     return (
         <div id="text-sidebar">
@@ -102,9 +104,26 @@ const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
                 </div>
                 <div className="setting row center">
                     <div className="column right-20">
-                        <img src="t.png" alt="" id="icon" />
+                        <img src={`/img/char_icon/${nameTag.icon}.png`} id="icon" />
                     </div>
-                    <select className="sel-small w-100"></select>
+                    <select className="sel-small w-100" value={nameTag.icon} onChange={(e) => {
+                        setNameTag({
+                            ...nameTag,
+                            icon: e.target.value
+                        })
+                    }}>
+                        {Object.keys(data)
+                            .sort((a, b) => a.localeCompare(b))
+                            .map((c) => {
+                                return (
+                                    c != "rina_board" && (
+                                        <option key={c} value={c}>
+                                            {data[c].information.first}
+                                        </option>
+                                    )
+                                );
+                            })}
+                    </select>
                 </div>
                 <button
                     className="btn-small btn-white w-100 setting"

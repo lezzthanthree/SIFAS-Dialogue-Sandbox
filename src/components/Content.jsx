@@ -4,7 +4,6 @@ import drawBackground from "../js/drawBackground";
 import drawSprites from "../js/drawSprites";
 import drawNameTag from "../js/drawNameTag";
 import drawText from "../js/drawText";
-import { useMemo } from "react";
 
 const Content = ({
     tabState,

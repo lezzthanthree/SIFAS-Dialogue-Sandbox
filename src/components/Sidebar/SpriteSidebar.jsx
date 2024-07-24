@@ -1,9 +1,11 @@
 import data from "../../characters.json";
 import { useState } from "react";
+import loadImage from "../../js/loadImage";
 
 const SpriteSidebar = ({ sprites, setSprites }) => {
     const [currentLayer, setCurrentLayer] = useState("sprite-layer-1");
     const [nextLayer, setNextLayer] = useState(2);
+    console.log(sprites);
     return (
         <div id="sprite-sidebar">
             <div className="group">
