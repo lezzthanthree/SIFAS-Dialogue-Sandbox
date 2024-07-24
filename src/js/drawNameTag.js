@@ -1,7 +1,7 @@
-
 async function drawNameTag(ctx, nameTagProp) {
     if (!nameTagProp) {
-        console.info("Name tag is null! Maybe it's loading or something.")
+        console.info("Name tag is null! Maybe it's loading or something.");
+        return;
     }
     if (nameTagProp.hidden) {
         console.warn("Name Tag is hidden.");
@@ -57,7 +57,11 @@ async function drawNameTag(ctx, nameTagProp) {
 
     const icon = nameTagProp.icon;
 
-    ctx.drawImage(icon, 0, 0, icon.width, icon.height, 230, 730, 50, 40);
+    if (!icon) {
+        console.log("Default");
+    } else {
+        ctx.drawImage(icon, 0, 0, icon.width, icon.height, 230, 730, 50, 40);
+    }
 
     console.info("Name Tag drawn!");
 }
