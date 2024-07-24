@@ -38,11 +38,13 @@ const Content = ({
 
         await drawBackground(ctx, background);
 
-        const drawSpritePromises = Object.keys(sprites).map((key) =>
-            drawSprites(ctx, sprites[key], data[sprites[key].character])
-        );
+        if (sprites) {
+            const drawSpritePromises = Object.keys(sprites).map((key) =>
+                drawSprites(ctx, sprites[key], data[sprites[key].character])
+            );
 
-        await Promise.all(drawSpritePromises);
+            await Promise.all(drawSpritePromises);
+        }
 
         await drawText(ctx, text);
         await drawNameTag(ctx, nameTag);
