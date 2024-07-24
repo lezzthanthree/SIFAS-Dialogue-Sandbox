@@ -1,6 +1,8 @@
 import Canvas from "./Canvas";
-import drawNameTag from "../js/drawNameTag";
+import data from "../characters.json";
 import drawBackground from "../js/drawBackground";
+import drawSprites from "../js/drawSprites";
+import drawNameTag from "../js/drawNameTag";
 import drawText from "../js/drawText";
 
 const Content = ({
@@ -9,10 +11,24 @@ const Content = ({
     setTabState,
     setHideState,
     background,
+    sprites,
     nameTag,
     text,
 }) => {
-    const drawCanvas = (ctx) => {
+    const save = () => {
+        const canvas = document.getElementsByTagName("canvas")[0];
+        var image = canvas
+            .toDataURL("image/png")
+            .replace("image/png", "image/octet-stream");
+
+        var link = document.createElement("a");
+        link.href = image;
+        link.download = "dialogue.png";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+    const drawCanvas = async (ctx) => {
         ctx.canvas.width = 1820;
         ctx.canvas.height = 1024;
 
@@ -20,9 +36,16 @@ const Content = ({
         ctx.shadowOffsetX = 2;
         ctx.shadowOffsetY = 2;
 
-        drawBackground(ctx, background);
-        drawText(ctx, text);
-        drawNameTag(ctx, nameTag);
+        await drawBackground(ctx, background);
+
+        const drawSpritePromises = Object.keys(sprites).map((key) =>
+            drawSprites(ctx, sprites[key], data[sprites[key].character])
+        );
+
+        await Promise.all(drawSpritePromises);
+
+        await drawText(ctx, text);
+        await drawNameTag(ctx, nameTag);
     };
 
     return (
@@ -76,13 +99,22 @@ const Content = ({
                 </button>
             </div>
             <div className="absolute bottom-left button-icons">
-                <button className="btn-small btn-green btn-192 bottom-20">
+                <button
+                    className="btn-small btn-green btn-192 bottom-20"
+                    onClick={() => {
+                        save();
+                    }}
+                >
                     Save
                 </button>
                 <button
                     className="btn-small btn-white btn-192"
                     onClick={() => {
-                        console.log("Canvas rerendered");
+                        drawCanvas(
+                            document
+                                .getElementById("main-canvas")
+                                .getContext("2d")
+                        );
                     }}
                 >
                     Rerender

@@ -1,4 +1,8 @@
-function drawBackground(ctx, background) {
+async function drawBackground(ctx, background) {
+    if (!background) {
+        console.warn("No background found!")
+        return
+    }
     const hRatio = ctx.canvas.width / background.width;
     const vRatio = ctx.canvas.height / background.height;
     const ratio = Math.max(hRatio, vRatio);
@@ -10,6 +14,8 @@ function drawBackground(ctx, background) {
         background.width * ratio,
         background.height * ratio
     );
+
+    console.info("Background drawn!");
 }
 
 export default drawBackground;

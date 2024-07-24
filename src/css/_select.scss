@@ -14,10 +14,11 @@ select {
     line-height: normal;
     color: $black;
     background-color: $white;
+    text-overflow: ellipsis;
 }
 
 select.sel-small {
-    padding: 10px 20px;
+    padding: 10px 30px 10px 20px;
     font-size: 30px;
     height: 60px;
 }

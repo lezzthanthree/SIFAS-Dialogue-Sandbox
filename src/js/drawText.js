@@ -1,11 +1,10 @@
-const drawText = (ctx, text) => {
+const drawText = async (ctx, text) => {
     const gradient = ctx.createLinearGradient(0, 750, 0, 950);
     gradient.addColorStop(0, "rgba(255, 255, 255, 0)");
     gradient.addColorStop(0.11, "rgba(255, 255, 255, 0.8)");
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 750, 1820, 300);
     let texts = text.split("\n");
-    console.log(texts);
     ctx.shadowColor = "rgba(0,0,0,0.4)";
     for (let i = 0; i < texts.length; i++) {
         ctx.font = "35px FOT-Skip Std";
@@ -28,6 +27,8 @@ const drawText = (ctx, text) => {
     ctc2.lineTo(1567.5, 966);
     ctc2.lineTo(1586, 937);
     ctx.fill(ctc2);
+
+    console.info("Text box drawn!")
 };
 
 export default drawText;

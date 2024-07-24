@@ -92,10 +92,11 @@ select {
   line-height: normal;
   color: #484848;
   background-color: #f8f8f8;
+  text-overflow: ellipsis;
 }
 
 select.sel-small {
-  padding: 10px 20px;
+  padding: 10px 30px 10px 20px;
   font-size: 30px;
   height: 60px;
 }
@@ -294,6 +295,15 @@ textarea {
   border: 2px #fa8291 solid;
 }
 
+.icon-expression {
+  font-size: 35px;
+}
+
+.expression-value {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -372,6 +382,11 @@ textarea {
   padding: inherit;
 }
 
+.space-center {
+  justify-content: space-between;
+  align-items: center;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -396,7 +411,7 @@ h1 {
 img {
   box-shadow: none;
   border: 0px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=main.css.map */
