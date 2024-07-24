@@ -8,38 +8,55 @@ function App() {
     const [hideState, setHideState] = useState(false);
     const [tabState, setTabState] = useState("background");
     const [background, setBackground] = useState(null);
-    const [nameTag, setNameTag] = useState({
-        primary: "#ff79cd",
-        secondary: "#ffcdec",
-        name: "Honoka",
-        icon: "honoka",
-        hidden: false,
-    });
+    const [nameTag, setNameTag] = useState(null);
     const [text, setText] = useState("kyou no pan ga umai!");
-    const [sprites, setSprites] = useState({
-        "sprite-layer-1": {
-            "layer-name": "Honoka",
-            character: "honoka",
-            costume: "3c2bnw",
-            expression: {
-                eye: 1,
-                mouth: 1,
-            },
-            options: {
-                x: 0,
-                y: 0,
-                scale: 0,
-                hidden: false,
-            },
-        },
-    });
+    const [sprites, setSprites] = useState(null);
 
     useEffect(() => {
         loadImage("/img/background/6olyyw_0.jpg")
             .then((img) => setBackground(img))
             .catch((error) => console.error(error));
-    }, []);
+        loadImage("/img/char_icon/honoka.png")
+            .then((img) =>
+                setNameTag({
+                    primary: "#ff79cd",
+                    secondary: "#ffcdec",
+                    name: "Honoka",
+                    iconValue: "honoka",
+                    icon: img,
+                    hidden: false,
+                })
+            )
+            .catch((error) => console.error(error));
 
+        Promise.all([
+            loadImage("/img/sprites/honoka/3c2bnw_0.png"),
+            loadImage("/img/sprites/honoka/3c2bnw_1.png"),
+        ])
+            .then(([bodyImage, expressionImage]) => {
+                setSprites({
+                    "sprite-layer-1": {
+                        "layer-name": "Honoka",
+                        character: "honoka",
+                        costume: "3c2bnw",
+                        bodyImage: bodyImage,
+                        expressionImage: expressionImage,
+                        expression: {
+                            eye: 1,
+                            mouth: 1,
+                        },
+                        options: {
+                            x: 0,
+                            y: 0,
+                            scale: 0,
+                            hidden: false,
+                        },
+                    },
+                });
+            })
+            .catch((error) => console.error(error));
+    }, []);
+    console.log(sprites);
     return (
         <main>
             <Content

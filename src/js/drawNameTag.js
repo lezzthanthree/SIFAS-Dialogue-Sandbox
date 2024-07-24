@@ -1,6 +1,8 @@
-import loadImage from "./loadImage";
 
 async function drawNameTag(ctx, nameTagProp) {
+    if (!nameTagProp) {
+        console.info("Name tag is null! Maybe it's loading or something.")
+    }
     if (nameTagProp.hidden) {
         console.warn("Name Tag is hidden.");
         return;
@@ -53,8 +55,7 @@ async function drawNameTag(ctx, nameTagProp) {
 
     ctx.shadowColor = "rgba(0,0,0,0)";
 
-    const iconSrc = `/img/char_icon/${nameTagProp.icon}.png`;
-    const icon = await loadImage(iconSrc);
+    const icon = nameTagProp.icon;
 
     ctx.drawImage(icon, 0, 0, icon.width, icon.height, 230, 730, 50, 40);
 

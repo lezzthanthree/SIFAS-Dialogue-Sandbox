@@ -1,15 +1,10 @@
-import loadImage from "./loadImage";
-
 async function drawSprites(ctx, sprite, data) {
-    const bodyImageSrc = `/img/sprites/${sprite.character}/${sprite.costume}_0.png`;
-    const expressionImageSrc = `/img/sprites/${sprite.character}/${sprite.costume}_1.png`;
-
     if (sprite.options.hidden) {
         console.warn(`${sprite["layer-name"]} is hidden.`);
         return;
     }
-    const bodyImage = await loadImage(bodyImageSrc);
-    const expressionImage = await loadImage(expressionImageSrc);
+    const bodyImage = sprite.bodyImage;
+    const expressionImage = sprite.expressionImage;
 
     const bodyWidth = bodyImage.width + sprite.options.scale;
     const bodyHeight =

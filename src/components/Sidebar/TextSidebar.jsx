@@ -1,6 +1,8 @@
 import data from "../../characters.json";
+import loadImage from "../../js/loadImage";
 
 const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
+    console.log(nameTag);
     return (
         <div id="text-sidebar">
             <div className="group">
@@ -104,14 +106,24 @@ const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
                 </div>
                 <div className="setting row center">
                     <div className="column right-20">
-                        <img src={`/img/char_icon/${nameTag.icon}.png`} id="icon" />
+                        <img src={nameTag.icon.src} id="icon" />
                     </div>
-                    <select className="sel-small w-100" value={nameTag.icon} onChange={(e) => {
-                        setNameTag({
-                            ...nameTag,
-                            icon: e.target.value
-                        })
-                    }}>
+                    <select
+                        className="sel-small w-100"
+                        value={nameTag.iconValue}
+                        id="char-icon"
+                        onChange={async (e) => {
+                            const newValue = e.target.value;
+                            const image = await loadImage(
+                                `img/char_icon/${newValue}.png`
+                            );
+                            setNameTag({
+                                ...nameTag,
+                                iconValue: newValue,
+                                icon: image,
+                            });
+                        }}
+                    >
                         {Object.keys(data)
                             .sort((a, b) => a.localeCompare(b))
                             .map((c) => {

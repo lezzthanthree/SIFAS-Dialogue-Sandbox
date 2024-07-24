@@ -13,13 +13,21 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                     Sprites
                     <i
                         className="bi bi-plus-circle sprite-setting-icon left-10"
-                        onClick={() => {
+                        onClick={async () => {
+                            const bodyImage = await loadImage(
+                                "/img/sprites/honoka/3c2bnw_0.png"
+                            );
+                            const expressionImage = await loadImage(
+                                "/img/sprites/honoka/3c2bnw_1.png"
+                            );
                             setSprites({
                                 ...sprites,
                                 [`sprite-layer-${nextLayer}`]: {
                                     "layer-name": `Honoka`,
                                     character: "honoka",
                                     costume: "3c2bnw",
+                                    bodyImage: bodyImage,
+                                    expressionImage: expressionImage,
                                     expression: {
                                         eye: 1,
                                         mouth: 1,
@@ -77,15 +85,24 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                     id=""
                     className="sel-small setting w-100"
                     value={sprites[currentLayer].character}
-                    onChange={(e) => {
+                    onChange={async (e) => {
+                        const newChar = e.target.value;
+                        const firstCostume = data[newChar].costumes[0];
+                        const bodyImage = await loadImage(
+                            `/img/sprites/${newChar}/${firstCostume}_0.png`
+                        );
+                        const expressionImage = await loadImage(
+                            `/img/sprites/${newChar}/${firstCostume}_1.png`
+                        );
                         setSprites({
                             ...sprites,
                             [currentLayer]: {
                                 ...sprites[currentLayer],
-                                "layer-name":
-                                    data[e.target.value].information.first,
-                                character: e.target.value,
-                                costume: data[e.target.value].costumes[0],
+                                "layer-name": data[newChar].information.first,
+                                character: newChar,
+                                costume: firstCostume,
+                                bodyImage: bodyImage,
+                                expressionImage: expressionImage,
                                 expression: {
                                     eye: 1,
                                     mouth: 1,
