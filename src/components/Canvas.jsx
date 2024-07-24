@@ -5,10 +5,10 @@ const Canvas = ({ draw }) => {
 
     useEffect(() => {
         const canvas = canvasRef.current;
-        const context = canvas.getContext("2d");
-
+        const ctx = canvas.getContext("2d");
+        
         try {
-            draw(context);
+            draw(ctx);
             console.info("Render Success!");
         } catch {
             console.error("Render Error!");
