@@ -36,7 +36,8 @@ function App() {
             .then(([bodyImage, expressionImage]) => {
                 setSprites({
                     "sprite-layer-1": {
-                        "layer-name": "Honoka",
+                        layerName: "Layer 1: Honoka",
+                        layerNumber: 1,
                         character: "honoka",
                         costume: "3c2bnw",
                         bodyImage: bodyImage,
@@ -56,7 +57,6 @@ function App() {
             })
             .catch((error) => console.error(error));
     }, []);
-    console.log(sprites);
     return (
         <main>
             <Content

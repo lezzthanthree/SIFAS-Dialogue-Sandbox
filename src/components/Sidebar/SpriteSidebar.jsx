@@ -5,7 +5,6 @@ import loadImage from "../../js/loadImage";
 const SpriteSidebar = ({ sprites, setSprites }) => {
     const [currentLayer, setCurrentLayer] = useState("sprite-layer-1");
     const [nextLayer, setNextLayer] = useState(2);
-    console.log(sprites);
     return (
         <div id="sprite-sidebar">
             <div className="group">
@@ -23,7 +22,8 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                             setSprites({
                                 ...sprites,
                                 [`sprite-layer-${nextLayer}`]: {
-                                    "layer-name": `Honoka`,
+                                    layerName: `Layer ${nextLayer}: Honoka`,
+                                    layerNumber: nextLayer,
                                     character: "honoka",
                                     costume: "3c2bnw",
                                     bodyImage: bodyImage,
@@ -72,7 +72,7 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                     {Object.keys(sprites).map((s) => {
                         return (
                             <option key={s} value={s}>
-                                {sprites[s]["layer-name"]}
+                                {sprites[s].layerName}
                             </option>
                         );
                     })}
@@ -94,11 +94,12 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                         const expressionImage = await loadImage(
                             `/img/sprites/${newChar}/${firstCostume}_1.png`
                         );
+                        const layerNumber = sprites[currentLayer].layerNumber;
                         setSprites({
                             ...sprites,
                             [currentLayer]: {
                                 ...sprites[currentLayer],
-                                "layer-name": data[newChar].information.first,
+                                layerName: `Layer ${layerNumber}: ${data[newChar].information.first}`,
                                 character: newChar,
                                 costume: firstCostume,
                                 bodyImage: bodyImage,
