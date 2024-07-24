@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+  font-family: "FOT-Skip Std";
+  src: url("FOT-Skip Std"), url("../fonts/FOT-SkipStd-B.otf") format("otf");
+}
 * {
   font-family: "Arsenal", sans-serif;
   font-weight: 700;
@@ -304,6 +308,10 @@ textarea {
   font-weight: bold;
 }
 
+.sprite-setting-icon {
+  font-size: 20px;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -326,6 +334,14 @@ textarea {
 
 .white {
   color: #f8f8f8;
+}
+
+.left-10 {
+  margin-left: 10px;
+}
+
+.left-20 {
+  margin-left: 20px;
 }
 
 .right-10 {
@@ -384,6 +400,11 @@ textarea {
 
 .space-center {
   justify-content: space-between;
+  align-items: center;
+}
+
+.align-center {
+  display: flex;
   align-items: center;
 }
 
