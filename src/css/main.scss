@@ -32,14 +32,32 @@ img {
     object-fit: contain;
 }
 
-@media (width <= 1500px) {
+@media (width <= 768px) {
+    #mobile {
+        display: flex;
+        background-color: #000000dd;
+        z-index: 9999;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media (width > 768px) and (width <= 1500px) {
     h1 {
         font-size: 25px;
+    }
+
+    #mobile {
+        display: none;
     }
 }
 
 @media (width > 1500px) {
     h1 {
         font-size: 35px;
+    }
+
+    #mobile {
+        display: none;
     }
 }

@@ -647,6 +647,16 @@ input[type=text].txt-white {
   align-items: center;
 }
 
+.full-screen {
+  min-height: 100dvh;
+  min-width: 100dvw;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -670,14 +680,29 @@ img {
   object-fit: contain;
 }
 
-@media (width <= 1500px) {
+@media (width <= 768px) {
+  #mobile {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8666666667);
+    z-index: 9999;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+@media (width > 768px) and (width <= 1500px) {
   h1 {
     font-size: 25px;
+  }
+  #mobile {
+    display: none;
   }
 }
 @media (width > 1500px) {
   h1 {
     font-size: 35px;
+  }
+  #mobile {
+    display: none;
   }
 }
 

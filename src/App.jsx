@@ -63,6 +63,19 @@ function App() {
     }, []);
     return (
         <main>
+            <div
+                className="absolute full-screen top-left justify-center white column"
+                id="mobile"
+            >
+                <p className="bottom-10">
+                    Unfortunately, this web app is not yet suitable for
+                    phones. Come back later or use a desktop to access this.
+                </p>
+                <p>
+                    If you are using a desktop, though, you should enlarge the
+                    window a little bit...
+                </p>
+            </div>
             <Content
                 tabState={tabState}
                 hideState={hideState}

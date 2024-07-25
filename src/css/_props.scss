@@ -126,6 +126,12 @@
     align-items: center;
 }
 
-.link {
-    
+.full-screen {
+    min-height: 100dvh;
+    min-width: 100dvw;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
 }
