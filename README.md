@@ -4,10 +4,28 @@ A Dialogue Sandbox for generating fan-made stories from the now-shut down game, 
 ![](./public/screenshot.png)
 
 ## Features
-### Backgrounds
-You can choose with more than 500 backgrounds found from SIFAS.
+### Choose the Background
+Choose from more than 500 backgrounds found in SIFAS.
+
+![](./public/Preview-1.png)
 
 Or if you want a custom background, you can upload your own!
+
+![](./public/Preview-2.png)
+
+### Change the Text and customize the Name Tag
+Change the color of the name tag and the name while you create your story.
+
+![](./public/Preview-3.png)
+
+### More Sprites to use
+Pick a sprite available for the characters you choose...
+
+![](./public/Preview-5.png)
+
+... and give them another chapter!
+
+![](./public/Preview-4.png)
 
 ## Developing
 ### Prerequisites
