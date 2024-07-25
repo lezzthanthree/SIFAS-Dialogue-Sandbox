@@ -1,4 +1,5 @@
-const drawText = async (ctx, text) => {
+const drawText = async (ctx, text, experimental) => {
+    const textOffset = parseInt(experimental.textOffset);
     const gradient = ctx.createLinearGradient(0, 750, 0, 950);
     gradient.addColorStop(0, "rgba(255, 255, 255, 0)");
     gradient.addColorStop(0.11, "rgba(255, 255, 255, 0.8)");
@@ -10,7 +11,7 @@ const drawText = async (ctx, text) => {
         ctx.font = "35px FOT-Skip Std";
         ctx.fillStyle = "#484848";
         ctx.textBaseline = "hanging";
-        ctx.fillText(texts[i], 315, 820 + 65 * i);
+        ctx.fillText(texts[i], 315, 820 + textOffset + 65 * i);
     }
 
     const ctc1 = new Path2D();
@@ -28,7 +29,7 @@ const drawText = async (ctx, text) => {
     ctc2.lineTo(1586, 937);
     ctx.fill(ctc2);
 
-    console.info("Text box drawn!")
+    console.info("Text box drawn!");
 };
 
 export default drawText;

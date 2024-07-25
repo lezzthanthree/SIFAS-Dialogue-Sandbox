@@ -14,6 +14,7 @@ const Content = ({
     sprites,
     nameTag,
     text,
+    experimental,
 }) => {
     const save = () => {
         const canvas = document.getElementsByTagName("canvas")[0];
@@ -48,8 +49,8 @@ const Content = ({
             await Promise.all(drawSpritePromises);
         }
 
-        await drawText(ctx, text);
-        await drawNameTag(ctx, nameTag);
+        await drawText(ctx, text, experimental);
+        await drawNameTag(ctx, nameTag, experimental);
     };
     return (
         <div id="content" className="center relative">

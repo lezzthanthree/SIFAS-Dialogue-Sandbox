@@ -13,6 +13,8 @@ const Sidebar = ({
     setText,
     sprites,
     setSprites,
+    experimental,
+    setExperimental
 }) => {
     return (
         <div id="sidebar" className={hideState ? "hide" : ""}>
@@ -28,6 +30,8 @@ const Sidebar = ({
                     setText={setText}
                     nameTag={nameTag}
                     setNameTag={setNameTag}
+                    experimental={experimental}
+                    setExperimental={setExperimental}
                 />
             )}
             {tabState === "sprite" && sprites && (

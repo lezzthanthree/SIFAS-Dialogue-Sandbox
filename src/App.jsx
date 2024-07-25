@@ -11,6 +11,9 @@ function App() {
     const [nameTag, setNameTag] = useState(null);
     const [text, setText] = useState("kyou no pan ga umai!");
     const [sprites, setSprites] = useState(null);
+    const [experimental, setExperimental] = useState({
+        textOffset: 0,
+    });
 
     useEffect(() => {
         loadImage("/img/background/6olyyw_0.jpg")
@@ -68,6 +71,7 @@ function App() {
                 sprites={sprites}
                 nameTag={nameTag}
                 text={text}
+                experimental={experimental}
             ></Content>
             {hideState === false && (
                 <Sidebar
@@ -81,6 +85,8 @@ function App() {
                     setText={setText}
                     sprites={sprites}
                     setSprites={setSprites}
+                    experimental={experimental}
+                    setExperimental={setExperimental}
                 ></Sidebar>
             )}
         </main>

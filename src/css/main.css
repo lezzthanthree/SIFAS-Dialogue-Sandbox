@@ -333,7 +333,8 @@ input[type=text].txt-white {
   font-weight: bold;
 }
 
-.sprite-setting-icon {
+.sprite-setting-icon,
+.text-setting-icon {
   font-size: 20px;
 }
 

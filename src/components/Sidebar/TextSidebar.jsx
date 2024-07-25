@@ -1,7 +1,14 @@
 import data from "../../characters.json";
 import loadImage from "../../js/loadImage";
 
-const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
+const TextSidebar = ({
+    text,
+    setText,
+    nameTag,
+    setNameTag,
+    experimental,
+    setExperimental,
+}) => {
     return (
         <div id="text-sidebar">
             <div className="group">
@@ -134,7 +141,7 @@ const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
                                     iconValue: newValue,
                                     icon: null,
                                 });
-                                return
+                                return;
                             }
                             const image = await loadImage(
                                 `img/char_icon/${newValue}.png`
@@ -181,6 +188,40 @@ const TextSidebar = ({ text, setText, nameTag, setNameTag }) => {
                     >
                         Hidden
                     </label>
+                </div>
+            </div>
+            <div className="group">
+                <h1 className="white">Experimental</h1>
+                <div className="column setting">
+                    <label
+                        htmlFor="Text-Y-Offset"
+                        className="label-slider white bottom-10 align-center"
+                    >
+                        Text Y-Offset ({experimental.textOffset}px){" "}
+                        <i
+                            className="bi bi-question-circle-fill text-setting-icon left-10"
+                            onClick={() => {
+                                alert(
+                                    "If text positions do not line up in the canvas, adjustments may be necessary."
+                                );
+                            }}
+                        ></i>
+                    </label>
+                    <input
+                        type="range"
+                        name="Text-Y-Offset"
+                        id="text-y-offset"
+                        className="white w-100"
+                        value={experimental.textOffset}
+                        min="-30"
+                        max="30"
+                        onChange={(e) => {
+                            setExperimental({
+                                ...experimental,
+                                textOffset: e.target.value,
+                            });
+                        }}
+                    />
                 </div>
             </div>
         </div>

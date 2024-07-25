@@ -1,4 +1,4 @@
-async function drawNameTag(ctx, nameTagProp) {
+async function drawNameTag(ctx, nameTagProp, experimental) {
     if (!nameTagProp) {
         console.info("Name tag is null! Maybe it's loading or something.");
         return;
@@ -7,6 +7,8 @@ async function drawNameTag(ctx, nameTagProp) {
         console.warn("Name Tag is hidden.");
         return;
     }
+    const textOffset = parseInt(experimental.textOffset);
+
     ctx.shadowColor = "rgba(0,0,0,0.4)";
 
     const nameTagPrimary = new Path2D();
@@ -50,8 +52,8 @@ async function drawNameTag(ctx, nameTagProp) {
     ctx.shadowColor = "rgba(0,0,0,0.4)";
     ctx.font = "35px FOT-Skip Std";
     ctx.fillStyle = "#484848";
-    ctx.textBaseline = "bottom";
-    ctx.fillText(nameTagProp.name, 290, 770);
+    ctx.textBaseline = "hanging";
+    ctx.fillText(nameTagProp.name, 290, 740 + textOffset);
 
     ctx.shadowColor = "rgba(0,0,0,0)";
 
