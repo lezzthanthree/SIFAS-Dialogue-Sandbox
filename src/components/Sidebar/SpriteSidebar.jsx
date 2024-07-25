@@ -1,6 +1,7 @@
 import data from "../../characters.json";
 import { useState } from "react";
 import loadImage from "../../js/loadImage";
+import CostumePicker from "../CostumePicker";
 
 const SpriteSidebar = ({ sprites, setSprites }) => {
     const [currentLayer, setCurrentLayer] = useState("sprite-layer-1");
@@ -172,11 +173,11 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
             </div>
             <div className="group">
                 <h1 className="white">Costume</h1>
-                <img
-                    src={`/img/sprites/${sprites[currentLayer].character}/${sprites[currentLayer].costume}_0.png`}
-                    alt=""
-                    className="image-picker setting"
-                />
+                <CostumePicker
+                    sprites={sprites}
+                    setSprites={setSprites}
+                    currentLayer={currentLayer}
+                ></CostumePicker>
             </div>
             <div className="group">
                 <h1 className="white">Expression</h1>

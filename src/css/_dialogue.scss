@@ -65,3 +65,51 @@
 .text-setting-icon {
     font-size: 20px;
 }
+
+#background-picker,
+.background-picker-item {
+    object-fit: cover;
+}
+
+#costume-picker,
+.costume-picker-item {
+    object-fit: contain;
+}
+
+#picker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000bb;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.picker-item {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid $white;
+    aspect-ratio: 1/1;
+    margin: 10px;
+}
+
+.picker-item:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+#picker-close {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    margin: inherit;
+    filter: $shadow;
+}
