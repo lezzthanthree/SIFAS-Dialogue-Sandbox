@@ -42,6 +42,12 @@ npm run dev
 ```
 
 ---
+## Disclaimer
+All assets used for this project are owned by KLabGames/Sunrise/Bushiroad and will be used for non-commercial purposes.
+
+No copyright infringement is intended.
+
+---
 ### Why is it called sandbox?
 idk, it sounds better
 
