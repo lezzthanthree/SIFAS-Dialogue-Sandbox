@@ -316,7 +316,6 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                             value={sprites[currentLayer].options.x}
                             min="-1024"
                             max="1024"
-                            list="zero"
                             onChange={(e) => {
                                 setSprites({
                                     ...sprites,
@@ -346,7 +345,6 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                             value={sprites[currentLayer].options.y}
                             min="-1024"
                             max="1024"
-                            list="zero"
                             onChange={(e) => {
                                 setSprites({
                                     ...sprites,
@@ -376,7 +374,6 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                             value={sprites[currentLayer].options.scale}
                             min="-512"
                             max="512"
-                            list="zero"
                             onChange={(e) => {
                                 setSprites({
                                     ...sprites,
@@ -420,9 +417,6 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                     </label>
                 </div>
             </div>
-            <datalist id="zero">
-                <option value="0"></option>
-            </datalist>
         </div>
     );
 };
