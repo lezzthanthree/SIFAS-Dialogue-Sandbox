@@ -1,3 +1,19 @@
+@media (width <= 1400px) {
+    .txt-small {
+        padding: 10px;
+        font-size: 20px;
+        height: 45px;
+    }
+}
+
+@media (width > 1400px) {
+    .txt-small {
+        padding: 10px;
+        font-size: 30px;
+        height: 60px;
+    }
+}
+
 input[type="text"] {
     border-radius: 8px;
     border: 0px none;
@@ -9,12 +25,6 @@ input[type="text"] {
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: 50%;
-}
-
-.txt-small {
-    padding: 10px;
-    font-size: 30px;
-    height: 60px;
 }
 
 input[type="text"].txt-white {

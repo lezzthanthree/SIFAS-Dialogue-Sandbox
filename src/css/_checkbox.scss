@@ -1,16 +1,35 @@
-input[type="checkbox"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    background: none;
-    border: 0;
-    outline: 0;
-    flex-grow: 0;
-    background-color: $gray;
-    cursor: pointer;
+@media (width <= 1400px) {
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+        background: none;
+        border: 0;
+        outline: 0;
+        flex-grow: 0;
+        background-color: $gray;
+        cursor: pointer;
+    }
+}
+
+@media (width > 1400px) {
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        background: none;
+        border: 0;
+        outline: 0;
+        flex-grow: 0;
+        background-color: $gray;
+        cursor: pointer;
+    }
 }
 
 input[type="checkbox"]::before {

@@ -1,3 +1,18 @@
+@media (width <= 1400px) {
+    .label-checkbox,
+    .label-slider {
+        font-size: 20px;
+        font-weight: normal;
+    }
+}
+@media (width > 1400px) {
+    .label-checkbox,
+    .label-slider {
+        font-size: 25px;
+        font-weight: normal;
+    }
+}
+
 .w-100 {
     width: 100%;
 }
@@ -46,10 +61,8 @@
     margin-bottom: 20px;
 }
 
-.label-checkbox,
-.label-slider {
-    font-size: 25px;
-    font-weight: normal;
+.font-20 {
+    font-size: 20px;
 }
 
 .hide {
@@ -92,8 +105,4 @@
 .align-center {
     display: flex;
     align-items: center;
-}
-
-.font-20 {
-    font-size: 20px;
 }

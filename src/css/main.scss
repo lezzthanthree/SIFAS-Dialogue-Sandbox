@@ -26,12 +26,20 @@ main {
     height: 100%;
 }
 
-h1 {
-    font-size: 35px;
-}
-
 img {
     box-shadow: none;
     border: 0px;
     object-fit: contain;
+}
+
+@media (width <= 1400px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media (width > 1400px) {
+    h1 {
+        font-size: 35px;
+    }
 }

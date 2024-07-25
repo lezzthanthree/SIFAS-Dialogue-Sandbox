@@ -126,7 +126,7 @@ const TextSidebar = ({
                     <div className="column right-20">
                         <img
                             src={nameTag.icon ? nameTag.icon.src : ""}
-                            id="icon"
+                            id="char-icon-img"
                         />
                     </div>
                     <select

@@ -1,20 +1,13 @@
+#main-canvas {
+    width: 80%;
+    border: 2px $pink solid;
+}
+
 #content {
     width: 100%;
     height: 100vh;
     padding: 25px;
     box-sizing: border-box;
-}
-
-#sidebar {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(180deg, #fa8291 0%, #c96975 100%);
-    width: 300px;
-    height: 100vh;
-    padding: 25px;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    overflow: auto;
 }
 
 .group {
@@ -25,46 +18,12 @@
     margin: 8px 0;
 }
 
-#icon {
-    height: 40px;
-    width: 40px;
-    background-color: $white;
-}
-
-.image-picker {
-    height: 250px;
-    width: 250px;
-    border-radius: 10px;
-    border: 2px $white solid;
-}
-
-.color-select {
-    margin: 4px 0;
-}
-
 .button-icons {
     display: flex;
     flex-direction: column;
 }
 
-#main-canvas {
-    width: 80%;
-    border: 2px $pink solid;
-}
 
-.icon-expression {
-    font-size: 35px;
-}
-
-.expression-value {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.sprite-setting-icon,
-.text-setting-icon {
-    font-size: 20px;
-}
 
 #background-picker,
 .background-picker-item {
@@ -92,24 +51,128 @@
     overflow: auto;
 }
 
-.picker-item {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    border: 2px solid $white;
-    aspect-ratio: 1/1;
-    margin: 10px;
-}
-
-.picker-item:hover {
-    transform: scale(1.5);
-    z-index: 10;
-}
-
 #picker-close {
     position: fixed;
     top: 25px;
     left: 25px;
     margin: inherit;
     filter: $shadow;
+}
+
+@media (width <= 1400px) {
+    #sidebar {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(180deg, #fa8291 0%, #c96975 100%);
+        width: 220px;
+        height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        overflow: auto;
+    }
+
+    #char-icon-img {
+        height: 30px;
+        width: 30px;
+        background-color: $white;
+    }
+
+    .color-select {
+        margin: 2px 0;
+    }
+
+    .sprite-setting-icon,
+    .text-setting-icon {
+        font-size: 15px;
+    }
+
+    .image-picker {
+        height: 180px;
+        width: 180px;
+        border-radius: 10px;
+        border: 2px $white solid;
+    }
+
+    .picker-item {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        border: 2px solid $white;
+        aspect-ratio: 1/1;
+        margin: 10px;
+    }
+
+    .picker-item:hover {
+        transform: scale(1.5);
+        z-index: 10;
+    }
+
+    .icon-expression {
+        font-size: 30px;
+    }
+    
+    .expression-value {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+@media (width > 1400px) {
+    #sidebar {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(180deg, #fa8291 0%, #c96975 100%);
+        width: 300px;
+        height: 100vh;
+        padding: 25px;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        overflow: auto;
+    }
+
+    #char-icon-img {
+        height: 40px;
+        width: 40px;
+        background-color: $white;
+    }
+
+    .color-select {
+        margin: 4px 0;
+    }
+
+    .sprite-setting-icon,
+    .text-setting-icon {
+        font-size: 20px;
+    }
+
+    .image-picker {
+        height: 250px;
+        width: 250px;
+        border-radius: 10px;
+        border: 2px $white solid;
+    }
+
+    .picker-item {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        border: 2px solid $white;
+        aspect-ratio: 1/1;
+        margin: 10px;
+    }
+
+    .picker-item:hover {
+        transform: scale(1.5);
+        z-index: 10;
+    }
+
+    .icon-expression {
+        font-size: 35px;
+    }
+    
+    .expression-value {
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
