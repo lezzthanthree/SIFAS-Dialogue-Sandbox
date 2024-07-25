@@ -60,7 +60,38 @@ async function drawNameTag(ctx, nameTagProp, experimental) {
     const icon = nameTagProp.icon;
 
     if (!icon) {
-        console.log("Default");
+        // ctx.fillStyle = "#0000ff";
+        // const test = new Path2D();
+        // test.moveTo(254, 775);
+        // test.lineTo(284, 725);
+        // test.lineTo(285, 725);
+        // test.lineTo(255, 775);
+        // ctx.fill(test)
+        const nameTagDefault = new Path2D();
+        ctx.fillStyle = nameTagProp.primary;
+        nameTagDefault.moveTo(225, 775);
+        nameTagDefault.lineTo(255, 725);
+        nameTagDefault.lineTo(260, 725);
+        nameTagDefault.lineTo(230, 775);
+
+        nameTagDefault.moveTo(243, 770);
+        nameTagDefault.lineTo(270, 725);
+        nameTagDefault.lineTo(274, 725);
+        nameTagDefault.lineTo(247, 770);
+
+        ctx.fill(nameTagDefault);
+
+        ctx.beginPath();
+        ctx.ellipse(260, 766, 3, 3, 0, 0, 2 * Math.PI);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(266, 756, 4, 4, 0, 0, 2 * Math.PI);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(272, 745, 5, 5, 0, 0, 2 * Math.PI);
+        ctx.fill();
     } else {
         ctx.drawImage(icon, 0, 0, icon.width, icon.height, 230, 730, 50, 40);
     }
