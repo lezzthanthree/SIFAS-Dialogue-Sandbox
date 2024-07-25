@@ -30,6 +30,7 @@ select {
     color: $black;
     background-color: $white;
     text-overflow: ellipsis;
+    cursor: pointer;
 }
 
 select.sel-large {

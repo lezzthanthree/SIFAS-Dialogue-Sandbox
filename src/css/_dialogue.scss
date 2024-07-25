@@ -26,6 +26,7 @@
 .picker-item:hover {
     transform: scale(1.5);
     z-index: 10;
+    cursor: pointer;
 }
 
 #background-picker,
@@ -95,6 +96,7 @@
         width: 180px;
         border-radius: 10px;
         border: 2px $white solid;
+        cursor: pointer;
     }
 
     .picker-item {
@@ -104,12 +106,13 @@
         border: 2px solid $white;
         aspect-ratio: 1/1;
         margin: 10px;
+        cursor: pointer;
     }
 
     .icon-expression {
         font-size: 30px;
     }
-    
+
     .expression-value {
         font-size: 25px;
         font-weight: bold;
@@ -149,6 +152,7 @@
         width: 250px;
         border-radius: 10px;
         border: 2px $white solid;
+        cursor: pointer;
     }
 
     .picker-item {
@@ -158,12 +162,13 @@
         border: 2px solid $white;
         aspect-ratio: 1/1;
         margin: 10px;
+        cursor: pointer;
     }
 
     .icon-expression {
         font-size: 35px;
     }
-    
+
     .expression-value {
         font-size: 30px;
         font-weight: bold;

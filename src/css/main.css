@@ -132,6 +132,7 @@ select {
   color: #484848;
   background-color: #f8f8f8;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 select.sel-large {
@@ -314,6 +315,7 @@ input[type=color] {
   border-radius: 50%;
   height: 40px;
   width: 40px;
+  cursor: pointer;
 }
 
 textarea {
@@ -382,6 +384,12 @@ input[type=text].txt-white {
   flex-direction: column;
 }
 
+.picker-item:hover {
+  transform: scale(1.5);
+  z-index: 10;
+  cursor: pointer;
+}
+
 #background-picker,
 .background-picker-item {
   object-fit: cover;
@@ -445,6 +453,7 @@ input[type=text].txt-white {
     width: 180px;
     border-radius: 10px;
     border: 2px #f8f8f8 solid;
+    cursor: pointer;
   }
   .picker-item {
     width: 150px;
@@ -453,10 +462,7 @@ input[type=text].txt-white {
     border: 2px solid #f8f8f8;
     aspect-ratio: 1/1;
     margin: 10px;
-  }
-  .picker-item:hover {
-    transform: scale(1.5);
-    z-index: 10;
+    cursor: pointer;
   }
   .icon-expression {
     font-size: 30px;
@@ -495,6 +501,7 @@ input[type=text].txt-white {
     width: 250px;
     border-radius: 10px;
     border: 2px #f8f8f8 solid;
+    cursor: pointer;
   }
   .picker-item {
     width: 200px;
@@ -503,10 +510,7 @@ input[type=text].txt-white {
     border: 2px solid #f8f8f8;
     aspect-ratio: 1/1;
     margin: 10px;
-  }
-  .picker-item:hover {
-    transform: scale(1.5);
-    z-index: 10;
+    cursor: pointer;
   }
   .icon-expression {
     font-size: 35px;
