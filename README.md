@@ -46,3 +46,4 @@ npm run dev
 idk, it sounds better
 
 ---
+[<img src="./public/sp.png" alt="smilie pop" width="150"/>](https://www.youtube.com/c/SmiliePop)[<img src="./public/lezzthanthree.png" alt="lezzthanthree" width="150"/>](https://reddit.com/user/lezzthanthree)
