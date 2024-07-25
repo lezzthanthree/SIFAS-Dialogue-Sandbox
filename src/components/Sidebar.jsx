@@ -14,8 +14,9 @@ const Sidebar = ({
     sprites,
     setSprites,
     experimental,
-    setExperimental
+    setExperimental,
 }) => {
+    console.log(text)
     return (
         <div id="sidebar" className={hideState ? "hide" : ""}>
             {tabState === "background" && background && (
@@ -24,7 +25,7 @@ const Sidebar = ({
                     setBackground={setBackground}
                 />
             )}
-            {tabState === "text" && text && nameTag && (
+            {tabState === "text" && text !== null && text !== undefined && nameTag && (
                 <TextSidebar
                     text={text}
                     setText={setText}
@@ -37,7 +38,9 @@ const Sidebar = ({
             {tabState === "sprite" && sprites && (
                 <SpriteSidebar sprites={sprites} setSprites={setSprites} />
             )}
-            {(!background || !text || !nameTag || !sprites ) && <div className="center white font-20">Please wait</div>}
+            {(!background || text === null || text === undefined || !nameTag || !sprites) && (
+                <div className="center white font-20">Please wait</div>
+            )}
         </div>
     );
 };
