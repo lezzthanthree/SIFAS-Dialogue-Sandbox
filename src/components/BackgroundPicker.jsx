@@ -7,7 +7,12 @@ const BackgroundPicker = ({ background, setBackground }) => {
     return (
         <>
             {show && (
-                <div id="picker">
+                <div
+                    id="picker"
+                    onClick={() => {
+                        setShow(false);
+                    }}
+                >
                     <button
                         id="picker-close"
                         className="icon btn-white"
