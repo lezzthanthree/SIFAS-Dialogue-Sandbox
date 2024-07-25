@@ -2,7 +2,7 @@ const drawText = async (ctx, text, experimental) => {
     const textOffset = parseInt(experimental.textOffset);
     const gradient = ctx.createLinearGradient(0, 750, 0, 950);
     gradient.addColorStop(0, "rgba(255, 255, 255, 0)");
-    gradient.addColorStop(0.11, "rgba(255, 255, 255, 0.8)");
+    gradient.addColorStop(0.11, "rgba(255, 255, 255, 0.85)");
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 750, 1820, 300);
     let texts = text.split("\n");
