@@ -4,7 +4,7 @@ import loadImage from "../../js/loadImage";
 import CostumePicker from "../CostumePicker";
 
 const SpriteSidebar = ({ sprites, setSprites }) => {
-    const [currentLayer, setCurrentLayer] = useState("sprite-layer-1");
+    const [currentLayer, setCurrentLayer] = useState(Object.keys(sprites)[0]);
     const [nextLayer, setNextLayer] = useState(2);
     return (
         <div id="sprite-sidebar">
