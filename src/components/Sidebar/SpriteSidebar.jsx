@@ -3,9 +3,8 @@ import { useState } from "react";
 import loadImage from "../../js/loadImage";
 import CostumePicker from "../CostumePicker";
 
-const SpriteSidebar = ({ sprites, setSprites }) => {
+const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
     const [currentLayer, setCurrentLayer] = useState(Object.keys(sprites)[0]);
-    const [nextLayer, setNextLayer] = useState(2);
     return (
         <div id="sprite-sidebar">
             <div className="group">

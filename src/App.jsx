@@ -14,6 +14,7 @@ function App() {
     const [experimental, setExperimental] = useState({
         textOffset: 0,
     });
+    const [nextLayer, setNextLayer] = useState(2);
 
     useEffect(() => {
         loadImage("/img/background/6olyyw_0.jpg")
@@ -87,6 +88,8 @@ function App() {
                     setSprites={setSprites}
                     experimental={experimental}
                     setExperimental={setExperimental}
+                    nextLayer={nextLayer}
+                    setNextLayer={setNextLayer}
                 ></Sidebar>
             )}
         </main>
