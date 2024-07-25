@@ -124,6 +124,14 @@ const Content = ({
                     Rerender
                 </button>
             </div>
+            <div className="absolute bottom-center black font-20">
+                <a
+                    href="https://github.com/lezzthanthree/SIFAS-Dialogue-Sandbox"
+                    target="_blank"
+                >
+                    <i className="bi bi-github black" />
+                </a>
+            </div>
             <Canvas draw={drawCanvas}></Canvas>
         </div>
     );

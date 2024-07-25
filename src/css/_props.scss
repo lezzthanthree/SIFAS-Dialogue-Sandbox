@@ -37,6 +37,14 @@
     color: $white;
 }
 
+.black {
+    color: $black;
+}
+
+.gray {
+    color: $gray;
+}
+
 .left-10 {
     margin-left: 10px;
 }
@@ -85,6 +93,12 @@
     padding: inherit;
 }
 
+.top-left {
+    left: 0;
+    top: 0;
+    padding: inherit;
+}
+
 .bottom-right {
     right: 0;
     bottom: 0;
@@ -97,6 +111,11 @@
     padding: inherit;
 }
 
+.bottom-center {
+    bottom: 0;
+    padding: inherit;
+}
+
 .space-center {
     justify-content: space-between;
     align-items: center;
@@ -105,4 +124,8 @@
 .align-center {
     display: flex;
     align-items: center;
+}
+
+.link {
+    
 }
