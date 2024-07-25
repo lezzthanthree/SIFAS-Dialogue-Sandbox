@@ -87,7 +87,7 @@ async function drawSprites(ctx, sprite, data) {
         );
     }
 
-    console.info(`${sprite["layer-name"]} drawn!`);
+    console.info(`${sprite.layerName} drawn!`);
 }
 
 export default drawSprites;

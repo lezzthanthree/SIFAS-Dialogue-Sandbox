@@ -59,7 +59,47 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                             setCurrentLayer(Object.keys(newSprites)[0]);
                         }}
                     ></i>
+                    <i
+                        className="bi bi-caret-up-square-fill sprite-setting-icon left-10 white"
+                        onClick={() => {
+                            const newLayer =
+                                sprites[currentLayer].layerNumber + 1;
+                            const character =
+                                data[sprites[currentLayer].character]
+                                    .information.first;
+                            setSprites({
+                                ...sprites,
+                                [currentLayer]: {
+                                    ...sprites[currentLayer],
+                                    layerName: `Layer ${newLayer}: ${character}`,
+                                    layerNumber: newLayer,
+                                },
+                            });
+                        }}
+                    ></i>
+                    <i
+                        className="bi bi-caret-down-square-fill sprite-setting-icon left-10 white"
+                        onClick={() => {
+                            const newLayer =
+                                sprites[currentLayer].layerNumber - 1;
+                            if (newLayer <= 0) {
+                                return;
+                            }
+                            const character =
+                                data[sprites[currentLayer].character]
+                                    .information.first;
+                            setSprites({
+                                ...sprites,
+                                [currentLayer]: {
+                                    ...sprites[currentLayer],
+                                    layerName: `Layer ${newLayer}: ${character}`,
+                                    layerNumber: newLayer,
+                                },
+                            });
+                        }}
+                    ></i>
                 </h1>
+
                 <select
                     name="sprite-layers"
                     id="sprite-layers"
@@ -69,13 +109,18 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                     }}
                     value={currentLayer}
                 >
-                    {Object.keys(sprites).map((s) => {
-                        return (
-                            <option key={s} value={s}>
-                                {sprites[s].layerName}
-                            </option>
-                        );
-                    })}
+                    {Object.keys(sprites)
+                        .sort(
+                            (a, b) =>
+                                sprites[a].layerNumber - sprites[b].layerNumber
+                        )
+                        .map((s) => {
+                            return (
+                                <option key={s} value={s}>
+                                    {sprites[s].layerName}
+                                </option>
+                            );
+                        })}
                 </select>
             </div>
             <div className="group">
@@ -192,7 +237,7 @@ const SpriteSidebar = ({ sprites, setSprites }) => {
                         ></i>
                     </div>
                 </div>
-                <div className="setting row center"> 
+                <div className="setting row center">
                     <div className="column right-20">
                         <i className="bi bi-emoji-smile-fill white icon-expression"></i>
                     </div>

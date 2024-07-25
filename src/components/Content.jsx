@@ -39,9 +39,11 @@ const Content = ({
         await drawBackground(ctx, background);
 
         if (sprites) {
-            const drawSpritePromises = Object.keys(sprites).map((key) =>
-                drawSprites(ctx, sprites[key], data[sprites[key].character])
-            );
+            const drawSpritePromises = Object.keys(sprites)
+                .sort((a, b) => sprites[a].layerNumber - sprites[b].layerNumber)
+                .map((key) =>
+                    drawSprites(ctx, sprites[key], data[sprites[key].character])
+                );
 
             await Promise.all(drawSpritePromises);
         }
