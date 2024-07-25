@@ -63,7 +63,7 @@
     filter: $shadow;
 }
 
-@media (width <= 1400px) {
+@media (width <= 1500px) {
     #sidebar {
         display: flex;
         flex-direction: column;
@@ -119,7 +119,7 @@
     }
 }
 
-@media (width > 1400px) {
+@media (width > 1500px) {
     #sidebar {
         display: flex;
         flex-direction: column;

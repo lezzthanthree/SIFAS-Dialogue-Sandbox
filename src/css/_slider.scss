@@ -7,27 +7,27 @@ input[type="range"] {
     height: 5px;
 }
 
-@media (width <= 1400px) {
+@media (width <= 1500px) {
     input[type="range"].white::-webkit-slider-runnable-track {
         background: $white;
         height: 3px;
     }
-    
+
     input[type="range"].white::-moz-range-track {
         background: $white;
         height: 3px;
     }
-    
+
     input[type="range"].pink::-webkit-slider-runnable-track {
         background: $pink;
         height: 3px;
     }
-    
+
     input[type="range"].pink::-moz-range-track {
         background: $pink;
         height: 3px;
     }
-    
+
     input[type="range"]::-webkit-slider-thumb {
         -webkit-appearance: none; /* Override default look */
         appearance: none;
@@ -39,7 +39,7 @@ input[type="range"] {
         width: 15px;
         margin-top: -7px;
     }
-    
+
     input[type="range"]::-moz-range-thumb {
         border: 3px $white solid;
         box-sizing: border-box;
@@ -50,27 +50,27 @@ input[type="range"] {
     }
 }
 
-@media (width > 1400px) {
+@media (width > 1500px) {
     input[type="range"].white::-webkit-slider-runnable-track {
         background: $white;
         height: 5px;
     }
-    
+
     input[type="range"].white::-moz-range-track {
         background: $white;
         height: 5px;
     }
-    
+
     input[type="range"].pink::-webkit-slider-runnable-track {
         background: $pink;
         height: 5px;
     }
-    
+
     input[type="range"].pink::-moz-range-track {
         background: $pink;
         height: 5px;
     }
-    
+
     input[type="range"]::-webkit-slider-thumb {
         -webkit-appearance: none; /* Override default look */
         appearance: none;
@@ -82,7 +82,7 @@ input[type="range"] {
         width: 20px;
         margin-top: -7px;
     }
-    
+
     input[type="range"]::-moz-range-thumb {
         border: 3px $white solid;
         box-sizing: border-box;

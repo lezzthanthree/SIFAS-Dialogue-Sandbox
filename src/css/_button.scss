@@ -1,4 +1,4 @@
-@media (width <= 1400px) {
+@media (width <= 1500px) {
     button.btn-small {
         padding: 10px;
         font-size: 20px;
@@ -19,7 +19,7 @@
         height: 60px;
         width: 60px;
         padding: 15px;
-    }    
+    }
 
     i.icon-btn {
         font-size: 30px;
@@ -27,7 +27,7 @@
     }
 }
 
-@media (width > 1400px) {
+@media (width > 1500px) {
     button.btn-small {
         padding: 10px;
         font-size: 30px;

@@ -32,13 +32,13 @@ img {
     object-fit: contain;
 }
 
-@media (width <= 1400px) {
+@media (width <= 1500px) {
     h1 {
         font-size: 25px;
     }
 }
 
-@media (width > 1400px) {
+@media (width > 1500px) {
     h1 {
         font-size: 35px;
     }

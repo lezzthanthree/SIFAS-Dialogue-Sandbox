@@ -1,11 +1,11 @@
-@media (width <= 1400px) {
+@media (width <= 1500px) {
     select.sel-small {
         padding: 8px 40px 8px 15px;
         font-size: 20px;
         height: 40px;
     }
 }
-@media (width > 1400px) {
+@media (width > 1500px) {
     select.sel-small {
         padding: 10px 30px 10px 20px;
         font-size: 30px;
