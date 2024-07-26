@@ -73,7 +73,8 @@
         padding: 20px;
         box-sizing: border-box;
         flex-shrink: 0;
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     #char-icon-img {
@@ -129,7 +130,8 @@
         padding: 25px;
         box-sizing: border-box;
         flex-shrink: 0;
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     #char-icon-img {
