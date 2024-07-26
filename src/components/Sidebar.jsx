@@ -15,8 +15,10 @@ const Sidebar = ({
     setSprites,
     experimental,
     setExperimental,
+    nextLayer,
+    setNextLayer,
 }) => {
-    console.log(text)
+    console.log(text);
     return (
         <div id="sidebar" className={hideState ? "hide" : ""}>
             {tabState === "background" && background && (
@@ -25,20 +27,32 @@ const Sidebar = ({
                     setBackground={setBackground}
                 />
             )}
-            {tabState === "text" && text !== null && text !== undefined && nameTag && (
-                <TextSidebar
-                    text={text}
-                    setText={setText}
-                    nameTag={nameTag}
-                    setNameTag={setNameTag}
-                    experimental={experimental}
-                    setExperimental={setExperimental}
+            {tabState === "text" &&
+                text !== null &&
+                text !== undefined &&
+                nameTag && (
+                    <TextSidebar
+                        text={text}
+                        setText={setText}
+                        nameTag={nameTag}
+                        setNameTag={setNameTag}
+                        experimental={experimental}
+                        setExperimental={setExperimental}
+                    />
+                )}
+            {tabState === "sprite" && sprites && (
+                <SpriteSidebar
+                    sprites={sprites}
+                    setSprites={setSprites}
+                    nextLayer={nextLayer}
+                    setNextLayer={setNextLayer}
                 />
             )}
-            {tabState === "sprite" && sprites && (
-                <SpriteSidebar sprites={sprites} setSprites={setSprites} />
-            )}
-            {(!background || text === null || text === undefined || !nameTag || !sprites) && (
+            {(!background ||
+                text === null ||
+                text === undefined ||
+                !nameTag ||
+                !sprites) && (
                 <div className="center white font-20">Please wait</div>
             )}
         </div>
