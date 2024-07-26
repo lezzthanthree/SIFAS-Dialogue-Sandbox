@@ -5,6 +5,15 @@ import CostumePicker from "../CostumePicker";
 
 const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
     const [currentLayer, setCurrentLayer] = useState(Object.keys(sprites)[0]);
+
+    const promptNumber = () => {
+        const number = prompt("Enter a value");
+        if (isNaN(number)) {
+            alert("Please input a valid number... *honk*");
+            return;
+        }
+        return number;
+    };
     return (
         <div id="sprite-sidebar">
             <div className="group">
@@ -307,27 +316,47 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                         >
                             X Offset ({sprites[currentLayer].options.x}px)
                         </label>
-                        <input
-                            type="range"
-                            name="X-offset"
-                            id="x-offset"
-                            className="white w-100"
-                            value={sprites[currentLayer].options.x}
-                            min="-1024"
-                            max="1024"
-                            onChange={(e) => {
-                                setSprites({
-                                    ...sprites,
-                                    [currentLayer]: {
-                                        ...sprites[currentLayer],
-                                        options: {
-                                            ...sprites[currentLayer].options,
-                                            x: parseInt(e.target.value),
+                        <div className="row white center">
+                            <input
+                                type="range"
+                                name="X-offset"
+                                id="x-offset"
+                                className="white w-100"
+                                value={sprites[currentLayer].options.x}
+                                min="-1024"
+                                max="1024"
+                                onChange={(e) => {
+                                    setSprites({
+                                        ...sprites,
+                                        [currentLayer]: {
+                                            ...sprites[currentLayer],
+                                            options: {
+                                                ...sprites[currentLayer]
+                                                    .options,
+                                                x: parseInt(e.target.value),
+                                            },
                                         },
-                                    },
-                                });
-                            }}
-                        />
+                                    });
+                                }}
+                            />
+                            <i
+                                className="bi bi-pencil-fill left-10 sprite-setting-icon"
+                                onClick={() => {
+                                    const number = promptNumber();
+                                    setSprites({
+                                        ...sprites,
+                                        [currentLayer]: {
+                                            ...sprites[currentLayer],
+                                            options: {
+                                                ...sprites[currentLayer]
+                                                    .options,
+                                                x: parseInt(number),
+                                            },
+                                        },
+                                    });
+                                }}
+                            ></i>
+                        </div>
                     </div>
                     <div className="column setting">
                         <label
@@ -336,27 +365,47 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                         >
                             Y Offset ({sprites[currentLayer].options.y}px)
                         </label>
-                        <input
-                            type="range"
-                            name="Y-offset"
-                            id="y-offset"
-                            className="white w-100"
-                            value={sprites[currentLayer].options.y}
-                            min="-1024"
-                            max="1024"
-                            onChange={(e) => {
-                                setSprites({
-                                    ...sprites,
-                                    [currentLayer]: {
-                                        ...sprites[currentLayer],
-                                        options: {
-                                            ...sprites[currentLayer].options,
-                                            y: parseInt(e.target.value),
+                        <div className="row white center">
+                            <input
+                                type="range"
+                                name="Y-offset"
+                                id="y-offset"
+                                className="white w-100"
+                                value={sprites[currentLayer].options.y}
+                                min="-1024"
+                                max="1024"
+                                onChange={(e) => {
+                                    setSprites({
+                                        ...sprites,
+                                        [currentLayer]: {
+                                            ...sprites[currentLayer],
+                                            options: {
+                                                ...sprites[currentLayer]
+                                                    .options,
+                                                y: parseInt(e.target.value),
+                                            },
                                         },
-                                    },
-                                });
-                            }}
-                        />
+                                    });
+                                }}
+                            />
+                            <i
+                                className="bi bi-pencil-fill left-10 sprite-setting-icon"
+                                onClick={() => {
+                                    const number = promptNumber();
+                                    setSprites({
+                                        ...sprites,
+                                        [currentLayer]: {
+                                            ...sprites[currentLayer],
+                                            options: {
+                                                ...sprites[currentLayer]
+                                                    .options,
+                                                y: parseInt(number),
+                                            },
+                                        },
+                                    });
+                                }}
+                            ></i>
+                        </div>
                     </div>
                     <div className="column setting">
                         <label
@@ -365,27 +414,47 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                         >
                             Scale ({sprites[currentLayer].options.scale}px)
                         </label>
-                        <input
-                            type="range"
-                            name="Scale"
-                            id="scale"
-                            className="white w-100"
-                            value={sprites[currentLayer].options.scale}
-                            min="-512"
-                            max="512"
-                            onChange={(e) => {
-                                setSprites({
-                                    ...sprites,
-                                    [currentLayer]: {
-                                        ...sprites[currentLayer],
-                                        options: {
-                                            ...sprites[currentLayer].options,
-                                            scale: parseInt(e.target.value),
+                        <div className="row white center">
+                            <input
+                                type="range"
+                                name="Scale"
+                                id="scale"
+                                className="white w-100"
+                                value={sprites[currentLayer].options.scale}
+                                min="-512"
+                                max="512"
+                                onChange={(e) => {
+                                    setSprites({
+                                        ...sprites,
+                                        [currentLayer]: {
+                                            ...sprites[currentLayer],
+                                            options: {
+                                                ...sprites[currentLayer]
+                                                    .options,
+                                                scale: parseInt(e.target.value),
+                                            },
                                         },
-                                    },
-                                });
-                            }}
-                        />
+                                    });
+                                }}
+                            />
+                            <i
+                                className="bi bi-pencil-fill left-10 sprite-setting-icon"
+                                onClick={() => {
+                                    const number = promptNumber();
+                                    setSprites({
+                                        ...sprites,
+                                        [currentLayer]: {
+                                            ...sprites[currentLayer],
+                                            options: {
+                                                ...sprites[currentLayer]
+                                                    .options,
+                                                scale: parseInt(number),
+                                            },
+                                        },
+                                    });
+                                }}
+                            ></i>
+                        </div>
                     </div>
                 </div>
                 <div className="checkbox-form setting center">
