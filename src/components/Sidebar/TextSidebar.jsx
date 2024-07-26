@@ -1,3 +1,4 @@
+import { useState } from "react";
 import data from "../../characters.json";
 import loadImage from "../../js/loadImage";
 
@@ -9,6 +10,7 @@ const TextSidebar = ({
     experimental,
     setExperimental,
 }) => {
+    const [fart, setFart] = useState(false);
     return (
         <div id="text-sidebar">
             <div className="group">
@@ -16,7 +18,15 @@ const TextSidebar = ({
                 <textarea
                     className="btn-small btn-white w-100 setting"
                     onChange={(e) => {
-                        setText(e.target.value);
+                        let textToChange = e.target.value;
+                        console.log(typeof textToChange);
+                        if (/fart/gim.test(textToChange) && !fart) {
+                            window.open("https://redd.it/nbr4ni");
+                            alert("...why?");
+                            setFart(true)
+                            textToChange = "STOP POSTING ABOUT ELI FART! I'M TIRED OF SEEING IT! \nMY FRIENDS ON TIKTOK SEND ME MEMES, ON DISCORD \nIT'S FUCKING MEMES! I was in a server, right? and ALL OF THE \nCHANNELS were just eli fart stuff. AAAAAAAAAAAAAAHGESFG"
+                        }
+                        setText(textToChange);
                     }}
                     value={text}
                 >
