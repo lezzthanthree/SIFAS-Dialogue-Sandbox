@@ -64,16 +64,19 @@ function App() {
     return (
         <main>
             <div
-                className="absolute full-screen top-left justify-center white column"
+                className="absolute top-left justify-center white column"
                 id="mobile"
             >
                 <p className="bottom-10">
-                    Unfortunately, this web app is not yet suitable for
-                    phones. Come back later or use a desktop to access this.
+                    If you are using a phone, it is highly suggested to turn on
+                    desktop view and rotate your phone in landscape mode.
+                </p>
+                <p className="bottom-10">
+                    Mobile view is still under development, so please wait for a while~ ♥
                 </p>
                 <p>
-                    If you are using a desktop, though, you should enlarge the
-                    window a little bit...
+                    If you are using a desktop, then you should enlarge the
+                    window a little bit or try zooming it out a little.
                 </p>
             </div>
             <Content
