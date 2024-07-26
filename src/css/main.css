@@ -166,8 +166,8 @@ select.sel-192 {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     vertical-align: middle;
     background: none;
     border: 0;
@@ -434,7 +434,8 @@ input[type=text].txt-white {
     padding: 20px;
     box-sizing: border-box;
     flex-shrink: 0;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   #char-icon-img {
     height: 30px;
@@ -482,7 +483,8 @@ input[type=text].txt-white {
     padding: 25px;
     box-sizing: border-box;
     flex-shrink: 0;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   #char-icon-img {
     height: 40px;
