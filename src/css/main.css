@@ -31,6 +31,11 @@
     font-size: 30px;
     line-height: 0;
   }
+  button.btn-tab {
+    border-radius: 0;
+    font-size: 20px;
+    padding: 3px;
+  }
 }
 @media (width > 1500px) {
   button.btn-small {
@@ -55,6 +60,11 @@
     font-size: 50px;
     line-height: 0;
   }
+  button.btn-tab {
+    border-radius: 0;
+    font-size: 25px;
+    padding: 3px;
+  }
 }
 button {
   border-radius: 8px;
@@ -63,6 +73,7 @@ button {
   text-align: center;
   font-style: normal;
   line-height: normal;
+  cursor: pointer;
 }
 
 button.btn-white {

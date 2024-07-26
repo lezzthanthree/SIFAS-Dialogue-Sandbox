@@ -185,7 +185,11 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                 <h1 className="white">Costume</h1>
                 <div className="row setting">
                     <button
-                        className="btn-small btn-white w-100 right-20"
+                        className={
+                            sprites[currentLayer].position == "front"
+                                ? "btn-tab w-100 btn-green"
+                                : "btn-tab w-100 btn-white"
+                        }
                         onClick={async () => {
                             const character = sprites[currentLayer].character;
                             const firstCostume = data[character].costumes[0];
@@ -214,7 +218,11 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                         Front
                     </button>
                     <button
-                        className="btn-small btn-white w-100"
+                        className={
+                            sprites[currentLayer].position == "back"
+                                ? "btn-tab w-100 btn-green"
+                                : "btn-tab w-100 btn-white"
+                        }
                         onClick={async () => {
                             const character = sprites[currentLayer].character;
                             const firstCostume = data[character].back[0];
