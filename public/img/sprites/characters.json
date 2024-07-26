@@ -1,6 +1,17 @@
 {
     "maki": {
+        "information": {
+            "first": "Maki",
+            "last": "Nishikino",
+            "group": "μ's",
+            "year": "1st"
+        },
         "costumes": [
+            "0dn3eg",
+            "qrwz05",
+            "es8ze1",
+            "f90527",
+            "cgp8er",
             "1p6a5s",
             "kh1ef8",
             "9mj22j",
@@ -10,20 +21,16 @@
             "ootnyd",
             "b97qbd",
             "t9g4n4",
-            "f90527",
             "jjqpt9",
             "0ymaim",
             "8tmify",
             "9nm29j",
             "ig5qgp",
-            "qrwz05",
-            "es8ze1",
             "cz335n",
             "k87ug0",
             "c33nat",
             "up8qhr",
             "5wuk3e",
-            "cgp8er",
             "3gp69v",
             "6739bk",
             "6stih6",
@@ -88,15 +95,23 @@
         }
     },
     "hanayo": {
+        "information": {
+            "first": "Hanayo",
+            "last": "Koizumi",
+            "group": "μ's",
+            "year": "1st"
+        },
         "costumes": [
+            "0dn3eg",
+            "g39jyf",
+            "isww06",
+            "f90527",
+            "bkmon2",
             "3mrmdb",
             "hr7i4t",
-            "isww06",
             "tdzpg0",
             "zfsdo3",
             "vcfvts",
-            "g39jyf",
-            "bkmon2",
             "pcspxt",
             "hhcwwz",
             "etx8d4",
@@ -120,8 +135,7 @@
             "jjqpt9",
             "k87ug0",
             "r6nwkj",
-            "t5zneg",
-            "f90527"
+            "t5zneg"
         ],
         "offset": {
             "512": {
@@ -180,14 +194,23 @@
         }
     },
     "rin": {
+        "information": {
+            "first": "Rin",
+            "last": "Hoshizora",
+            "group": "μ's",
+            "year": "1st"
+        },
         "costumes": [
+            "0dn3eg",
+            "vwufml",
+            "ojkprp",
+            "b0heyy",
+            "d4ed0c",
             "6ufoz8",
             "7q1q51",
-            "d4ed0c",
             "ghm1os",
             "xz32dz",
             "2ah0in",
-            "ojkprp",
             "679oy8",
             "ssrus6",
             "c6gu6u",
@@ -270,7 +293,18 @@
         }
     },
     "umi": {
+        "information": {
+            "first": "Umi",
+            "last": "Sonoda",
+            "group": "μ's",
+            "year": "2nd"
+        },
         "costumes": [
+            "0dn3eg",
+            "ctve4p",
+            "jka396",
+            "fatf6k",
+            "t1xujd",
             "macuuy",
             "zj5f2h",
             "hr7i4t",
@@ -290,14 +324,10 @@
             "mqsydh",
             "9kkmfe",
             "g42czk",
-            "ctve4p",
-            "jka396",
             "vnf22u",
-            "fatf6k",
             "wey34o",
             "aoocvi",
             "quxdvp",
-            "t1xujd",
             "wht5go",
             "9yqauq",
             "i1m56m",
@@ -353,24 +383,31 @@
         }
     },
     "lanzhu": {
+        "information": {
+            "first": "Lanzhu",
+            "last": "Zhong",
+            "group": "Nijigasaki",
+            "year": "2nd"
+        },
         "costumes": [
+            "ylpyki",
+            "p4sunk",
+            "gxkz6g",
+            "28m3zj",
+            "bidaky",
             "7gv603",
             "x9y2x9",
             "nccg08",
             "ps2hin",
             "y9x6kn",
             "ev5sdz",
-            "p4sunk",
             "7ffj9f",
             "3cmz57",
-            "gxkz6g",
             "f9j3z3",
-            "28m3zj",
             "0tgekh",
             "xz32dz",
             "3mrmdb",
             "i023hc",
-            "bidaky",
             "i1m56m"
         ],
         "offset": {
@@ -444,7 +481,21 @@
         }
     },
     "mari": {
+        "information": {
+            "first": "Mari",
+            "last": "Ohara",
+            "group": "Aqours",
+            "year": "3rd"
+        },
         "costumes": [
+            "0dn3eg",
+            "jjs459",
+            "eeqs51",
+            "3d7vdp",
+            "vhzaxp",
+            "4n8crv",
+            "ngsulq",
+            "4s31ga",
             "1yud5i",
             "qk00kf",
             "c8xqfu",
@@ -457,7 +508,6 @@
             "kd3etu",
             "2qvbuc",
             "2lhvas",
-            "3d7vdp",
             "knthsz",
             "8449fr",
             "65eu64",
@@ -469,7 +519,6 @@
             "isa2x7",
             "4cecxf",
             "6739bk",
-            "vhzaxp",
             "g1jq86",
             "udndpj",
             "xb3q7a"
@@ -531,18 +580,26 @@
         }
     },
     "mia": {
+        "information": {
+            "first": "Mia",
+            "last": "Taylor",
+            "group": "Nijigasaki",
+            "year": "3rd"
+        },
         "costumes": [
+            "ylpyki",
+            "p4sunk",
+            "qzhtq1",
+            "bagul4",
+            "4n7vhu",
             "3cmz57",
             "8bqzea",
             "kajo69",
-            "qzhtq1",
             "ps2hin",
             "storry",
             "0ymaim",
             "m3rccg",
             "3gql0u",
-            "4n7vhu",
-            "bagul4",
             "lsc361",
             "ory9oc",
             "ssrus6",
@@ -622,7 +679,18 @@
         }
     },
     "dia": {
+        "information": {
+            "first": "Dia",
+            "last": "Kurosawa",
+            "group": "Aqours",
+            "year": "3rd"
+        },
         "costumes": [
+            "0dn3eg",
+            "murrbt",
+            "l1kgfp",
+            "ggcu9u",
+            "vhzaxp",
             "i1m56m",
             "hqzwu1",
             "67k51o",
@@ -634,12 +702,10 @@
             "l8dhe5",
             "9yat6k",
             "r0fgne",
-            "vhzaxp",
             "yp3c4s",
             "uvzub8",
             "ggf9dr",
             "13et7d",
-            "l1kgfp",
             "r2n4sj",
             "937b8r",
             "d1dai9",
@@ -653,8 +719,7 @@
             "2lhvas",
             "0oqanf",
             "63xw99",
-            "isa2x7",
-            "ggcu9u"
+            "isa2x7"
         ],
         "offset": {
             "512": {
@@ -713,7 +778,17 @@
         }
     },
     "ai": {
+        "information": {
+            "first": "Ai",
+            "last": "Miyashita",
+            "group": "Nijigasaki",
+            "year": "2nd"
+        },
         "costumes": [
+            "0dn3eg",
+            "jyv2cc",
+            "4aumgk",
+            "zim4i4",
             "isa2x7",
             "bndyo1",
             "hr7i4t",
@@ -726,9 +801,6 @@
             "8fplel",
             "2qvbuc",
             "5a88qi",
-            "4aumgk",
-            "jyv2cc",
-            "zim4i4",
             "ez31wv",
             "13et7d",
             "tybuju",
@@ -804,17 +876,27 @@
         }
     },
     "hanamaru": {
+        "information": {
+            "first": "Hanamaru",
+            "last": "Kunikida",
+            "group": "Aqours",
+            "year": "1st"
+        },
         "costumes": [
+            "0dn3eg",
+            "gibbhl",
+            "cp11z4",
+            "9j7ox4",
+            "3x9wmd",
+            "vhzaxp",
             "ksnhzv",
             "g3iiho",
             "tybuju",
             "udndpj",
             "w9tlhy",
             "63xw99",
-            "9j7ox4",
             "hqzwu1",
             "uk638v",
-            "vhzaxp",
             "03zhal",
             "k87ug0",
             "2lhvas",
@@ -822,7 +904,6 @@
             "u0ym5x",
             "0j0vsk",
             "6ulki7",
-            "3x9wmd",
             "7dhpka",
             "1yud5i",
             "67wg70",
@@ -830,8 +911,6 @@
             "4b54ve",
             "g1jq86",
             "3gql0u",
-            "cp11z4",
-            "gibbhl",
             "ishrxi",
             "ymjyuv",
             "hhcwwz",
@@ -888,18 +967,27 @@
         }
     },
     "you": {
+        "information": {
+            "first": "You",
+            "last": "Watanabe",
+            "group": "Aqours",
+            "year": "2nd"
+        },
         "costumes": [
+            "0dn3eg",
+            "g6vut4",
+            "c397mx",
+            "gkaxia",   
+            "vhzaxp",
             "up8qhr",
             "dzhgjo",
             "th3q2v",
             "ghm1os",
-            "vhzaxp",
-            "g6vut4",
             "yaktsu",
             "5p0678",
-            "5h7c1y",
             "rd0k64",
             "ig5qgp",
+            "5h7c1y",
             "cuty1e",
             "o9eto0",
             "cac4pj",
@@ -907,7 +995,6 @@
             "2lhvas",
             "nvtmz7",
             "hqzwu1",
-            "gkaxia",
             "udndpj",
             "p1hs35",
             "vecjb3",
@@ -915,7 +1002,6 @@
             "yaon69",
             "f2h099",
             "skp1j9",
-            "c397mx",
             "fi5gf2",
             "zjk9d3",
             "j8g4g2",
@@ -981,19 +1067,28 @@
         }
     },
     "setsuna": {
+        "information": {
+            "first": "Setsuna",
+            "last": "Yuki",
+            "group": "Nijigasaki",
+            "year": "2nd"
+        },
         "costumes": [
-            "4zd06q",
-            "9fakzm",
-            "hq4z40",
-            "vq0eo6",
+            "0dn3eg",
+            "56nnej",
+            "h3q7yh",
             "wsfbko",
-            "hhcwwz",
+            "vq0eo6",
             "bd1k71",
+            "l04dc4",
+            "hq4z40",
+            "9fakzm",
+            "hhcwwz",
+            "4zd06q",
             "9yqauq",
             "xz32dz",
             "ez31wv",
             "ot5g6s",
-            "h3q7yh",
             "22z7c3",
             "7ffj9f",
             "lza8rc",
@@ -1011,7 +1106,6 @@
             "wmbmhv",
             "qk00kf",
             "muqc9w",
-            "l04dc4",
             "q3bz1z",
             "8lvn5s",
             "esjbkc"
@@ -1022,8 +1116,8 @@
                 "mouth": [191, 363]
             },
             "1024": {
-                "eye": [191, 288],
-                "mouth": [191, 363]
+                "eye": [447, 288],
+                "mouth": [447, 363]
             }
         },
         "size": {
@@ -1073,17 +1167,26 @@
         }
     },
     "yoshiko": {
+        "information": {
+            "first": "Yoshiko",
+            "last": "Tsushima",
+            "group": "Aqours",
+            "year": "1st"
+        },
         "costumes": [
+            "0dn3eg",
+            "213ckg",
+            "2lhvas",
+            "3h1vqt",
             "ztzfo7",
+            "vhzaxp",
             "udndpj",
             "n695op",
             "5wuk3e",
             "t9g4n4",
-            "213ckg",
             "i255jw",
             "3zczv4",
             "ymjyuv",
-            "3h1vqt",
             "g3pzh5",
             "ivhe9n",
             "hqzwu1",
@@ -1094,14 +1197,12 @@
             "tvy0t3",
             "f5ph3p",
             "0aba0k",
-            "2lhvas",
             "8lvn5s",
             "g3iiho",
             "m4w152",
             "jti0jn",
             "3auv88",
             "7vgsru",
-            "vhzaxp",
             "cfh43u",
             "vfs905",
             "tjxp0a",
@@ -1166,12 +1267,23 @@
         }
     },
     "kotori": {
+        "information": {
+            "first": "Kotori",
+            "last": "Minami",
+            "group": "μ's",
+            "year": "2nd"
+        },
         "costumes": [
+            "0dn3eg",
+            "yx3xiq",
+            "nz2tqm",
+            "fmn14z",
+            "5127kc",
+            "t1xujd",
             "5n5us4",
             "2hxcz4",
             "ued41p",
             "vecjb3",
-            "fmn14z",
             "78jj83",
             "wjaua1",
             "x2agm1",
@@ -1179,15 +1291,12 @@
             "772yvc",
             "o9eto0",
             "un0zm4",
-            "t1xujd",
             "cexz7h",
             "9yqauq",
             "gj7rug",
             "9rpmra",
             "vcx3nq",
             "gbedvr",
-            "5127kc",
-            "nz2tqm",
             "g3pzh5",
             "zj580i",
             "f0bpak",
@@ -1197,8 +1306,7 @@
             "bt6q18",
             "moggiy",
             "zfodqb",
-            "yruubd",
-            "yx3xiq"
+            "yruubd"
         ],
         "offset": {
             "512": {
@@ -1250,10 +1358,22 @@
         }
     },
     "emma": {
+        "information": {
+            "first": "Emma",
+            "last": "Verde",
+            "group": "Nijigasaki",
+            "year": "3rd"
+        },
         "costumes": [
+            "sc7poi",
+            "wl9ec6",
+            "onszay",
+            "xdg971",
+            "8xo2u7",
+            "42imjb",
+            "nepyac",
             "224iw5",
             "chaz2f",
-            "onszay",
             "h7tx7h",
             "2o3q0c",
             "p7arzd",
@@ -1276,14 +1396,12 @@
             "x2agm1",
             "g3pzh5",
             "4x72ut",
-            "xdg971",
             "mmauhv",
             "6zw1ds",
             "5qqmp8",
             "yeff5i",
             "aarvqq",
-            "o5jv32",
-            "wl9ec6"
+            "o5jv32"
         ],
         "offset": {
             "512": {
@@ -1349,11 +1467,22 @@
         }
     },
     "honoka": {
+        "information": {
+            "first": "Honoka",
+            "last": "Kousaka",
+            "group": "μ's",
+            "year": "2nd"
+        },
         "costumes": [
+            "0dn3eg",
+            "48iom6",
+            "aac5ch",
+            "f90527",
+            "7p6h56",
+            "t1xujd",
             "dd61d4",
             "umckb2",
             "hhcwwz",
-            "t1xujd",
             "ddzbcn",
             "g42czk",
             "nxvhik",
@@ -1361,7 +1490,6 @@
             "wjaua1",
             "cxt890",
             "x9y2x9",
-            "48iom6",
             "78jj83",
             "687d4i",
             "nepyac",
@@ -1369,16 +1497,13 @@
             "7eywza",
             "jjqpt9",
             "qnb35q",
-            "aac5ch",
             "xj13nc",
             "qeeqg6",
             "w9fnrz",
             "tkx0ou",
-            "7p6h56",
             "l8kc3v",
             "jklm59",
             "4qjnjb",
-            "f90527",
             "czp7b2",
             "8ljph9",
             "m3rccg",
@@ -1437,16 +1562,25 @@
         }
     },
     "rina_board": {
+        "information": {
+            "first": "Rina",
+            "last": "Tennouji",
+            "group": "Nijigasaki",
+            "year": "1st"
+        },
         "costumes": [
-            "26vj6y",
+            "0dn3eg",
+            "dw01bx",
             "a258zs",
-            "ifqydl",
+            "aqvr4r",
+            "8fplel",
+            "tppnkp",
             "zim4i4",
+            "26vj6y",
+            "ifqydl",
             "hcv4sx",
             "gef1wm",
-            "tppnkp",
             "w9fnrz",
-            "aqvr4r",
             "ug8vsf",
             "tjxp0a",
             "7q1q51",
@@ -1455,14 +1589,12 @@
             "3gql0u",
             "dzhgjo",
             "13et7d",
-            "8fplel",
             "6jmuzo",
             "3mrmdb",
             "vlz78e",
             "cb9tal",
             "yp3c4s",
             "m3rccg",
-            "dw01bx",
             "cnlq1k"
         ],
         "offset": {
@@ -1529,14 +1661,23 @@
         }
     },
     "shizuku": {
+        "information": {
+            "first": "Shizuku",
+            "last": "Osaka",
+            "group": "Nijigasaki",
+            "year": "1st"
+        },
         "costumes": [
+            "0dn3eg",
+            "hjwlfp",
+            "hyxfyp",
             "8fplel",
+            "zim4i4",
             "h19lwu",
             "xmrx4g",
             "cskejg",
             "4i5hvo",
             "9dg78l",
-            "hyxfyp",
             "rq8qwk",
             "i023hc",
             "kz9jfy",
@@ -1548,9 +1689,7 @@
             "be9c7f",
             "au84i6",
             "mtp1s3",
-            "hjwlfp",
             "kz2des",
-            "zim4i4",
             "5iook9",
             "3mrmdb",
             "s3m5yr",
@@ -1619,16 +1758,25 @@
         }
     },
     "kanan": {
+        "information": {
+            "first": "Kanan",
+            "last": "Matsuura",
+            "group": "Aqours",
+            "year": "3rd"
+        },
         "costumes": [
+            "0dn3eg",
+            "m5x9ak",
+            "y7bypy",
             "cmmjug",
+            "vhzaxp",
+            "r81e44",
             "dzhgjo",
             "udndpj",
             "vpgv8e",
             "2lhvas",
             "qfvm0g",
             "jlzb91",
-            "y7bypy",
-            "vhzaxp",
             "9n19x7",
             "ddzbcn",
             "i2fyt3",
@@ -1702,7 +1850,17 @@
         }
     },
     "nozomi": {
+        "information": {
+            "first": "Nozomi",
+            "last": "Tojo",
+            "group": "μ's",
+            "year": "3rd"
+        },
         "costumes": [
+            "0dn3eg",
+            "n5vztx",
+            "ztgi2p",
+            "f90527",
             "jti0jn",
             "bfgeog",
             "f2h099",
@@ -1710,7 +1868,6 @@
             "59c5pd",
             "whefz6",
             "z2mjl7",
-            "n5vztx",
             "m56xlb",
             "5krmu5",
             "9n19x7",
@@ -1726,13 +1883,11 @@
             "hikin1",
             "atzqfn",
             "ci3aq9",
-            "ztgi2p",
             "f9j3z3",
             "jjqpt9",
             "c6gu6u",
             "43mnf1",
             "63xw99",
-            "f90527",
             "pyr68c"
         ],
         "offset": {
@@ -1785,13 +1940,22 @@
         }
     },
     "riko": {
+        "information": {
+            "first": "Riko",
+            "last": "Sakurauchi",
+            "group": "Aqours",
+            "year": "2nd"
+        },
         "costumes": [
+            "0dn3eg",
+            "z8bmhi",
+            "chaz2f",
+            "mv478d",
+            "vhzaxp",
             "hqzwu1",
             "ila7nv",
-            "mv478d",
             "amjx0n",
             "vcx3nq",
-            "vhzaxp",
             "tyluf5",
             "k5rstx",
             "udndpj",
@@ -1812,12 +1976,10 @@
             "f2h099",
             "8xo2u7",
             "umckb2",
-            "z8bmhi",
             "xokxz3",
             "8179v7",
             "2lhvas",
-            "9n19x7",
-            "chaz2f"
+            "9n19x7"
         ],
         "offset": {
             "512": {
@@ -1869,9 +2031,19 @@
         }
     },
     "eli": {
+        "information": {
+            "first": "Eli",
+            "last": "Ayase",
+            "group": "μ's",
+            "year": "3rd"
+        },
         "costumes": [
-            "qjyxn8",
+            "0dn3eg",
             "03z67c",
+            "f90527",
+            "ky0ohh",
+            "fzi9wj",
+            "qjyxn8",
             "gaqrm4",
             "8449fr",
             "i1m56m",
@@ -1884,7 +2056,6 @@
             "umckb2",
             "nepyac",
             "k5rstx",
-            "fzi9wj",
             "4255jj",
             "3zczv4",
             "2qvbuc",
@@ -1897,7 +2068,6 @@
             "f6p5xf",
             "13et7d",
             "2qjow8",
-            "ky0ohh",
             "2owoqv"
         ],
         "offset": {
@@ -1957,13 +2127,22 @@
         }
     },
     "ayumu": {
+        "information": {
+            "first": "Ayumu",
+            "last": "Uehara",
+            "group": "Nijigasaki",
+            "year": "2nd"
+        },
         "costumes": [
+            "0dn3eg",
+            "17kstk",
+            "6s2ksv",
+            "mcz16u",
+            "s0v7f9",
             "0ymaim",
             "psv215",
-            "6s2ksv",
             "cinipy",
             "xx12fa",
-            "mcz16u",
             "7ghyal",
             "tl9801",
             "ruozau",
@@ -2055,7 +2234,22 @@
         }
     },
     "chika": {
+        "information": {
+            "first": "Chika",
+            "last": "Takami",
+            "group": "Aqours",
+            "year": "2nd"
+        },
         "costumes": [
+            "0dn3eg",
+            "x3ztah",
+            "6jmuzo",
+            "zfyztl",
+            "7p6h56",
+            "gelmmc",
+            "h13vlf",
+            "swkocw",
+            "udndpj",
             "p5kjz2",
             "cr32ya",
             "hqzwu1",
@@ -2064,7 +2258,6 @@
             "85hwue",
             "43mnf1",
             "3mrmdb",
-            "6jmuzo",
             "yaon69",
             "b7obt4",
             "gt2k3s",
@@ -2075,8 +2268,6 @@
             "buw4tm",
             "z0eo31",
             "hr7i4t",
-            "7p6h56",
-            "gelmmc",
             "7q1q51",
             "pcspxt",
             "g9gca1",
@@ -2085,7 +2276,6 @@
             "clcxhx",
             "0ymaim",
             "yyz0ls",
-            "zfyztl",
             "8xo2u7",
             "m3rccg",
             "k5rstx"
@@ -2140,23 +2330,32 @@
         }
     },
     "kanata": {
+        "information": {
+            "first": "Kanata",
+            "last": "Konoe",
+            "group": "Nijigasaki",
+            "year": "3rd"
+        },
         "costumes": [
-            "f447ac",
+            "0dn3eg",
             "et1ojk",
-            "0eygka",
+            "17eevz",
+            "55t3s8",
+            "gg808o",
             "i89y7q",
+            "bd1k71",
+            "h76sg4",
+            "f447ac",
+            "0eygka",
             "38w40h",
             "k87ug0",
             "vesbeh",
-            "55t3s8",
             "xx12fa",
             "5wuk3e",
             "ddzbcn",
             "1yud5i",
-            "h76sg4",
             "47yo1x",
             "jjqpt9",
-            "17eevz",
             "jmijzt",
             "s8vewo",
             "0kx032",
@@ -2168,10 +2367,8 @@
             "dzhgjo",
             "g3iiho",
             "jaru7q",
-            "bd1k71",
             "vnf22u",
             "8bqzea",
-            "gg808o",
             "im0wrh",
             "81d0hn"
         ],
@@ -2232,10 +2429,19 @@
         }
     },
     "kasumi": {
+        "information": {
+            "first": "Kasumi",
+            "last": "Nakasu",
+            "group": "Nijigasaki",
+            "year": "1st"
+        },
         "costumes": [
+            "0dn3eg",
+            "colz44",
+            "v3h4kr",
+            "zim4i4",
             "tybuju",
             "ddzbcn",
-            "zim4i4",
             "j8g4g2",
             "qpb4fu",
             "ishrxi",
@@ -2246,7 +2452,6 @@
             "qewrjv",
             "i5oy1s",
             "1hq5nz",
-            "colz44",
             "xqmnw4",
             "qk00kf",
             "eu6x1b",
@@ -2260,7 +2465,6 @@
             "6ozjxi",
             "5wuk3e",
             "8fplel",
-            "v3h4kr",
             "jjqpt9"
         ],
         "offset": {
@@ -2327,10 +2531,21 @@
         }
     },
     "karin": {
+        "information": {
+            "first": "Karin",
+            "last": "Asaka",
+            "group": "Nijigasaki",
+            "year": "3rd"
+        },
         "costumes": [
+            "0dn3eg",
+            "09cllb",
+            "vk2t1g",
+            "t3mfhu",
+            "zim4i4",
+            "chuppi",
             "7vgsru",
             "wxr77k",
-            "09cllb",
             "m4w152",
             "6jmuzo",
             "p7arzd",
@@ -2344,16 +2559,12 @@
             "pcspxt",
             "laotun",
             "b7obt4",
-            "chuppi",
-            "vk2t1g",
-            "zim4i4",
             "71bwi9",
             "jjqpt9",
             "ishrxi",
             "ghm1os",
             "spoe87",
             "x0t5l9",
-            "t3mfhu",
             "hp5bqv",
             "f2h099",
             "oeck00",
@@ -2416,18 +2627,24 @@
         }
     },
     "rina": {
+        "information": {
+            "first": "Rina",
+            "last": "Tennouji",
+            "group": "Nijigasaki",
+            "year": "1st"
+        },
         "costumes": [
+            "2p3chq",
+            "n9j2nm",
+            "qzhtq1",
+            "qy6cdn",
+            "w9mi5c",
+            "ik3g55",
             "hcv4sx1",
             "1kyqbv",
             "hmofnc",
-            "2p3chq",
-            "qzhtq1",
-            "w9mi5c",
-            "n9j2nm",
             "9yqauq",
-            "skomn4",
-            "qy6cdn",
-            "ik3g55"
+            "skomn4"
         ],
         "offset": {
             "512": {
@@ -2458,9 +2675,22 @@
         }
     },
     "ruby": {
+        "information": {
+            "first": "Ruby",
+            "last": "Kurosawa",
+            "group": "Aqours",
+            "year": "1st"
+        },
         "costumes": [
+            "0dn3eg",
+            "xvzvoa",
+            "j7982y",
+            "yk8kc4",
+            "vhzaxp",
+            "jti0jn",
             "8nnc6j",
             "pcspxt",
+            "sljtq6",
             "qeeqg6",
             "88y1pr",
             "n54ylv",
@@ -2481,19 +2711,13 @@
             "ppw1ou",
             "z7j0ba",
             "bi0v4u",
-            "vhzaxp",
             "13et7d",
             "ddzbcn",
-            "xvzvoa",
             "rctwup",
             "hqzwu1",
             "5q206o",
-            "sljtq6",
-            "yk8kc4",
             "34mmat",
-            "43yop0",
-            "jti0jn",
-            "j7982y"
+            "43yop0"
         ],
         "offset": {
             "512": {
@@ -2545,21 +2769,29 @@
         }
     },
     "shioriko": {
+        "information": {
+            "first": "Shioriko",
+            "last": "Mifune",
+            "group": "Nijigasaki",
+            "year": "1st"
+        },
         "costumes": [
+            "p04f8w",
+            "d5h9wv",
+            "16t4fw",
+            "y5f9vi",
+            "bidaky",
             "ssrus6",
             "1btcxr",
+            "jjqpt9",
             "7gv603",
-            "p04f8w",
             "qeeqg6",
             "y67x54",
             "8fplel",
-            "16t4fw",
             "xz32dz",
             "43mnf1",
             "ezuiqr",
             "ps2hin",
-            "d5h9wv",
-            "y5f9vi",
             "59it3p",
             "tybuju",
             "2qvbuc",
@@ -2568,8 +2800,7 @@
             "yyr4i3",
             "k2f3pw",
             "v5x83w",
-            "umckb2",
-            "bidaky"
+            "umckb2"
         ],
         "offset": {
             "512": {
@@ -2642,12 +2873,22 @@
         }
     },
     "nico": {
+        "information": {
+            "first": "Nico",
+            "last": "Yazawa",
+            "group": "μ's",
+            "year": "3rd"
+        },
         "costumes": [
+            "0dn3eg",
+            "1qi3z9",
+            "2mcdgg",
+            "nz2tqm",
+            "jti0jn",
+            "580ib2",
             "owj5c9",
             "1j10tj",
-            "580ib2",
             "ssrus6",
-            "jti0jn",
             "39bmvg",
             "6eb37b",
             "q3bz1z",
@@ -2657,11 +2898,9 @@
             "jjqpt9",
             "34mmat",
             "13et7d",
-            "2mcdgg",
             "dzhgjo",
             "zob9ft",
             "w9fnrz",
-            "nz2tqm",
             "63uiae",
             "vlvzsf",
             "qfvm0g",
@@ -2676,7 +2915,6 @@
             "x35tvp",
             "au84i6",
             "9lexxb",
-            "1qi3z9",
             "ylw0lw"
         ],
         "offset": {
