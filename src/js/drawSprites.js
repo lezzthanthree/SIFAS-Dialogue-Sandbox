@@ -15,6 +15,22 @@ async function drawSprites(ctx, sprite, data) {
         ctx.canvas.width / 2 - bodyImage.width / 2 + sprite.options.x;
     const bodyYPos = sprite.options.y;
 
+    ctx.drawImage(
+        bodyImage,
+        0,
+        0,
+        bodyImage.width,
+        bodyImage.height,
+        bodyXPos,
+        bodyYPos,
+        bodyWidth,
+        bodyHeight
+    );
+
+    if (expressionImage == null) {
+        return;
+    }
+
     const eyePos = data.expression.eye[sprite.expression.eye];
     const mouthPos = data.expression.mouth[sprite.expression.mouth];
 
@@ -46,18 +62,6 @@ async function drawSprites(ctx, sprite, data) {
 
     const yMouthPos =
         (mouthOffset[1] / mouthSize[1]) * mouthHeight + sprite.options.y;
-
-    ctx.drawImage(
-        bodyImage,
-        0,
-        0,
-        bodyImage.width,
-        bodyImage.height,
-        bodyXPos,
-        bodyYPos,
-        bodyWidth,
-        bodyHeight
-    );
 
     if (eyePos) {
         ctx.drawImage(

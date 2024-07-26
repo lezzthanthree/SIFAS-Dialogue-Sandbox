@@ -44,6 +44,7 @@ function App() {
                         layerNumber: 1,
                         character: "honoka",
                         costume: "3c2bnw",
+                        position: "front",
                         bodyImage: bodyImage,
                         expressionImage: expressionImage,
                         expression: {
@@ -72,7 +73,8 @@ function App() {
                     desktop view and rotate your phone in landscape mode.
                 </p>
                 <p className="bottom-10">
-                    Mobile view is still under development, so please wait for a while~ ♥
+                    Mobile view is still under development, so please wait for a
+                    while~ ♥
                 </p>
                 <p>
                     If you are using a desktop, then you should enlarge the

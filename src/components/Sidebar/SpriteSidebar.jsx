@@ -35,6 +35,7 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                                     layerNumber: nextLayer,
                                     character: "honoka",
                                     costume: "3c2bnw",
+                                    position: "front",
                                     bodyImage: bodyImage,
                                     expressionImage: expressionImage,
                                     expression: {
@@ -155,6 +156,7 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                                 ...sprites[currentLayer],
                                 layerName: `Layer ${layerNumber}: ${data[newChar].information.first}`,
                                 character: newChar,
+                                position: "front",
                                 costume: firstCostume,
                                 bodyImage: bodyImage,
                                 expressionImage: expressionImage,
@@ -181,13 +183,75 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
             </div>
             <div className="group">
                 <h1 className="white">Costume</h1>
+                <div className="row setting">
+                    <button
+                        className="btn-small btn-white w-100 right-20"
+                        onClick={async () => {
+                            const character = sprites[currentLayer].character;
+                            const firstCostume = data[character].costumes[0];
+                            const bodyImage = await loadImage(
+                                `/img/sprites/${character}/${firstCostume}_0.png`
+                            );
+                            const expressionImage = await loadImage(
+                                `/img/sprites/${character}/${firstCostume}_1.png`
+                            );
+                            setSprites({
+                                ...sprites,
+                                [currentLayer]: {
+                                    ...sprites[currentLayer],
+                                    position: "front",
+                                    costume: firstCostume,
+                                    bodyImage: bodyImage,
+                                    expressionImage: expressionImage,
+                                    expression: {
+                                        eye: 1,
+                                        mouth: 1,
+                                    },
+                                },
+                            });
+                        }}
+                    >
+                        Front
+                    </button>
+                    <button
+                        className="btn-small btn-white w-100"
+                        onClick={async () => {
+                            const character = sprites[currentLayer].character;
+                            const firstCostume = data[character].back[0];
+                            const bodyImage = await loadImage(
+                                `/img/sprites_back/${character}/${firstCostume}_0.png`
+                            );
+                            const expressionImage = null;
+                            setSprites({
+                                ...sprites,
+                                [currentLayer]: {
+                                    ...sprites[currentLayer],
+                                    position: "back",
+                                    costume: firstCostume,
+                                    bodyImage: bodyImage,
+                                    expressionImage: expressionImage,
+                                    expression: {
+                                        eye: 1,
+                                        mouth: 1,
+                                    },
+                                },
+                            });
+                        }}
+                    >
+                        Back
+                    </button>
+                </div>
                 <CostumePicker
                     sprites={sprites}
                     setSprites={setSprites}
                     currentLayer={currentLayer}
                 ></CostumePicker>
             </div>
-            <div className="group">
+            <div
+                className={
+                    sprites[currentLayer].position == "back" ? "hide" : "group"
+                }
+            >
                 <h1 className="white">Expression</h1>
                 <div className="setting row center">
                     <div className="column right-20">

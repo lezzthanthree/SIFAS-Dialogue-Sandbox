@@ -22,36 +22,67 @@ const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
                     >
                         <i className="bi bi-x-lg icon-btn"></i>
                     </button>
-                    {data[sprites[currentLayer].character].costumes.map(
-                        (cos) => {
-                            return (
-                                <img
-                                    key={cos}
-                                    className="picker-item costume-picker-item"
-                                    src={`/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`}
-                                    onClick={async () => {
-                                        const bodyImage = await loadImage(
-                                            `/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`
-                                        );
-                                        const expressionImage = await loadImage(
-                                            `/img/sprites/${sprites[currentLayer].character}/${cos}_1.png`
-                                        );
-                                        setSprites({
-                                            ...sprites,
-                                            [currentLayer]: {
-                                                ...sprites[currentLayer],
-                                                costume: cos,
-                                                bodyImage: bodyImage,
-                                                expressionImage:
-                                                    expressionImage,
-                                            },
-                                        });
-                                        setShow(false);
-                                    }}
-                                />
-                            );
-                        }
-                    )}
+
+                    {sprites[currentLayer].position == "front"
+                        ? data[sprites[currentLayer].character].costumes.map(
+                              (cos) => {
+                                  return (
+                                      <img
+                                          key={cos}
+                                          className="picker-item costume-picker-item"
+                                          src={`/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`}
+                                          onClick={async () => {
+                                              const bodyImage = await loadImage(
+                                                  `/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`
+                                              );
+                                              const expressionImage =
+                                                  await loadImage(
+                                                      `/img/sprites/${sprites[currentLayer].character}/${cos}_1.png`
+                                                  );
+                                              setSprites({
+                                                  ...sprites,
+                                                  [currentLayer]: {
+                                                      ...sprites[currentLayer],
+                                                      costume: cos,
+                                                      bodyImage: bodyImage,
+                                                      expressionImage:
+                                                          expressionImage,
+                                                  },
+                                              });
+                                              setShow(false);
+                                          }}
+                                      />
+                                  );
+                              }
+                          )
+                        : data[sprites[currentLayer].character].back.map(
+                              (cos) => {
+                                  return (
+                                      <img
+                                          key={cos}
+                                          className="picker-item costume-picker-item"
+                                          src={`/img/sprites_back/${sprites[currentLayer].character}/${cos}_0.png`}
+                                          onClick={async () => {
+                                              const bodyImage = await loadImage(
+                                                  `/img/sprites_back/${sprites[currentLayer].character}/${cos}_0.png`
+                                              );
+                                              const expressionImage = null;
+                                              setSprites({
+                                                  ...sprites,
+                                                  [currentLayer]: {
+                                                      ...sprites[currentLayer],
+                                                      costume: cos,
+                                                      bodyImage: bodyImage,
+                                                      expressionImage:
+                                                          expressionImage,
+                                                  },
+                                              });
+                                              setShow(false);
+                                          }}
+                                      />
+                                  );
+                              }
+                          )}
                 </div>
             )}
             <img
