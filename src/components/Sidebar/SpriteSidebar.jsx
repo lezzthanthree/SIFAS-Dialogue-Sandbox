@@ -8,9 +8,9 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
 
     const promptNumber = () => {
         const number = prompt("Enter a value");
-        if (isNaN(number)) {
+        if (isNaN(number) || number == null) {
             alert("Please input a valid number... *honk*");
-            return;
+            return NaN;
         }
         return number;
     };
@@ -343,6 +343,10 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                                 className="bi bi-pencil-fill left-10 sprite-setting-icon"
                                 onClick={() => {
                                     const number = promptNumber();
+                                    console.log(number);
+                                    if (isNaN(number) || number == null) {
+                                        return;
+                                    }
                                     setSprites({
                                         ...sprites,
                                         [currentLayer]: {
@@ -392,6 +396,10 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                                 className="bi bi-pencil-fill left-10 sprite-setting-icon"
                                 onClick={() => {
                                     const number = promptNumber();
+                                    console.log(number);
+                                    if (isNaN(number) || number == null) {
+                                        return;
+                                    }
                                     setSprites({
                                         ...sprites,
                                         [currentLayer]: {
@@ -441,6 +449,10 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                                 className="bi bi-pencil-fill left-10 sprite-setting-icon"
                                 onClick={() => {
                                     const number = promptNumber();
+                                    console.log(number);
+                                    if (isNaN(number) || number == null) {
+                                        return;
+                                    }
                                     setSprites({
                                         ...sprites,
                                         [currentLayer]: {
