@@ -264,7 +264,7 @@ const TextSidebar = ({
                     z
                     allowEdit={false}
                 />
-                <p className="white setting font-normal bottom-10">
+                <p className="white setting font-normal bottom-10 notice-p">
                     If the text in the canvas do not line up correctly,
                     adjustments may be necessary.
                 </p>
@@ -281,12 +281,12 @@ const TextSidebar = ({
                         });
                     }}
                 />
-                <p className="white setting font-normal">
+                <p className="white setting font-normal notice-p">
                     If the text appears too bold, turning off text shadow may be
                     needed.
                 </p>
-                <p className="white setting font-normal">
-                    iPad devices may have this issue.
+                <p className="white setting font-normal notice-p">
+                    Apple devices may have this issue.
                 </p>
                 <img src="/img/bold-error.jpg" alt="" className="w-100" />
             </div>

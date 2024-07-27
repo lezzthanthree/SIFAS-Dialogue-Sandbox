@@ -20,7 +20,6 @@ body {
     min-height: 100dvh;
 }
 
-
 img {
     box-shadow: none;
     border: 0px;
@@ -58,4 +57,12 @@ main {
     #mobile {
         display: none;
     }
+}
+
+#mobile {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8666666667);
+    z-index: 9999;
+    padding: 20px;
+    box-sizing: border-box;
 }

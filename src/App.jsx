@@ -19,6 +19,8 @@ function App() {
         shadow: true,
     });
     const [nextLayer, setNextLayer] = useState(2);
+    const [iOS, setiOS] = useState(false);
+    const [read, setRead] = useState(false);
 
     useEffect(() => {
         loadImage("/img/background/6olyyw_0.jpg")
@@ -65,9 +67,30 @@ function App() {
                 });
             })
             .catch((error) => console.error(error));
+
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/iPad|iPhone|iPod|Mac/.test(userAgent) && !window.MSStream) {
+            setiOS(true);
+        }
     }, []);
     return (
         <main>
+            {iOS && !read && (
+                <div
+                    className="absolute top-left justify-center white column w-100 fixed-0-0"
+                    id="mobile"
+                    onClick={() => {
+                        setRead(true);
+                    }}
+                >
+                    <p className="bottom-10">
+                        You are currently using an Apple device. Text may not
+                        render properly on the canvas.
+                    </p>
+                    <p>Tap this section to close.</p>
+                </div>
+            )}
+
             <Content
                 tabState={tabState}
                 hideState={hideState}
