@@ -27,6 +27,10 @@ Pick a sprite available for the characters you choose...
 
 ![](./public/Preview-4.png)
 
+or introduce new characters to your own story.
+
+[![](./public/Preview-6.png)](https://github.com/lezzthanthree/Needy-Streamer-Overload/)
+
 ## Developing
 ### Prerequisites
 Make sure you have [Node.JS](https://nodejs.org/en) and [npm](https://www.npmjs.com/) in your system. Install them first before proceeding.  
@@ -48,6 +52,13 @@ All assets used for this project are owned by KLabGames/Sunrise/Bushiroad and wi
 No copyright infringement is intended.
 
 ---
+## Relevant Links
+- [Love Live SIF Waifu Simulator](https://llsif-waifu-sim.github.io/) by [u/vanstorm9](https://llsif-waifu-sim.github.io/)
+- [Custom Beatmap Festival](https://www.reddit.com/r/CustomBeatmapFestival/) by [u/SovietSpartan](https://www.reddit.com/r/SchoolIdolFestival/comments/54uyaz/fan_made_custom_beatmap_festival_beatmap/)
+- [SIFAS Daily Theater Maker]((https://twy.name/LLAS/mainichi/) ) by [@twy____](https://twitter.com/twy____)
+
+---
+
 ### Why is it called sandbox?
 idk, it sounds better
 
