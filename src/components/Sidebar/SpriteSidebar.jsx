@@ -20,7 +20,7 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                 <h1 className="white align-center">
                     Sprites
                     <i
-                        className="bi bi-plus-circle sprite-setting-icon left-10"
+                        className="bi bi-plus-circle sprite-setting-icon"
                         onClick={async () => {
                             const bodyImage = await loadImage(
                                 "/img/sprites/honoka/3c2bnw_0.png"
@@ -55,7 +55,7 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                         }}
                     ></i>
                     <i
-                        className="bi bi-trash-fill sprite-setting-icon left-10"
+                        className="bi bi-trash-fill sprite-setting-icon"
                         onClick={() => {
                             if (Object.keys(sprites).length == 1) {
                                 alert(
@@ -70,7 +70,7 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                         }}
                     ></i>
                     <i
-                        className="bi bi-caret-up-square-fill sprite-setting-icon left-10 white"
+                        className="bi bi-caret-up-square-fill sprite-setting-icon"
                         onClick={() => {
                             const newLayer =
                                 sprites[currentLayer].layerNumber + 1;
@@ -88,7 +88,7 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                         }}
                     ></i>
                     <i
-                        className="bi bi-caret-down-square-fill sprite-setting-icon left-10 white"
+                        className="bi bi-caret-down-square-fill sprite-setting-icon"
                         onClick={() => {
                             const newLayer =
                                 sprites[currentLayer].layerNumber - 1;
