@@ -49,7 +49,7 @@ async function drawNameTag(ctx, nameTagProp, experimental) {
     nameTagSecondary.closePath();
     ctx.fill(nameTagSecondary);
 
-    ctx.shadowColor = "rgba(0,0,0,0.4)";
+    ctx.shadowColor = experimental.shadow ? "rgba(0,0,0,0.4)" : "rgba(0,0,0,0)";
     ctx.font = "35px FOT-Skip Std";
     ctx.fillStyle = "#484848";
     ctx.textBaseline = "hanging";

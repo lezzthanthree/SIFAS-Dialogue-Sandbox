@@ -214,8 +214,14 @@ const TextSidebar = ({
                     checked={nameTag.hidden}
                 />
             </div>
-            <div className="group">
+            <div className="group relative">
+                <img
+                    src="/img/notice.png"
+                    alt="notice-me"
+                    className="absolute notice"
+                />
                 <h1 className="white">Experimental</h1>
+
                 <Slider
                     id="text-y-offset"
                     text={`Text Y-Offset (${experimental.textOffset}px)`}
@@ -227,18 +233,34 @@ const TextSidebar = ({
                         });
                     }}
                     range={[-30, 30]}
-                    info={
-                        <i
-                            className="bi bi-question-circle-fill text-setting-icon left-10"
-                            onClick={() => {
-                                alert(
-                                    "If text positions do not line up in the canvas, adjustments may be necessary."
-                                );
-                            }}
-                        ></i>
-                    }
+                    z
                     allowEdit={false}
                 />
+                <p className="white setting font-normal bottom-10">
+                    If the text in the canvas do not line up correctly,
+                    adjustments may be necessary.
+                </p>
+                <img src="/img/offset-error.png" alt="" className="w-100" />
+
+                <Checkbox
+                    id="shadow-toggle"
+                    text="Toggle Text Shadow"
+                    checked={experimental.shadow}
+                    onChange={(e) => {
+                        setExperimental({
+                            ...experimental,
+                            shadow: e.target.checked,
+                        });
+                    }}
+                />
+                <p className="white setting font-normal">
+                    If the text appears too bold, turning off text shadow may be
+                    needed.
+                </p>
+                <p className="white setting font-normal">
+                    iPad devices may have this issue.
+                </p>
+                <img src="/img/bold-error.jpg" alt="" className="w-100" />
             </div>
         </div>
     );

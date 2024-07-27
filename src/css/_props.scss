@@ -73,6 +73,10 @@
     font-size: 20px;
 }
 
+.font-normal {
+    font-weight: normal;
+}
+
 .hide {
     display: none !important;
     width: 0;
@@ -134,4 +138,19 @@
 .justify-center {
     display: flex;
     justify-content: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.notice {
+    top: -20px;
+    right: 0;
+    z-index: 20;
+    height: 50px;
 }

@@ -10,7 +10,7 @@ const drawText = async (ctx, text, experimental) => {
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 750, 1820, 300);
     let texts = text.dialogue.split("\n");
-    ctx.shadowColor = "rgba(0,0,0,0.4)";
+    ctx.shadowColor = experimental.shadow ? "rgba(0,0,0,0.4)" : "rgba(0,0,0,0)";
     for (let i = 0; i < texts.length; i++) {
         ctx.font = "35px FOT-Skip Std";
         ctx.fillStyle = "#484848";
@@ -18,6 +18,7 @@ const drawText = async (ctx, text, experimental) => {
         ctx.fillText(texts[i], 315, 820 + textOffset + 65 * i);
     }
 
+    ctx.shadowColor = "rgba(0,0,0,0.4)";
     const ctc1 = new Path2D();
     ctx.fillStyle = "#ffffff";
     ctc1.moveTo(1545, 935);
