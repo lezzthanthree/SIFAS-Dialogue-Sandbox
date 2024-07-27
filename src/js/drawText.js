@@ -1,11 +1,15 @@
 const drawText = async (ctx, text, experimental) => {
+    if (text.hidden) {
+        console.warn("Text box is hidden.");
+        return;
+    }
     const textOffset = parseInt(experimental.textOffset);
     const gradient = ctx.createLinearGradient(0, 750, 0, 950);
     gradient.addColorStop(0, "rgba(255, 255, 255, 0)");
     gradient.addColorStop(0.11, "rgba(255, 255, 255, 0.85)");
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 750, 1820, 300);
-    let texts = text.split("\n");
+    let texts = text.dialogue.split("\n");
     ctx.shadowColor = "rgba(0,0,0,0.4)";
     for (let i = 0; i < texts.length; i++) {
         ctx.font = "35px FOT-Skip Std";

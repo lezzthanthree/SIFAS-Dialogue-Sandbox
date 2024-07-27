@@ -9,7 +9,10 @@ function App() {
     const [tabState, setTabState] = useState("background");
     const [background, setBackground] = useState(null);
     const [nameTag, setNameTag] = useState(null);
-    const [text, setText] = useState("kyou no pan ga umai!");
+    const [text, setText] = useState({
+        dialogue: "kyou no pan ga umai!",
+        hidden: false,
+    });
     const [sprites, setSprites] = useState(null);
     const [experimental, setExperimental] = useState({
         textOffset: 0,

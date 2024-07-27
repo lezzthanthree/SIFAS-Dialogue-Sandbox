@@ -23,15 +23,36 @@ const TextSidebar = ({
                         if (/fart/gim.test(textToChange) && !fart) {
                             window.open("https://redd.it/nbr4ni");
                             alert("...why?");
-                            setFart(true)
-                            textToChange = "STOP POSTING ABOUT ELI FART! I'M TIRED OF SEEING IT! \nMY FRIENDS ON TIKTOK SEND ME MEMES, ON DISCORD \nIT'S FUCKING MEMES! I was in a server, right? and ALL OF THE \nCHANNELS were just eli fart stuff. AAAAAAAAAAAAAAHGESFG"
+                            setFart(true);
+                            textToChange =
+                                "STOP POSTING ABOUT ELI FART! I'M TIRED OF SEEING IT! \nMY FRIENDS ON TIKTOK SEND ME MEMES, ON DISCORD \nIT'S FUCKING MEMES! I was in a server, right? and ALL OF THE \nCHANNELS were just eli fart stuff. AAAAAAAAAAAAAAHGESFG";
                         }
-                        setText(textToChange);
+                        setText({ ...text, dialogue: textToChange });
                     }}
-                    value={text}
+                    value={text.dialogue}
                 >
                     Edit Text
                 </textarea>
+                <div className="checkbox-form setting center">
+                    <input
+                        type="checkbox"
+                        name="name-tag-hide"
+                        id="name-tag-hide"
+                        className="right-10"
+                        onInput={(e) => {
+                            setText({
+                                ...text,
+                                hidden: e.target.checked,
+                            });
+                        }}
+                    />
+                    <label
+                        htmlFor="name-tag-hide"
+                        className="label-checkbox white w-100"
+                    >
+                        Hidden
+                    </label>
+                </div>
             </div>
             <div className="group">
                 <h1 className="white">Name Tag</h1>
