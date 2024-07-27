@@ -90,6 +90,10 @@ const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
                 id="costume-picker"
                 className="image-picker setting"
                 onClick={() => {
+                    if (sprites[currentLayer].character == "custom") {
+                        alert("This is a custom sprite.");
+                        return;
+                    }
                     setShow(!show);
                 }}
             />

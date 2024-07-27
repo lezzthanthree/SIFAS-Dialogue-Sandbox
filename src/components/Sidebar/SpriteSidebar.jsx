@@ -4,6 +4,7 @@ import loadImage from "../../js/loadImage";
 import CostumePicker from "../CostumePicker";
 import Checkbox from "../Checkbox";
 import Slider from "../Slider";
+import UploadImageButton from "../UploadImageButton";
 const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
     const [currentLayer, setCurrentLayer] = useState(Object.keys(sprites)[0]);
     return (
@@ -67,8 +68,11 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                             const newLayer =
                                 sprites[currentLayer].layerNumber + 1;
                             const character =
-                                data[sprites[currentLayer].character]
-                                    .information.first;
+                                sprites[currentLayer].character == "custom"
+                                    ? "Custom"
+                                    : data[sprites[currentLayer].character]
+                                          .information.first;
+
                             setSprites({
                                 ...sprites,
                                 [currentLayer]: {
@@ -88,8 +92,10 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                                 return;
                             }
                             const character =
-                                data[sprites[currentLayer].character]
-                                    .information.first;
+                                sprites[currentLayer].character == "custom"
+                                    ? "Custom"
+                                    : data[sprites[currentLayer].character]
+                                          .information.first;
                             setSprites({
                                 ...sprites,
                                 [currentLayer]: {
@@ -124,16 +130,52 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                             );
                         })}
                 </select>
+                <UploadImageButton
+                    id="sprite-upload"
+                    uploadFunction={async (file) => {
+                        const imageSrc = URL.createObjectURL(file);
+                        const image = await loadImage(imageSrc);
+                        setSprites({
+                            ...sprites,
+                            [currentLayer]: {
+                                ...sprites[currentLayer],
+                                layerName: `Layer ${sprites[currentLayer].layerNumber}: Custom`,
+                                character: "custom",
+                                position: "custom",
+                                costume: null,
+                                bodyImage: image,
+                                expressionImage: null,
+                                expression: {
+                                    eye: 1,
+                                    mouth: 1,
+                                },
+                            },
+                        });
+                    }}
+                    text={
+                        <>
+                            <i className="bi bi-upload right-10"></i> Sprite
+                        </>
+                    }
+                    alertMsg="You are uploading a custom sprite. For best experience, upload sprites that are 512x1024 or 1024x1024 in size."
+                ></UploadImageButton>
             </div>
             <div className="group">
                 <h1 className="white">Character</h1>
                 <select
-                    name=""
-                    id=""
+                    name="character-sprite-select"
+                    id="character-sprite-select"
                     className="sel-small setting w-100"
                     value={sprites[currentLayer].character}
                     onChange={async (e) => {
                         const newChar = e.target.value;
+                        if (newChar == "custom") {
+                            document
+                                .getElementById("btn-sprite-upload")
+                                .click();
+                            return;
+                        }
+
                         const firstCostume = data[newChar].costumes[0];
                         const bodyImage = await loadImage(
                             `/img/sprites/${newChar}/${firstCostume}_0.png`
@@ -171,11 +213,21 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                                 </option>
                             );
                         })}
+                    <option key="custom" value="custom">
+                        Custom
+                    </option>
                 </select>
             </div>
             <div className="group">
                 <h1 className="white">Costume</h1>
-                <div className="row setting">
+
+                <div
+                    className={
+                        sprites[currentLayer].character == "custom"
+                            ? "hide"
+                            : "row setting"
+                    }
+                >
                     <button
                         className={
                             sprites[currentLayer].position == "front"
@@ -199,10 +251,6 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                                     costume: firstCostume,
                                     bodyImage: bodyImage,
                                     expressionImage: expressionImage,
-                                    expression: {
-                                        eye: 1,
-                                        mouth: 1,
-                                    },
                                 },
                             });
                         }}
@@ -230,10 +278,6 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
                                     costume: firstCostume,
                                     bodyImage: bodyImage,
                                     expressionImage: expressionImage,
-                                    expression: {
-                                        eye: 1,
-                                        mouth: 1,
-                                    },
                                 },
                             });
                         }}
@@ -249,7 +293,7 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
             </div>
             <div
                 className={
-                    sprites[currentLayer].position == "back" ? "hide" : "group"
+                    sprites[currentLayer].position == "front" ? "group" : "hide"
                 }
             >
                 <h1 className="white">Expression</h1>

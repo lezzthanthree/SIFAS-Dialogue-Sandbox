@@ -1,5 +1,6 @@
 import loadImage from "../../js/loadImage";
 import BackgroundPicker from "../BackgroundPicker";
+import UploadImageButton from "../UploadImageButton";
 
 const BackgroundSidebar = ({ background, setBackground }) => {
     return (
@@ -11,36 +12,20 @@ const BackgroundSidebar = ({ background, setBackground }) => {
                     background={background}
                     setBackground={setBackground}
                 />
-                <input
-                    type="file"
+                <UploadImageButton
                     id="background-upload"
-                    style={{ display: "none" }}
-                    accept="image/*"
-                    onChange={async () => {
-                        let file =
-                            document.getElementById("background-upload")
-                                .files[0];
-                        const validImageTypes = ["image/jpeg", "image/png", "image/gif"];
-                        if (!validImageTypes.includes(file["type"])) {
-                            alert("This is not an image!");
-                        }
-                        if (file) {
-                            const imageSrc = URL.createObjectURL(file)
-                            const image = await loadImage(imageSrc)
-                            setBackground(image)
-                        }
+                    uploadFunction={async (file) => {
+                        const imageSrc = URL.createObjectURL(file);
+                        const image = await loadImage(imageSrc);
+                        setBackground(image);
                     }}
+                    text={
+                        <>
+                            <i className="bi bi-upload right-10"> </i>
+                            Background
+                        </>
+                    }
                 />
-                <button
-                    className="btn-small btn-white w-100 setting"
-                    onClick={async () => {
-                        await document
-                            .getElementById("background-upload")
-                            .click();
-                    }}
-                >
-                    Upload Image
-                </button>
             </div>
         </div>
     );
