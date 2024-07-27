@@ -2,18 +2,10 @@ import data from "../../characters.json";
 import { useState } from "react";
 import loadImage from "../../js/loadImage";
 import CostumePicker from "../CostumePicker";
-
+import Checkbox from "../Checkbox";
+import Slider from "../Slider";
 const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
     const [currentLayer, setCurrentLayer] = useState(Object.keys(sprites)[0]);
-
-    const promptNumber = () => {
-        const number = prompt("Enter a value");
-        if (isNaN(number) || number == null) {
-            alert("Please input a valid number... *honk*");
-            return NaN;
-        }
-        return number;
-    };
     return (
         <div id="sprite-sidebar">
             <div className="group">
@@ -381,193 +373,81 @@ const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
             <div className="group">
                 <h1 className="white">Options</h1>
                 <div className="column">
-                    <div className="column setting">
-                        <label
-                            htmlFor="X-offset"
-                            className="label-slider white bottom-10"
-                        >
-                            X Offset ({sprites[currentLayer].options.x}px)
-                        </label>
-                        <div className="row white center">
-                            <input
-                                type="range"
-                                name="X-offset"
-                                id="x-offset"
-                                className="white w-100"
-                                value={sprites[currentLayer].options.x}
-                                min="-1024"
-                                max="1024"
-                                onChange={(e) => {
-                                    setSprites({
-                                        ...sprites,
-                                        [currentLayer]: {
-                                            ...sprites[currentLayer],
-                                            options: {
-                                                ...sprites[currentLayer]
-                                                    .options,
-                                                x: parseInt(e.target.value),
-                                            },
-                                        },
-                                    });
-                                }}
-                            />
-                            <i
-                                className="bi bi-pencil-fill left-10 sprite-setting-icon"
-                                onClick={() => {
-                                    const number = promptNumber();
-                                    console.log(number);
-                                    if (isNaN(number) || number == null) {
-                                        return;
-                                    }
-                                    setSprites({
-                                        ...sprites,
-                                        [currentLayer]: {
-                                            ...sprites[currentLayer],
-                                            options: {
-                                                ...sprites[currentLayer]
-                                                    .options,
-                                                x: parseInt(number),
-                                            },
-                                        },
-                                    });
-                                }}
-                            ></i>
-                        </div>
-                    </div>
-                    <div className="column setting">
-                        <label
-                            htmlFor="Y-offset"
-                            className="label-slider white bottom-10"
-                        >
-                            Y Offset ({sprites[currentLayer].options.y}px)
-                        </label>
-                        <div className="row white center">
-                            <input
-                                type="range"
-                                name="Y-offset"
-                                id="y-offset"
-                                className="white w-100"
-                                value={sprites[currentLayer].options.y}
-                                min="-1024"
-                                max="1024"
-                                onChange={(e) => {
-                                    setSprites({
-                                        ...sprites,
-                                        [currentLayer]: {
-                                            ...sprites[currentLayer],
-                                            options: {
-                                                ...sprites[currentLayer]
-                                                    .options,
-                                                y: parseInt(e.target.value),
-                                            },
-                                        },
-                                    });
-                                }}
-                            />
-                            <i
-                                className="bi bi-pencil-fill left-10 sprite-setting-icon"
-                                onClick={() => {
-                                    const number = promptNumber();
-                                    console.log(number);
-                                    if (isNaN(number) || number == null) {
-                                        return;
-                                    }
-                                    setSprites({
-                                        ...sprites,
-                                        [currentLayer]: {
-                                            ...sprites[currentLayer],
-                                            options: {
-                                                ...sprites[currentLayer]
-                                                    .options,
-                                                y: parseInt(number),
-                                            },
-                                        },
-                                    });
-                                }}
-                            ></i>
-                        </div>
-                    </div>
-                    <div className="column setting">
-                        <label
-                            htmlFor="Scale"
-                            className="label-slider white bottom-10"
-                        >
-                            Scale ({sprites[currentLayer].options.scale}px)
-                        </label>
-                        <div className="row white center">
-                            <input
-                                type="range"
-                                name="Scale"
-                                id="scale"
-                                className="white w-100"
-                                value={sprites[currentLayer].options.scale}
-                                min="-512"
-                                max="512"
-                                onChange={(e) => {
-                                    setSprites({
-                                        ...sprites,
-                                        [currentLayer]: {
-                                            ...sprites[currentLayer],
-                                            options: {
-                                                ...sprites[currentLayer]
-                                                    .options,
-                                                scale: parseInt(e.target.value),
-                                            },
-                                        },
-                                    });
-                                }}
-                            />
-                            <i
-                                className="bi bi-pencil-fill left-10 sprite-setting-icon"
-                                onClick={() => {
-                                    const number = promptNumber();
-                                    console.log(number);
-                                    if (isNaN(number) || number == null) {
-                                        return;
-                                    }
-                                    setSprites({
-                                        ...sprites,
-                                        [currentLayer]: {
-                                            ...sprites[currentLayer],
-                                            options: {
-                                                ...sprites[currentLayer]
-                                                    .options,
-                                                scale: parseInt(number),
-                                            },
-                                        },
-                                    });
-                                }}
-                            ></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="checkbox-form setting center">
-                    <input
-                        type="checkbox"
-                        name="sprite-hide"
-                        id="sprite-hide"
-                        className="right-10"
-                        checked={sprites[currentLayer].options.hidden}
-                        onChange={(e) => {
+                    <Slider
+                        id="x-offset"
+                        text={`X-Offset (${sprites[currentLayer].options.x}px)`}
+                        value={sprites[currentLayer].options.x}
+                        onChange={(number) => {
                             setSprites({
                                 ...sprites,
                                 [currentLayer]: {
                                     ...sprites[currentLayer],
                                     options: {
                                         ...sprites[currentLayer].options,
-                                        hidden: e.target.checked,
+                                        x: parseInt(number),
                                     },
                                 },
                             });
                         }}
+                        range={[-1024, 1024]}
+                        allowEdit={true}
                     />
-                    <label
-                        htmlFor="sprite-hide"
-                        className="label-checkbox white  w-100"
-                    >
-                        Hidden
-                    </label>
+                    <Slider
+                        id="y-offset"
+                        text={`Y-Offset (${sprites[currentLayer].options.y}px)`}
+                        value={sprites[currentLayer].options.y}
+                        onChange={(number) => {
+                            setSprites({
+                                ...sprites,
+                                [currentLayer]: {
+                                    ...sprites[currentLayer],
+                                    options: {
+                                        ...sprites[currentLayer].options,
+                                        y: parseInt(number),
+                                    },
+                                },
+                            });
+                        }}
+                        range={[-1024, 1024]}
+                        allowEdit={true}
+                    />
+                    <Slider
+                        id="scale"
+                        text={`Scale (${sprites[currentLayer].options.scale}px)`}
+                        value={sprites[currentLayer].options.scale}
+                        onChange={(number) => {
+                            setSprites({
+                                ...sprites,
+                                [currentLayer]: {
+                                    ...sprites[currentLayer],
+                                    options: {
+                                        ...sprites[currentLayer].options,
+                                        scale: parseInt(number),
+                                    },
+                                },
+                            });
+                        }}
+                        range={[-512, 512]}
+                        allowEdit={true}
+                    />
                 </div>
+                <Checkbox
+                    id="sprite-hide"
+                    text="Hidden"
+                    onChange={(e) => {
+                        setSprites({
+                            ...sprites,
+                            [currentLayer]: {
+                                ...sprites[currentLayer],
+                                options: {
+                                    ...sprites[currentLayer].options,
+                                    hidden: e.target.checked,
+                                },
+                            },
+                        });
+                    }}
+                    checked={sprites[currentLayer].options.hidden}
+                />
             </div>
         </div>
     );

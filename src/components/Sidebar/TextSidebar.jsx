@@ -1,6 +1,8 @@
 import { useState } from "react";
 import data from "../../characters.json";
 import loadImage from "../../js/loadImage";
+import Checkbox from "../Checkbox";
+import Slider from "../Slider";
 
 const TextSidebar = ({
     text,
@@ -33,26 +35,26 @@ const TextSidebar = ({
                 >
                     Edit Text
                 </textarea>
-                <div className="checkbox-form setting center">
-                    <input
-                        type="checkbox"
-                        name="name-tag-hide"
-                        id="name-tag-hide"
-                        className="right-10"
-                        onInput={(e) => {
-                            setText({
-                                ...text,
-                                hidden: e.target.checked,
-                            });
-                        }}
-                    />
-                    <label
-                        htmlFor="name-tag-hide"
-                        className="label-checkbox white w-100"
-                    >
-                        Hidden
-                    </label>
-                </div>
+                <Checkbox
+                    id="textbox-hide"
+                    text="Hidden"
+                    onChange={(e) => {
+                        const newValue = e.target.checked;
+                        if (newValue)
+                            console.info(
+                                "Text box hidden. The name tag is automatically be hidden as well."
+                            );
+                        setText({
+                            ...text,
+                            hidden: newValue,
+                        });
+                        setNameTag({
+                            ...nameTag,
+                            hidden: newValue,
+                        });
+                    }}
+                    checked={text.hidden}
+                />
             </div>
             <div className="group">
                 <h1 className="white">Name Tag</h1>
@@ -200,35 +202,32 @@ const TextSidebar = ({
                             })}
                     </select>
                 </div>
-                <div className="checkbox-form setting center">
-                    <input
-                        type="checkbox"
-                        name="name-tag-hide"
-                        id="name-tag-hide"
-                        className="right-10"
-                        onInput={(e) => {
-                            setNameTag({
-                                ...nameTag,
-                                hidden: e.target.checked,
-                            });
-                        }}
-                    />
-                    <label
-                        htmlFor="name-tag-hide"
-                        className="label-checkbox white  w-100"
-                    >
-                        Hidden
-                    </label>
-                </div>
+                <Checkbox
+                    id="name-tag-hide"
+                    text="Hidden"
+                    onChange={(e) => {
+                        setNameTag({
+                            ...nameTag,
+                            hidden: e.target.checked,
+                        });
+                    }}
+                    checked={nameTag.hidden}
+                />
             </div>
             <div className="group">
                 <h1 className="white">Experimental</h1>
-                <div className="column setting">
-                    <label
-                        htmlFor="Text-Y-Offset"
-                        className="label-slider white bottom-10 align-center"
-                    >
-                        Text Y-Offset ({experimental.textOffset}px){" "}
+                <Slider
+                    id="text-y-offset"
+                    text={`Text Y-Offset (${experimental.textOffset}px)`}
+                    value={experimental.textOffset}
+                    onChange={(number) => {
+                        setExperimental({
+                            ...experimental,
+                            textOffset: number,
+                        });
+                    }}
+                    range={[-30, 30]}
+                    info={
                         <i
                             className="bi bi-question-circle-fill text-setting-icon left-10"
                             onClick={() => {
@@ -237,23 +236,9 @@ const TextSidebar = ({
                                 );
                             }}
                         ></i>
-                    </label>
-                    <input
-                        type="range"
-                        name="Text-Y-Offset"
-                        id="text-y-offset"
-                        className="white w-100"
-                        value={experimental.textOffset}
-                        min="-30"
-                        max="30"
-                        onChange={(e) => {
-                            setExperimental({
-                                ...experimental,
-                                textOffset: e.target.value,
-                            });
-                        }}
-                    />
-                </div>
+                    }
+                    allowEdit={false}
+                />
             </div>
         </div>
     );
