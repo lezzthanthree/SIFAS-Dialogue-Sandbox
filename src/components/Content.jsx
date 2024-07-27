@@ -56,7 +56,7 @@ const Content = ({
         <div id="content" className="center relative">
             <div
                 className={
-                    hideState ? "hide" : "absolute top-right button-icons"
+                    hideState ? "hide" : "absolute tabs button-icons"
                 }
             >
                 <button
@@ -82,15 +82,15 @@ const Content = ({
                 <button
                     className={
                         tabState === "sprite"
-                            ? "icon btn-orange bottom-20"
-                            : "icon btn-white bottom-20"
+                            ? "icon btn-orange"
+                            : "icon btn-white"
                     }
                     onClick={() => setTabState("sprite")}
                 >
                     <i className="bi bi-person-fill icon-btn"></i>
                 </button>
             </div>
-            <div className="absolute bottom-right button-icons">
+            <div className="absolute bottom-right hide-sidebar button-icons">
                 <button
                     className="icon btn-white"
                     onClick={() => setHideState(!hideState)}
@@ -102,7 +102,7 @@ const Content = ({
                     )}
                 </button>
             </div>
-            <div className="absolute bottom-left button-icons">
+            <div className="absolute bottom-left button-icons save">
                 <button
                     className="btn-small btn-green btn-192 bottom-20"
                     onClick={() => {

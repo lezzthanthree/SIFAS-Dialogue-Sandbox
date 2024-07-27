@@ -1,11 +1,50 @@
 #main-canvas {
-    width: 80%;
+    @media (width <= 768px) {
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+    }
+
+    width: 90%;
     border: 2px $pink solid;
 }
 
+#sidebar {
+    @media (width <= 768px) {
+        width: 100%;
+        min-height: 100dvh;
+        padding: 20px;
+    }
+
+    @media (width > 768px) and (width <= 1500px) {
+        width: 220px;
+        height: 100dvh;
+        padding: 20px;
+    }
+    @media (width > 1500px) {
+        width: 300px;
+        height: 100dvh;
+        padding: 25px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #fa8291 0%, #c96975 100%);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 #content {
-    width: 100%;
-    height: 100dvh;
+    @media (width <= 768px) {
+        width: 100%;
+        height: 500px;
+    }
+    @media (width > 768px) {
+        width: 100%;
+        height: 100dvh;
+    }
     padding: 25px;
     box-sizing: border-box;
 }
@@ -40,7 +79,7 @@
 }
 
 #picker {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #000000bb;
@@ -63,20 +102,80 @@
     filter: $shadow;
 }
 
-@media (width <= 1500px) {
-    #sidebar {
-        display: flex;
-        flex-direction: column;
-        background: linear-gradient(180deg, #fa8291 0%, #c96975 100%);
-        width: 220px;
-        height: 100dvh;
-        padding: 20px;
-        box-sizing: border-box;
-        flex-shrink: 0;
-        overflow-y: auto;
-        overflow-x: hidden;
+.tabs {
+    @media (width <= 768px) {
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+    @media (width > 768px) {
+        top: 0;
+        right: 0;
+    }
+    padding: inherit;
+}
+
+.save {
+    @media (width <= 768px) {
+        z-index: 3;
+    }
+}
+
+.hide-sidebar {
+    @media (width <= 768px) {
+        display: none;
+    }
+    @media (width > 768px) {
+        display: block;
+    }
+}
+
+@media (width <= 768px) {
+    #char-icon-img {
+        height: 30px;
+        width: 30px;
+        background-color: $white;
     }
 
+    .color-select {
+        margin: 2px 0;
+    }
+
+    .sprite-setting-icon,
+    .text-setting-icon {
+        font-size: 25px;
+        margin-left: 25px;
+    }
+
+    .image-picker {
+        height: 180px;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px $white solid;
+        cursor: pointer;
+    }
+
+    .picker-item {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        border: 2px solid $white;
+        aspect-ratio: 1/1;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .icon-expression {
+        font-size: 30px;
+    }
+
+    .expression-value {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+@media (width > 768px) and (width <= 1500px) {
     #char-icon-img {
         height: 30px;
         width: 30px;
@@ -122,19 +221,6 @@
 }
 
 @media (width > 1500px) {
-    #sidebar {
-        display: flex;
-        flex-direction: column;
-        background: linear-gradient(180deg, #fa8291 0%, #c96975 100%);
-        width: 300px;
-        height: 100dvh;
-        padding: 25px;
-        box-sizing: border-box;
-        flex-shrink: 0;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
     #char-icon-img {
         height: 40px;
         width: 40px;

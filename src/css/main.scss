@@ -20,11 +20,6 @@ body {
     min-height: 100dvh;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
 
 img {
     box-shadow: none;
@@ -32,13 +27,16 @@ img {
     object-fit: contain;
 }
 
-@media (width <= 768px) {
-    #mobile {
+main {
+    @media (width <= 768px) {
         display: flex;
-        background-color: #000000dd;
-        z-index: 9999;
-        padding: 20px;
-        box-sizing: border-box;
+        flex-direction: column;
+        height: 100%;
+    }
+    @media (width > 768px) {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
     }
 }
 
