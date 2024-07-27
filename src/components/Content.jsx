@@ -16,6 +16,20 @@ const Content = ({
     text,
     experimental,
 }) => {
+    window.addEventListener("scroll", function () {
+        const scrollPosition = window.scrollY;
+        const tabs = document.getElementById("tabs");
+        const save = document.getElementById("save");
+        const hideAtPosition = 100;
+
+        if (scrollPosition > hideAtPosition) {
+            tabs.style.opacity = "0";
+            save.style.opacity = "0";
+        } else {
+            tabs.style.opacity = "1.0";
+            save.style.opacity = "1.0";
+        }
+    });
     const save = () => {
         const canvas = document.getElementsByTagName("canvas")[0];
         var image = canvas
@@ -55,9 +69,8 @@ const Content = ({
     return (
         <div id="content" className="center relative">
             <div
-                className={
-                    hideState ? "hide" : "absolute tabs button-icons"
-                }
+                className={hideState ? "hide" : "absolute tabs button-icons"}
+                id="tabs"
             >
                 <button
                     className={
@@ -102,7 +115,7 @@ const Content = ({
                     )}
                 </button>
             </div>
-            <div className="absolute bottom-left button-icons save">
+            <div className="absolute bottom-left button-icons save" id="save">
                 <button
                     className="btn-small btn-green btn-192 bottom-20"
                     onClick={() => {
