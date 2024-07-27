@@ -93,7 +93,29 @@ async function drawNameTag(ctx, nameTagProp, experimental) {
         ctx.ellipse(272, 745, 5, 5, 0, 0, 2 * Math.PI);
         ctx.fill();
     } else {
-        ctx.drawImage(icon, 0, 0, icon.width, icon.height, 230, 730, 50, 40);
+        let aspectRatio = icon.width / icon.height;
+        let iconWidth = 50;
+        let iconHeight = 40;
+        let iconRatio = iconWidth / iconHeight;
+        let drawWidth, drawHeight;
+        if (iconRatio > aspectRatio) {
+            drawHeight = iconHeight;
+            drawWidth = iconHeight * aspectRatio;
+        } else {
+            drawWidth = iconWidth;
+            drawHeight = iconWidth / aspectRatio;
+        }
+        var offsetX = (iconWidth - drawWidth) / 2;
+        var offsetY = (iconHeight - drawHeight) / 2;
+        // drawImageScaled(ctx, icon, 230, 730, 50, 40);
+        ctx.drawImage(
+            icon,
+            230 + offsetX,
+            730 + offsetY,
+            drawWidth,
+            drawHeight
+        );
+        // ctx.drawImage(icon, 0, 0, icon.width, icon.height, 230, 730, 50, 40);
     }
 
     console.info("Name Tag drawn!");

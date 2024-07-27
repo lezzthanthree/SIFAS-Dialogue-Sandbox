@@ -3,6 +3,7 @@ import data from "../../characters.json";
 import loadImage from "../../js/loadImage";
 import Checkbox from "../Checkbox";
 import Slider from "../Slider";
+import UploadImageButton from "../UploadImageButton";
 
 const TextSidebar = ({
     text,
@@ -176,6 +177,12 @@ const TextSidebar = ({
                                 });
                                 return;
                             }
+                            if (newValue == "custom") {
+                                document
+                                    .getElementById("btn-icon-upload")
+                                    .click();
+                                return;
+                            }
                             const image = await loadImage(
                                 `img/char_icon/${newValue}.png`
                             );
@@ -200,8 +207,29 @@ const TextSidebar = ({
                                     )
                                 );
                             })}
+                        <option key="custom" value="custom">
+                            Custom
+                        </option>
                     </select>
                 </div>
+                <UploadImageButton
+                    id="icon-upload"
+                    text={
+                        <>
+                            <i className="bi bi-upload right-10"></i> Icon
+                        </>
+                    }
+                    uploadFunction={async (file) => {
+                        const imageSrc = URL.createObjectURL(file);
+                        const image = await loadImage(imageSrc);
+                        setNameTag({
+                            ...nameTag,
+                            iconValue: "custom",
+                            icon: image,
+                        });
+                    }}
+                    alertMsg="You are about to upload a custom icon. For the best experience, upload icons with a 5:4 ratio."
+                />
                 <Checkbox
                     id="name-tag-hide"
                     text="Hidden"
