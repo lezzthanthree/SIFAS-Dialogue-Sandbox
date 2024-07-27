@@ -68,23 +68,6 @@ function App() {
     }, []);
     return (
         <main>
-            <div
-                className="absolute top-left justify-center white column"
-                id="mobile"
-            >
-                <p className="bottom-10">
-                    If you are using a phone, it is highly suggested to turn on
-                    desktop view and rotate your phone in landscape mode.
-                </p>
-                <p className="bottom-10">
-                    Mobile view is still under development, so please wait for a
-                    while~ ♥
-                </p>
-                <p>
-                    If you are using a desktop, then you should enlarge the
-                    window a little bit or try zooming it out a little.
-                </p>
-            </div>
             <Content
                 tabState={tabState}
                 hideState={hideState}
