@@ -8,6 +8,11 @@
   font-weight: 700;
 }
 
+canvas {
+  font-family: "FOT-Skip Std", sans-serif;
+  font-weight: normal;
+}
+
 @media (width <= 1500px) {
   button.btn-small {
     padding: 10px;

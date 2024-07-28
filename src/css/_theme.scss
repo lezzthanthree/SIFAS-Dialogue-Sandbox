@@ -11,7 +11,8 @@ $shadow: drop-shadow(0px 0px 2px #000);
 
 @font-face {
     font-family: "FOT-Skip Std";
-    src: local("FOT-Skip Std"), url("../fonts/FOT-SkipStd-B.otf") format('opentype');
+    src: local("FOT-Skip Std"),
+        url("../fonts/FOT-SkipStd-B.otf") format("opentype");
 }
 
 * {
@@ -19,3 +20,7 @@ $shadow: drop-shadow(0px 0px 2px #000);
     font-weight: 700;
 }
 
+canvas {
+    font-family: "FOT-Skip Std", sans-serif;
+    font-weight: normal;
+}
