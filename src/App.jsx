@@ -19,7 +19,6 @@ function App() {
         shadow: true,
     });
     const [nextLayer, setNextLayer] = useState(2);
-    const [iOS, setiOS] = useState(false);
     const [read, setRead] = useState(false);
 
     useEffect(() => {
@@ -67,17 +66,12 @@ function App() {
                 });
             })
             .catch((error) => console.error(error));
-
-        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        if (/iPad|iPhone|iPod|Mac/.test(userAgent) && !window.MSStream) {
-            setiOS(true);
-        }
     }, []);
     return (
         <main>
-            {iOS && !read && (
+            {!read && (
                 <div
-                    className="absolute top-left justify-center white column w-100 fixed-0-0"
+                    className="absolute top-left justify-center white column fixed-0-0"
                     id="mobile"
                     onClick={() => {
                         setRead(true);
