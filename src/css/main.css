@@ -827,6 +827,14 @@ input[type=text].txt-white {
   left: 0;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.text-orange {
+  color: #ffb637;
+}
+
 * {
   margin: 0px;
   padding: 0px;
