@@ -4,18 +4,21 @@ import drawBackground from "../js/drawBackground";
 import drawSprites from "../js/drawSprites";
 import drawNameTag from "../js/drawNameTag";
 import drawText from "../js/drawText";
+import { useContext } from "react";
+import { AppContext } from "../AppContext";
 
-const Content = ({
-    tabState,
-    hideState,
-    setTabState,
-    setHideState,
-    background,
-    sprites,
-    nameTag,
-    text,
-    experimental,
-}) => {
+const Content = () => {
+    const {
+        tabState,
+        hideState,
+        setTabState,
+        setHideState,
+        background,
+        sprites,
+        nameTag,
+        text,
+        experimental,
+    } = useContext(AppContext)
     window.addEventListener("scroll", function () {
         const scrollPosition = window.scrollY;
         const tabs = document.getElementById("tabs");

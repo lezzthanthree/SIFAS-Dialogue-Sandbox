@@ -1,11 +1,14 @@
 import data from "../../characters.json";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import loadImage from "../../js/loadImage";
 import CostumePicker from "../CostumePicker";
 import Checkbox from "../Checkbox";
 import Slider from "../Slider";
 import UploadImageButton from "../UploadImageButton";
-const SpriteSidebar = ({ sprites, setSprites, nextLayer, setNextLayer }) => {
+import { AppContext } from "../../AppContext";
+const SpriteSidebar = () => {
+    const { sprites, setSprites, nextLayer, setNextLayer } =
+        useContext(AppContext);
     const [currentLayer, setCurrentLayer] = useState(Object.keys(sprites)[0]);
     return (
         <div id="sprite-sidebar">

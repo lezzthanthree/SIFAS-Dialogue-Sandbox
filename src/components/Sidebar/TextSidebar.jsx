@@ -1,18 +1,20 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import data from "../../characters.json";
 import loadImage from "../../js/loadImage";
 import Checkbox from "../Checkbox";
 import Slider from "../Slider";
 import UploadImageButton from "../UploadImageButton";
+import { AppContext } from "../../AppContext";
 
-const TextSidebar = ({
-    text,
-    setText,
-    nameTag,
-    setNameTag,
-    experimental,
-    setExperimental,
-}) => {
+const TextSidebar = () => {
+    const {
+        text,
+        setText,
+        nameTag,
+        setNameTag,
+        experimental,
+        setExperimental,
+    } = useContext(AppContext);
     const [fart, setFart] = useState(false);
     return (
         <div id="text-sidebar">

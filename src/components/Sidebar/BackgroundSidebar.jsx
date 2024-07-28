@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import loadImage from "../../js/loadImage";
 import BackgroundPicker from "../BackgroundPicker";
 import UploadImageButton from "../UploadImageButton";
+import { AppContext } from "../../AppContext";
 
-const BackgroundSidebar = ({ background, setBackground }) => {
+const BackgroundSidebar = () => {
+    const { background, setBackground } = useContext(AppContext);
     return (
         <div id="background-sidebar">
             <div className="group">

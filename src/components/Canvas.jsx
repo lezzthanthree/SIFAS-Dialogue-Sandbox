@@ -6,7 +6,7 @@ const Canvas = ({ draw }) => {
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext("2d");
-        
+
         try {
             draw(ctx);
             console.info("Render Success!");
