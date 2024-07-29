@@ -17,8 +17,10 @@ const Content = () => {
         sprites,
         nameTag,
         text,
+        clearTimes,
+        setClearTimes,
         experimental,
-    } = useContext(AppContext)
+    } = useContext(AppContext);
     window.addEventListener("scroll", function () {
         const scrollPosition = window.scrollY;
         const tabs = document.getElementById("tabs");
@@ -130,14 +132,16 @@ const Content = () => {
                 <button
                     className="btn-small btn-white btn-192"
                     onClick={() => {
-                        drawCanvas(
-                            document
-                                .getElementById("main-canvas")
-                                .getContext("2d")
+                        const confirmation = confirm(
+                            "You are about to clear the canvas! Any progress will be lost. \nPressing 'OK' will proceed the action."
                         );
+                        console.log(confirmation);
+                        if (confirmation) {
+                            setClearTimes(clearTimes + 1);
+                        }
                     }}
                 >
-                    Rerender
+                    Clear
                 </button>
             </div>
             <div className="absolute bottom-center black font-20">

@@ -20,12 +20,18 @@ export const AppProvider = ({ children }) => {
         shadow: true,
     });
     const [nextLayer, setNextLayer] = useState(2);
+    const [clearTimes, setClearTimes] = useState(0);
     const [read, setRead] = useState(false);
+    sessionStorage.setItem("dictionary", {
+        Test: "test again",
+    });
 
     useEffect(() => {
+        setSprites(null);
         loadImage("/img/background/6olyyw_0.jpg")
             .then((img) => setBackground(img))
             .catch((error) => console.error(error));
+
         loadImage("/img/char_icon/honoka.png")
             .then((img) =>
                 setNameTag({
@@ -38,6 +44,12 @@ export const AppProvider = ({ children }) => {
                 })
             )
             .catch((error) => console.error(error));
+
+        setText({
+            dialogue: "kyou no pan ga umai!",
+            hidden: false,
+            fontSize: 35,
+        });
 
         Promise.all([
             loadImage("/img/sprites/honoka/3c2bnw_0.png"),
@@ -67,7 +79,9 @@ export const AppProvider = ({ children }) => {
                 });
             })
             .catch((error) => console.error(error));
-    }, []);
+
+        setNextLayer(2);
+    }, [clearTimes]);
 
     return (
         <AppContext.Provider
@@ -90,6 +104,8 @@ export const AppProvider = ({ children }) => {
                 setNextLayer,
                 read,
                 setRead,
+                clearTimes,
+                setClearTimes,
             }}
         >
             {children}
