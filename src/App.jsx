@@ -17,23 +17,19 @@ function App() {
                     }}
                 >
                     <p>What&apos;s new?</p>
-                    <p className="bottom-10">
-                        <ul>
-                            <li>
-                                You can now change the{" "}
-                                <a
-                                    href="https://i.imgur.com/U7wFyT9.png"
-                                    className="text-orange"
-                                >
-                                    font size
-                                </a>
-                                {" "}of the text.
-                            </li>
-                            <li>
-                                Allow slider inputs to revert to default value.
-                            </li>
-                        </ul>
-                    </p>
+                    <ul className="bottom-10">
+                        <li>
+                            You can now change the{" "}
+                            <a
+                                href="https://i.imgur.com/U7wFyT9.png"
+                                className="text-orange"
+                            >
+                                font size
+                            </a>{" "}
+                            of the text.
+                        </li>
+                        <li>Allow slider inputs to revert to default value.</li>
+                    </ul>
                     <p>Tap this section to close.</p>
                 </div>
             )}
