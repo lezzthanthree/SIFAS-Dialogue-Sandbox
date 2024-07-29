@@ -102,6 +102,10 @@ const TextSidebar = () => {
                                 });
                                 document.getElementById("default-color").value =
                                     "custom";
+                                sessionStorage.setItem(
+                                    "customPrimary",
+                                    e.target.value
+                                );
                             }}
                         />
                         <input
@@ -117,6 +121,10 @@ const TextSidebar = () => {
                                 });
                                 document.getElementById("default-color").value =
                                     "custom";
+                                sessionStorage.setItem(
+                                    "customSecondary",
+                                    e.target.value
+                                );
                             }}
                         />
                     </div>
@@ -125,6 +133,10 @@ const TextSidebar = () => {
                         className="sel-small w-100"
                         onChange={(e) => {
                             let value = e.target.value;
+                            const primary =
+                                sessionStorage.getItem("customPrimary");
+                            const secondary =
+                                sessionStorage.getItem("customSecondary");
                             switch (value) {
                                 case "muse":
                                     setNameTag({
@@ -159,6 +171,15 @@ const TextSidebar = () => {
                                         ...nameTag,
                                         primary: "#bcecab",
                                         secondary: "#e5f8df",
+                                    });
+                                    break;
+                                case "custom":
+                                    setNameTag({
+                                        ...nameTag,
+                                        primary: primary ? primary : "#ff79cd",
+                                        secondary: secondary
+                                            ? secondary
+                                            : "#ffcdec",
                                     });
                                     break;
                             }
