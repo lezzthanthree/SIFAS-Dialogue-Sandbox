@@ -5,6 +5,7 @@ import Checkbox from "../Checkbox";
 import Slider from "../Slider";
 import UploadImageButton from "../UploadImageButton";
 import { AppContext } from "../../AppContext";
+import { useTranslation } from "react-i18next";
 
 const TextSidebar = () => {
     const {
@@ -15,11 +16,13 @@ const TextSidebar = () => {
         experimental,
         setExperimental,
     } = useContext(AppContext);
+    const { t, i18n } = useTranslation();
+    const language = i18n.language;
     const [fart, setFart] = useState(false);
     return (
         <div id="text-sidebar">
             <div className="group">
-                <h1 className="white">Text</h1>
+                <h1 className="white">{t("text-header")}</h1>
                 <textarea
                     className="btn-small btn-white w-100 setting"
                     onChange={(e) => {
@@ -35,12 +38,10 @@ const TextSidebar = () => {
                         setText({ ...text, dialogue: textToChange });
                     }}
                     value={text.dialogue}
-                >
-                    Edit Text
-                </textarea>
+                ></textarea>
                 <Slider
                     id="text-font-size"
-                    text={`Text Font Size (${text.fontSize}px)`}
+                    text={`${t("text-font-size")} (${text.fontSize}px)`}
                     value={text.fontSize}
                     onChange={(number) => {
                         setText({
@@ -54,7 +55,7 @@ const TextSidebar = () => {
                 ></Slider>
                 <Checkbox
                     id="textbox-hide"
-                    text="Hidden"
+                    text={t("hidden")}
                     onChange={(e) => {
                         const newValue = e.target.checked;
                         if (newValue)
@@ -74,7 +75,7 @@ const TextSidebar = () => {
                 />
             </div>
             <div className="group">
-                <h1 className="white">Name Tag</h1>
+                <h1 className="white">{t("name-tag-header")}</h1>
                 <input
                     type="text"
                     className="txt-small txt-white setting w-100"
@@ -188,9 +189,9 @@ const TextSidebar = () => {
                         <option value="muse">μ&apos;s</option>
                         <option value="aqours">Aqours</option>
                         <option value="niji">Nijigasaki</option>
-                        <option value="you">You</option>
-                        <option value="others">Others</option>
-                        <option value="custom">Custom</option>
+                        <option value="you">{t("you")}</option>
+                        <option value="others">{t("others")}</option>
+                        <option value="custom">{t("custom")}</option>
                     </select>
                 </div>
                 <div className="setting row center">
@@ -231,7 +232,7 @@ const TextSidebar = () => {
                         }}
                     >
                         <option key="default" value="default">
-                            --Default--
+                            {t("default")}
                         </option>
                         {Object.keys(data)
                             .sort((a, b) => a.localeCompare(b))
@@ -239,13 +240,13 @@ const TextSidebar = () => {
                                 return (
                                     c != "rina_board" && (
                                         <option key={c} value={c}>
-                                            {data[c].information.first}
+                                            {data[c].information[language].first}
                                         </option>
                                     )
                                 );
                             })}
                         <option key="custom" value="custom">
-                            Custom
+                            {t("custom")}
                         </option>
                     </select>
                 </div>
@@ -253,7 +254,8 @@ const TextSidebar = () => {
                     id="icon-upload"
                     text={
                         <>
-                            <i className="bi bi-upload right-10"></i> Icon
+                            <i className="bi bi-upload right-10"></i>{" "}
+                            {t("icon-upload")}
                         </>
                     }
                     uploadFunction={async (file) => {
@@ -265,11 +267,11 @@ const TextSidebar = () => {
                             icon: image,
                         });
                     }}
-                    alertMsg="You are about to upload a custom icon. For the best experience, upload icons with a 5:4 ratio."
+                    alertMsg={t("icon-upload-info")}
                 />
                 <Checkbox
                     id="name-tag-hide"
-                    text="Hidden"
+                    text={t("hidden")}
                     onChange={(e) => {
                         setNameTag({
                             ...nameTag,
@@ -285,11 +287,11 @@ const TextSidebar = () => {
                     alt="notice-me"
                     className="absolute notice"
                 />
-                <h1 className="white">Experimental</h1>
+                <h1 className="white">{t("experimental-header")}</h1>
 
                 <Slider
                     id="font-offset"
-                    text={`Font Offset (${experimental.fontOffset}px)`}
+                    text={`${t("font-offset")} (${experimental.fontOffset}px)`}
                     value={experimental.fontOffset}
                     onChange={(number) => {
                         setExperimental({
@@ -302,8 +304,7 @@ const TextSidebar = () => {
                     description={
                         <>
                             <p className="white setting font-normal bottom-10 notice-p">
-                                If the text in the canvas do not line up
-                                correctly, adjustments may be necessary.
+                                {t("font-offset-info")}
                             </p>
                             <img
                                 src="/img/offset-error.png"
@@ -317,7 +318,7 @@ const TextSidebar = () => {
 
                 <Checkbox
                     id="shadow-toggle"
-                    text="Font Shadow"
+                    text={t("font-shadow")}
                     checked={experimental.shadow}
                     onChange={(e) => {
                         setExperimental({

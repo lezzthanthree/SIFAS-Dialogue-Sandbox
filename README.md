@@ -1,6 +1,15 @@
 # School Idol Festival: All Stars Dialogue Sandbox
 A Dialogue Sandbox for generating fan-made stories from the now-shut down game, [Love Live! School Idol Festival All Stars](https://lovelive-as-global.com/)
 
+## The Localization Branch
+You are currently in the localization branch. 
+
+To contribute, use the [i18ninit.js](./src/js/i18ninit.js) or the [localization template file](./localization-template-en.json) (if you don't know code). Translate to the desired language and make a pull request on this branch.
+
+Character names can also be translated in [characters.json](./src/characters.json).
+
+If you wish to see the main branch instead, [click here](https://github.com/lezzthanthree/SIFAS-Dialogue-Sandbox).
+
 ![](./public/screenshot.png)
 
 ## Features

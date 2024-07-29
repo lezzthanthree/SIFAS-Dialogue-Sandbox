@@ -5,35 +5,9 @@ import { AppContext } from "./AppContext";
 import "./css/main.css";
 
 function App() {
-    const { read, setRead, hideState } = useContext(AppContext);
+    const { hideState } = useContext(AppContext);
     return (
         <main>
-            {!read && (
-                <div
-                    className="absolute top-left justify-center white column fixed-0-0 w-100"
-                    id="mobile"
-                    onClick={() => {
-                        setRead(true);
-                    }}
-                >
-                    <p>What&apos;s new?</p>
-                    <ul className="bottom-10">
-                        <li>
-                            You can now change the{" "}
-                            <a
-                                href="https://i.imgur.com/U7wFyT9.png"
-                                className="text-orange"
-                            >
-                                font size
-                            </a>{" "}
-                            of the text.
-                        </li>
-                        <li>Allow slider inputs to revert to default value.</li>
-                    </ul>
-                    <p>Tap this section to close.</p>
-                </div>
-            )}
-
             <Content></Content>
             {hideState === false && <Sidebar></Sidebar>}
         </main>
