@@ -16,20 +16,21 @@ function App() {
                         setRead(true);
                     }}
                 >
-                    <p>What&apos;s new?</p>
-                    <ul className="bottom-10">
-                        <li>
-                            You can now change the{" "}
-                            <a
-                                href="https://i.imgur.com/U7wFyT9.png"
-                                className="text-orange"
-                            >
-                                font size
-                            </a>{" "}
-                            of the text.
-                        </li>
-                        <li>Allow slider inputs to revert to default value.</li>
-                    </ul>
+                    <p className="bottom-10">
+                        Contributions for localization are now available!
+                    </p>
+                    <p className="bottom-10">
+                        If you wish to contribute, you can check this
+                        information on{" "}
+                        <a
+                            href="https://github.com/lezzthanthree/SIFAS-Dialogue-Sandbox/blob/i18n/README.md#the-localization-branch"
+                            className="text-orange"
+                            target="_blank"
+                        >
+                            GitHub
+                        </a>
+                        .
+                    </p>
                     <p>Tap this section to close.</p>
                 </div>
             )}
