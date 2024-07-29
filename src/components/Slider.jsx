@@ -1,4 +1,14 @@
-const Slider = ({ id, text, value, onChange, range, info, allowEdit }) => {
+const Slider = ({
+    id,
+    text,
+    value,
+    onChange,
+    range,
+    info,
+    allowEdit,
+    description,
+    resetToDefault,
+}) => {
     const promptNumber = () => {
         const number = prompt("Enter a value");
         if (isNaN(number) || number == null) {
@@ -41,7 +51,16 @@ const Slider = ({ id, text, value, onChange, range, info, allowEdit }) => {
                         }}
                     ></i>
                 )}
+                {!isNaN(resetToDefault) && (
+                    <i
+                        className="bi bi-arrow-counterclockwise left-10 sprite-setting-icon"
+                        onClick={() => {
+                            onChange(resetToDefault);
+                        }}
+                    ></i>
+                )}
             </div>
+            {description}
         </div>
     );
 };

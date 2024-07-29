@@ -10,26 +10,29 @@ function App() {
         <main>
             {!read && (
                 <div
-                    className="absolute top-left justify-center white column fixed-0-0"
+                    className="absolute top-left justify-center white column fixed-0-0 w-100"
                     id="mobile"
                     onClick={() => {
                         setRead(true);
                     }}
                 >
+                    <p>What&apos;s new?</p>
                     <p className="bottom-10">
-                        The bold text bug on Apple devices has now been fixed.
-                        If the bug still persists, clearing the site&apos;s
-                        cookies may be necessary.
-                    </p>
-                    <p className="bottom-10">
-                        If that did not work, please report the issue on{" "}
-                        <a
-                            href="https://github.com/lezzthanthree/SIFAS-Dialogue-Sandbox"
-                            className="white text-orange"
-                        >
-                            GitHub
-                        </a>
-                        .
+                        <ul>
+                            <li>
+                                You can now change the{" "}
+                                <a
+                                    href="https://i.imgur.com/U7wFyT9.png"
+                                    className="text-orange"
+                                >
+                                    font size
+                                </a>
+                                {" "}of the text.
+                            </li>
+                            <li>
+                                Allow slider inputs to revert to default value.
+                            </li>
+                        </ul>
                     </p>
                     <p>Tap this section to close.</p>
                 </div>

@@ -438,6 +438,7 @@ const SpriteSidebar = () => {
                         }}
                         range={[-1024, 1024]}
                         allowEdit={true}
+                        resetToDefault={0}
                     />
                     <Slider
                         id="y-offset"
@@ -457,6 +458,7 @@ const SpriteSidebar = () => {
                         }}
                         range={[-1024, 1024]}
                         allowEdit={true}
+                        resetToDefault={0}
                     />
                     <Slider
                         id="scale"
@@ -476,6 +478,7 @@ const SpriteSidebar = () => {
                         }}
                         range={[-512, 512]}
                         allowEdit={true}
+                        resetToDefault={0}
                     />
                 </div>
                 <Checkbox
