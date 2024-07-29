@@ -12,10 +12,11 @@ export const AppProvider = ({ children }) => {
     const [text, setText] = useState({
         dialogue: "kyou no pan ga umai!",
         hidden: false,
+        fontSize: 35,
     });
     const [sprites, setSprites] = useState(null);
     const [experimental, setExperimental] = useState({
-        textOffset: 0,
+        fontOffset: 0,
         shadow: true,
     });
     const [nextLayer, setNextLayer] = useState(2);

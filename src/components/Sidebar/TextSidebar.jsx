@@ -38,6 +38,20 @@ const TextSidebar = () => {
                 >
                     Edit Text
                 </textarea>
+                <Slider
+                    id="text-font-size"
+                    text={`Text Font Size (${text.fontSize}px)`}
+                    value={text.fontSize}
+                    onChange={(number) => {
+                        setText({
+                            ...text,
+                            fontSize: number,
+                        });
+                    }}
+                    range={[10, 100]}
+                    allowEdit={true}
+                    resetToDefault={35}
+                ></Slider>
                 <Checkbox
                     id="textbox-hide"
                     text="Hidden"
@@ -253,28 +267,36 @@ const TextSidebar = () => {
                 <h1 className="white">Experimental</h1>
 
                 <Slider
-                    id="text-y-offset"
-                    text={`Text Y-Offset (${experimental.textOffset}px)`}
-                    value={experimental.textOffset}
+                    id="font-offset"
+                    text={`Font Offset (${experimental.fontOffset}px)`}
+                    value={experimental.fontOffset}
                     onChange={(number) => {
                         setExperimental({
                             ...experimental,
-                            textOffset: number,
+                            fontOffset: number,
                         });
                     }}
                     range={[-30, 30]}
-                    z
                     allowEdit={false}
+                    description={
+                        <>
+                            <p className="white setting font-normal bottom-10 notice-p">
+                                If the text in the canvas do not line up
+                                correctly, adjustments may be necessary.
+                            </p>
+                            <img
+                                src="/img/offset-error.png"
+                                alt=""
+                                className="w-100"
+                            />
+                        </>
+                    }
+                    resetToDefault={0}
                 />
-                <p className="white setting font-normal bottom-10 notice-p">
-                    If the text in the canvas do not line up correctly,
-                    adjustments may be necessary.
-                </p>
-                <img src="/img/offset-error.png" alt="" className="w-100" />
 
                 <Checkbox
                     id="shadow-toggle"
-                    text="Toggle Text Shadow"
+                    text="Font Shadow"
                     checked={experimental.shadow}
                     onChange={(e) => {
                         setExperimental({
@@ -283,14 +305,6 @@ const TextSidebar = () => {
                         });
                     }}
                 />
-                <p className="white setting font-normal notice-p">
-                    If the text appears too bold, turning off text shadow may be
-                    needed.
-                </p>
-                <p className="white setting font-normal notice-p">
-                    Apple devices may have this issue.
-                </p>
-                <img src="/img/bold-error.jpg" alt="" className="w-100" />
             </div>
         </div>
     );

@@ -3,7 +3,8 @@ const drawText = async (ctx, text, experimental) => {
         console.warn("Text box is hidden.");
         return;
     }
-    const textOffset = parseInt(experimental.textOffset);
+    const fontOffset = parseInt(experimental.fontOffset);
+    const textFontSize = parseInt(text.fontSize);
     const gradient = ctx.createLinearGradient(0, 750, 0, 950);
     gradient.addColorStop(0, "rgba(255, 255, 255, 0)");
     gradient.addColorStop(0.11, "rgba(255, 255, 255, 0.85)");
@@ -12,10 +13,14 @@ const drawText = async (ctx, text, experimental) => {
     let texts = text.dialogue.split("\n");
     ctx.shadowColor = experimental.shadow ? "rgba(0,0,0,0.4)" : "rgba(0,0,0,0)";
     for (let i = 0; i < texts.length; i++) {
-        ctx.font = "35px FOT-Skip Std";
+        ctx.font = `${textFontSize}px FOT-Skip Std`;
         ctx.fillStyle = "#484848";
         ctx.textBaseline = "hanging";
-        ctx.fillText(texts[i], 315, 820 + textOffset + 65 * i);
+        ctx.fillText(
+            texts[i],
+            315,
+            820 + fontOffset + (65 + (textFontSize - 35))  * i 
+        );
     }
 
     ctx.shadowColor = "rgba(0,0,0,0.4)";
