@@ -55,7 +55,8 @@ No copyright infringement is intended.
 ## Relevant Links
 - [Love Live SIF Waifu Simulator](https://llsif-waifu-sim.github.io/) by [u/vanstorm9](https://llsif-waifu-sim.github.io/)
 - [Custom Beatmap Festival](https://www.reddit.com/r/CustomBeatmapFestival/) by [u/SovietSpartan](https://www.reddit.com/r/SchoolIdolFestival/comments/54uyaz/fan_made_custom_beatmap_festival_beatmap/)
-- [SIFAS Daily Theater Maker]((https://twy.name/LLAS/mainichi/) ) by [@twy____](https://twitter.com/twy____)
+- [SIFAS Daily Theater Maker](https://twy.name/LLAS/mainichi/) by [@twy____](https://twitter.com/twy____)
+- [Project Sekai Stickers](https://st.ayaka.one/) by [TheOriginalAyaka](https://github.com/TheOriginalAyaka/sekai-stickers)
 
 ---
 
