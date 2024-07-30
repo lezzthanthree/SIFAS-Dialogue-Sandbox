@@ -45,21 +45,21 @@ Once done, you can start the application
 npm run dev
 ```
 
----
 ## Disclaimer
 All assets used for this project are owned by KLabGames/Sunrise/Bushiroad and will be used for non-commercial purposes.
 
 No copyright infringement is intended.
 
----
+## Special Thanks
+- [LLASDecryptor](https://github.com/nosyrbllewe/LLASDecryptor) by nosyrbllewe for their awesome SIFAS Decryptor.
+
 ## Relevant Links
 - [Love Live SIF Waifu Simulator](https://llsif-waifu-sim.github.io/) by [u/vanstorm9](https://llsif-waifu-sim.github.io/)
 - [Custom Beatmap Festival](https://www.reddit.com/r/CustomBeatmapFestival/) by [u/SovietSpartan](https://www.reddit.com/r/SchoolIdolFestival/comments/54uyaz/fan_made_custom_beatmap_festival_beatmap/)
 - [SIFAS Daily Theater Maker](https://twy.name/LLAS/mainichi/) by [@twy____](https://twitter.com/twy____)
 - [Project Sekai Stickers](https://st.ayaka.one/) by [TheOriginalAyaka](https://github.com/TheOriginalAyaka/sekai-stickers)
 
----
-
+--- 
 ### Why is it called sandbox?
 idk, it sounds better
 
