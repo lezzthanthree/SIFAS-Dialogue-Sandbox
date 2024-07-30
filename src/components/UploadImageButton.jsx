@@ -1,4 +1,7 @@
+import { useRef } from "react";
+
 const UploadImageButton = ({ id, uploadFunction, text, alertMsg }) => {
+    const uploadElement = useRef(null);
     const checkFile = (file) => {
         const validImageTypes = ["image/jpeg", "image/png", "image/gif"];
         if (!validImageTypes.includes(file["type"])) {
@@ -10,12 +13,13 @@ const UploadImageButton = ({ id, uploadFunction, text, alertMsg }) => {
     return (
         <>
             <input
+                ref={uploadElement}
                 type="file"
                 id={id}
                 style={{ display: "none" }}
                 accept="image/*"
                 onChange={async () => {
-                    let file = document.getElementById(id).files[0];
+                    let file = uploadElement.current.files[0];
                     if (file && checkFile(file)) {
                         uploadFunction(file);
                     }
@@ -28,7 +32,7 @@ const UploadImageButton = ({ id, uploadFunction, text, alertMsg }) => {
                     if (alertMsg) {
                         alert(alertMsg);
                     }
-                    await document.getElementById(id).click();
+                    await uploadElement.current.click();
                 }}
             >
                 {text}
