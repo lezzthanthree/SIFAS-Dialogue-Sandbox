@@ -1,15 +1,6 @@
 # School Idol Festival: All Stars Dialogue Sandbox
 A Dialogue Sandbox for generating fan-made stories from the now-shut down game, [Love Live! School Idol Festival All Stars](https://lovelive-as-global.com/)
 
-## The Localization Branch
-You are currently in the localization branch. 
-
-To contribute, use the [i18ninit.js](./src/js/i18ninit.js) or the [localization template file](./localization-template-en.json) (if you don't know code). Translate to the desired language and make a pull request on this branch.
-
-Character names can also be translated in [characters.json](./src/characters.json).
-
-If you wish to see the main branch instead, [click here](https://github.com/lezzthanthree/SIFAS-Dialogue-Sandbox).
-
 ![](./public/screenshot.png)
 
 ## Features
@@ -53,21 +44,25 @@ Once done, you can start the application
 ```
 npm run dev
 ```
+## Special Thanks
 
----
-## Disclaimer
-All assets used for this project are owned by KLabGames/Sunrise/Bushiroad and will be used for non-commercial purposes.
+### The Localization Contributors
+A huge thanks to our translators!
+- **Spanish Team**: [SantosAlarcon](https://github.com/SantosAlarcon)
 
-No copyright infringement is intended.
+### Love Live Hax
+- [LLAS Decryptor](https://github.com/nosyrbllewe/LLASDecryptor) by [nosyrbllewe](https://github.com/nosyrbllewe/)
 
----
 ## Relevant Links
 - [Love Live SIF Waifu Simulator](https://llsif-waifu-sim.github.io/) by [u/vanstorm9](https://llsif-waifu-sim.github.io/)
 - [Custom Beatmap Festival](https://www.reddit.com/r/CustomBeatmapFestival/) by [u/SovietSpartan](https://www.reddit.com/r/SchoolIdolFestival/comments/54uyaz/fan_made_custom_beatmap_festival_beatmap/)
 - [SIFAS Daily Theater Maker](https://twy.name/LLAS/mainichi/) by [@twy____](https://twitter.com/twy____)
 - [Project Sekai Stickers](https://st.ayaka.one/) by [TheOriginalAyaka](https://github.com/TheOriginalAyaka/sekai-stickers)
 
----
+## Disclaimer
+All assets used for this project are owned by KLabGames/Sunrise/Bushiroad and will be used for non-commercial purposes.
+
+No copyright infringement is intended.
 
 ### Why is it called sandbox?
 idk, it sounds better
