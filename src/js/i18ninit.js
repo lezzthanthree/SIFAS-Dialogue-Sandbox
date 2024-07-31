@@ -102,7 +102,148 @@ const i18nInit = () => {
 				},
 			},
 			jp: {
-				translation: {},
+				translation: {
+					save: "保存",
+					clear: "クリア",
+					"background-header": "背景",
+					"background-upload": "背景", // This has an upload icon beside it
+					"text-header": "テキスト",
+					"text-font-size": "テキストのフォントサイズ",
+					"name-tag-header": "名前欄",
+					you: "あなた", // not watanabe.
+					others: "他の",
+					default: "--デフォルト--",
+					"icon-upload": "アイコン", // This has an upload icon beside it
+					"icon-upload-info":
+						"カスタムアイコンをアップロードしようとしています。最高の体験のために、5:4の比率のアイコンをアップロードしてください。",
+					"experimental-header": "実験的",
+					"font-offset": "フォントオフセット",
+					"font-offset-info":
+						"キャンバス内のテキストが正しく整列していない場合は、調整が必要です。",
+					"font-shadow": "フォントシャドウ",
+					"sprites-header": "立ち絵",
+					"sprites-delete-layer-warn": "立ち絵",
+					"sprites-upload": "立ち絵", // This has an upload icon beside it
+					"sprites-upload-info":
+						"カスタム立ち絵をアップロードしようとしています。最高の体験のために、512x1024または1024x1024のサイズの立ち絵をアップロードしてください。",
+					"custom-sprite-warn":
+						"これはカスタム立ち絵です。衣類の選択は無効になっています。",
+					"character-header": "キャラクター",
+					"costume-header": "衣類",
+					front: "フロント",
+					back: "バック",
+					"expression-header": "表情",
+					"options-header": "オプション",
+					"x-offset": "X-オフセット",
+					"y-offset": "Y-オフセット",
+					scale: "スケール",
+					hidden: "隠し", // DoubleTime, HardRock
+					custom: "カスタム",
+					"enter-a-value": "値を入力",
+					"enter-a-value-error":
+						"有効な数値を入力してください... *honk*", // honk is a sound effect
+					"delete-layer-warn":
+						"これは唯一のレイヤーであり、削除できません。代わりに「非表示」オプションを使用してください。",
+					"clear-warn":
+						"キャンバスをクリアしようとしています！ 進捗状況が失われます。\n「OK」を押すと操作が実行されます。",
+					layer: "レイヤー",
+				},
+			},
+			zh_tw: {
+				translation: {
+					save: "保存",
+					clear: "清除",
+					"background-header": "背景",
+					"background-upload": "背景", // This has an upload icon beside it
+					"text-header": "文字",
+					"text-font-size": "文字大小",
+					"name-tag-header": "名稱欄",
+					you: "你", // not watanabe.
+					others: "其他",
+					default: "--預設--",
+					"icon-upload": "上傳圖示", // This has an upload icon beside it
+					"icon-upload-info":
+						"您即將上傳自定義圖示。為了獲得最佳體驗，請上傳 5:4 的圖示。",
+					"experimental-header": "實驗性",
+					"font-offset": "字體偏移",
+					"font-offset-info":
+						"如果畫布中的文字未對齊，可能需要進行調整。",
+					"font-shadow": "字體陰影",
+					"sprites-header": "立繪",
+					"sprites-delete-layer-warn": "立繪",
+					"sprites-upload": "上傳立繪", // This has an upload icon beside it
+					"sprites-upload-info":
+						"您即將上傳自定義立繪。為了獲得最佳體驗，請上傳 512x1024 或 1024x1024 大小的立繪。",
+					"custom-sprite-warn":
+						"這是自定義立繪。服裝選擇已停用。",
+					"character-header": "角色",
+					"costume-header": "服裝",
+					front: "正面",
+					back: "背面",
+					"expression-header": "表情",
+					"options-header": "選項",
+					"x-offset": "X-偏移",
+					"y-offset": "Y-偏移",
+					scale: "比例",
+					hidden: "隱藏", // DoubleTime, HardRock
+					custom: "自定義",
+					"enter-a-value": "輸入數值",
+					"enter-a-value-error":
+						"請輸入有效數字... *honk*",
+					"delete-layer-warn":
+						"這是唯一的圖層，無法刪除。請使用“隱藏”選項。",
+					"clear-warn":
+						"您即將清除畫布！任何進度都將丟失。\n按下“確定”將執行此操作。",
+					layer: "圖層",
+				},
+			},
+			zh_cn: {
+				translation: {
+					save: "保存",
+					clear: "清除",
+					"background-header": "背景",
+					"background-upload": "背景", // This has an upload icon beside it
+					"text-header": "文字",
+					"text-font-size": "文字大小",
+					"name-tag-header": "名称栏",
+					you: "你", // not watanabe.
+					others: "其他",
+					default: "--默认--",
+					"icon-upload": "上传图标", // This has an upload icon beside it
+					"icon-upload-info":
+						"您即将上传自定义图标。为了获得最佳体验，请上传 5:4 的图标。",
+					"experimental-header": "实验性",
+					"font-offset": "字体偏移",
+					"font-offset-info":
+						"如果画布中的文字未对齐，可能需要进行调整。",
+					"font-shadow": "字体阴影",
+					"sprites-header": "立绘",
+					"sprites-delete-layer-warn": "立绘",
+					"sprites-upload": "上传立绘", // This has an upload icon beside it
+					"sprites-upload-info":
+						"您即将上传自定义立绘。为了获得最佳体验，请上传 512x1024 或 1024x1024 大小的立绘。",
+					"custom-sprite-warn":
+						"这是自定义立绘。服装选择已停用。",
+					"character-header": "角色",
+					"costume-header": "服装",
+					front: "正面",
+					back: "背面",
+					"expression-header": "表情",
+					"options-header": "选项",
+					"x-offset": "X-偏移",
+					"y-offset": "Y-偏移",
+					scale: "比例",
+					hidden: "隐藏", // DoubleTime, HardRock
+					custom: "自定义",
+					"enter-a-value": "输入数值",
+					"enter-a-value-error":
+						"请输入有效数字... *honk*", // honk is a sound effect
+					"delete-layer-warn":
+						"这是唯一的图层，无法删除。请使用“隐藏”选项。",
+					"clear-warn":
+						"您即将清除画布！任何进度都将丢失。\n按下“确定”将执行此操作。",
+					layer: "图层",
+				},
 			},
 		},
 	});

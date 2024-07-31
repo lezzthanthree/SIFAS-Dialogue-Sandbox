@@ -3,7 +3,9 @@
         "information": {
             "en": { "first": "Maki", "last": "Nishikino" },
             "es": { "first": "Maki", "last": "Nishikino" },
-            "jp": { "first": "Maki", "last": "Nishikino" },
+            "jp": { "first": "真姫", "last": "西木野" },
+            "zh_tw": { "first": "真姬", "last": "西木野" },
+            "zh_cn": { "first": "真姬", "last": "西木野" },
             "group": "μ's",
             "year": "1st"
         },
@@ -100,7 +102,9 @@
         "information": {
             "en": { "first": "Hanayo", "last": "Koizumi" },
             "es": { "first": "Hanayo", "last": "Koizumi" },
-            "jp": { "first": "Hanayo", "last": "Koizumi" },
+            "jp": { "first": "花陽", "last": "小泉" },
+            "zh_tw": { "first": "花陽", "last": "小泉" },
+            "zh_cn": { "first": "花阳", "last": "小泉" },
             "group": "μ's",
             "year": "1st"
         },
@@ -201,7 +205,9 @@
         "information": {
             "en": { "first": "Rin", "last": "Hoshizora" },
             "es": { "first": "Rin", "last": "Hoshizora" },
-            "jp": { "first": "Rin", "last": "Hoshizora" },
+            "jp": { "first": "凛", "last": "星空" },
+            "zh_tw": { "first": "凜", "last": "星空" },
+            "zh_cn": { "first": "凛", "last": "星空" },
             "group": "μ's",
             "year": "1st"
         },
@@ -302,7 +308,9 @@
         "information": {
             "en": { "first": "Umi", "last": "Sonoda" },
             "es": { "first": "Umi", "last": "Sonoda" },
-            "jp": { "first": "Umi", "last": "Sonoda" },
+            "jp": { "first": "海未", "last": "園田" },
+            "zh_tw": { "first": "海未", "last": "園田" },
+            "zh_cn": { "first": "海未", "last": "园田" },
             "group": "μ's",
             "year": "2nd"
         },
@@ -394,7 +402,9 @@
         "information": {
             "en": { "first": "Lanzhu", "last": "Zhong" },
             "es": { "first": "Lanzhu", "last": "Zhong" },
-            "jp": { "first": "Lanzhu", "last": "Zhong" },
+            "jp": { "first": "嵐珠", "last": "鐘" },
+            "zh_tw" : { "first": "嵐珠", "last": "鐘" },
+            "zh_cn" : { "first": "岚珠", "last": "钟" },
             "group": "Nijigasaki",
             "year": "2nd"
         },
@@ -494,7 +504,9 @@
         "information": {
             "en": { "first": "Mari", "last": "Ohara" },
             "es": { "first": "Mari", "last": "Ohara" },
-            "jp": { "first": "Mari", "last": "Ohara" },
+            "jp": { "first": "鞠莉", "last": "小原" },
+            "zh_tw": { "first": "鞠莉", "last": "小原" },
+            "zh_cn": { "first": "鞠莉", "last": "小原" },
             "group": "Aqours",
             "year": "3rd"
         },
@@ -595,7 +607,9 @@
         "information": {
             "en": { "first": "Mia", "last": "Taylor" },
             "es": { "first": "Mia", "last": "Taylor" },
-            "jp": { "first": "Mia", "last": "Taylor" },
+            "jp": { "first": "ミア", "last": "テイラー" },
+            "zh_tw": { "first": "米雅", "last": "泰勒" },
+            "zh_cn": { "first": "米娅", "last": "泰勒" },
             "group": "Nijigasaki",
             "year": "3rd"
         },
@@ -696,7 +710,9 @@
         "information": {
             "en": { "first": "Dia", "last": "Kurosawa" },
             "es": { "first": "Dia", "last": "Kurosawa" },
-            "jp": { "first": "Dia", "last": "Kurosawa" },
+            "jp": { "first": "ダイヤ", "last": "黒澤" },
+            "zh_tw": { "first": "黛雅", "last": "黑澤" },
+            "zh_cn": { "first": "黛雅", "last": "黑泽" },
             "group": "Aqours",
             "year": "3rd"
         },
@@ -797,7 +813,9 @@
         "information": {
             "en": { "first": "Ai", "last": "Miyashita" },
             "es": { "first": "Ai", "last": "Miyashita" },
-            "jp": { "first": "Ai", "last": "Miyashita" },
+            "jp": { "first": "愛", "last": "宮下" },
+            "zh_tw": { "first": "愛", "last": "宮下" },
+            "zh_cn": { "first": "爱", "last": "宫下" },
             "group": "Nijigasaki",
             "year": "2nd"
         },
@@ -897,7 +915,9 @@
         "information": {
             "en": { "first": "Hanamaru", "last": "Kunikida" },
             "es": { "first": "Hanamaru", "last": "Kunikida" },
-            "jp": { "first": "Hanamaru", "last": "Kunikida" },
+            "jp": { "first": "花丸", "last": "国木田" },
+            "zh_tw": { "first": "花丸", "last": "國木田" },
+            "zh_cn": { "first": "花丸", "last": "国木田" },
             "group": "Aqours",
             "year": "1st"
         },
@@ -990,7 +1010,9 @@
         "information": {
             "en": { "first": "You", "last": "Watanabe" },
             "es": { "first": "You", "last": "Watanabe" },
-            "jp": { "first": "You", "last": "Watanabe" },
+            "jp": { "first": "曜", "last": "渡辺" },
+            "zh_tw": { "first": "曜", "last": "渡邊" },
+            "zh_cn": { "first": "曜", "last": "渡边" },
             "group": "Aqours",
             "year": "2nd"
         },
@@ -1092,7 +1114,9 @@
         "information": {
             "en": { "first": "Setsuna", "last": "Yuki" },
             "es": { "first": "Setsuna", "last": "Yuki" },
-            "jp": { "first": "Setsuna", "last": "Yuki" },
+            "jp": { "first": "せつ菜", "last": "優木" },
+            "zh_tw": { "first": "雪菜", "last": "優木" },
+            "zh_cn": { "first": "雪菜", "last": "优木" },
             "group": "Nijigasaki",
             "year": "2nd"
         },
@@ -1194,7 +1218,9 @@
         "information": {
             "en": { "first": "Yoshiko", "last": "Tsushima" },
             "es": { "first": "Yoshiko", "last": "Tsushima" },
-            "jp": { "first": "Yoshiko", "last": "Tsushima" },
+            "jp": { "first": "善子", "last": "津島" },
+            "zh_tw": { "first": "善子", "last": "津島" },
+            "zh_cn": { "first": "善子", "last": "津岛" },
             "group": "Aqours",
             "year": "1st"
         },
@@ -1296,7 +1322,9 @@
         "information": {
             "en": { "first": "Kotori", "last": "Minami" },
             "es": { "first": "Kotori", "last": "Minami" },
-            "jp": { "first": "Kotori", "last": "Minami" },
+            "jp": { "first": "ことり", "last": "南" },
+            "zh_tw": { "first": "小鳥", "last": "南" },
+            "zh_cn": { "first": "小鸟", "last": "南" },
             "group": "μ's",
             "year": "2nd"
         },
@@ -1389,7 +1417,9 @@
         "information": {
             "en": { "first": "Emma", "last": "Verde" },
             "es": { "first": "Emma", "last": "Verde" },
-            "jp": { "first": "Emma", "last": "Verde" },
+            "jp": { "first": "エマ", "last": "ヴェルデ" },
+            "zh_tw": { "first": "艾瑪", "last": "薇蒂" },
+            "zh_cn": { "first": "艾玛", "last": "维尔德" },
             "group": "Nijigasaki",
             "year": "3rd"
         },
@@ -1500,7 +1530,9 @@
         "information": {
             "en": { "first": "Honoka", "last": "Kousaka" },
             "es": { "first": "Honoka", "last": "Kousaka" },
-            "jp": { "first": "Honoka", "last": "Kousaka" },
+            "jp": { "first": "穂乃果", "last": "高坂" },
+            "zh_tw": { "first": "穗乃果", "last": "高坂" },
+            "zh_cn": { "first": "穗乃果", "last": "高坂" },
             "group": "μ's",
             "year": "2nd"
         },
@@ -1597,7 +1629,9 @@
         "information": {
             "en": { "first": "Rina", "last": "Tennouji" },
             "es": { "first": "Rina", "last": "Tennouji" },
-            "jp": { "first": "Rina", "last": "Tennouji" },
+            "jp": { "first": "璃奈", "last": "天王寺" },
+            "zh_tw": { "first": "璃奈", "last": "天王寺" },
+            "zh_cn": { "first": "璃奈", "last": "天王寺" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -1698,7 +1732,9 @@
         "information": {
             "en": { "first": "Shizuku", "last": "Osaka" },
             "es": { "first": "Shizuku", "last": "Osaka" },
-            "jp": { "first": "Shizuku", "last": "Osaka" },
+            "jp": { "first": "しずく", "last": "桜坂" },
+            "zh_tw": { "first": "雫", "last": "櫻坂" },
+            "zh_cn": { "first": "雫", "last": "樱坂" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -1797,7 +1833,9 @@
         "information": {
             "en": { "first": "Kanan", "last": "Matsuura" },
             "es": { "first": "Kanan", "last": "Matsuura" },
-            "jp": { "first": "Kanan", "last": "Matsuura" },
+            "jp": { "first": "果南", "last": "松浦" },
+            "zh_tw": { "first": "果南", "last": "松浦" },
+            "zh_cn": { "first": "果南", "last": "松浦" },
             "group": "Aqours",
             "year": "3rd"
         },
@@ -1891,7 +1929,9 @@
         "information": {
             "en": { "first": "Nozomi", "last": "Tojo" },
             "es": { "first": "Nozomi", "last": "Tojo" },
-            "jp": { "first": "Nozomi", "last": "Tojo" },
+            "jp": { "first": "希", "last": "東條" },
+            "zh_tw": { "first": "希", "last": "東條" },
+            "zh_cn": { "first": "希", "last": "东条" },
             "group": "μ's",
             "year": "3rd"
         },
@@ -1983,7 +2023,9 @@
         "information": {
             "en": { "first": "Riko", "last": "Sakurauchi" },
             "es": { "first": "Riko", "last": "Sakurauchi" },
-            "jp": { "first": "Riko", "last": "Sakurauchi" },
+            "jp": { "first": "梨子", "last": "桜内" },
+            "zh_tw": { "first": "梨子", "last": "櫻內" },
+            "zh_cn": { "first": "梨子", "last": "樱内" },
             "group": "Aqours",
             "year": "2nd"
         },
@@ -2076,7 +2118,9 @@
         "information": {
             "en": { "first": "Eli", "last": "Ayase" },
             "es": { "first": "Eli", "last": "Ayase" },
-            "jp": { "first": "Eli", "last": "Ayase" },
+            "jp": { "first": "絵里", "last": "絢瀬" },
+            "zh_tw": { "first": "繪里", "last": "絢瀨" },
+            "zh_cn": { "first": "绘里", "last": "绚濑" },
             "group": "μ's",
             "year": "3rd"
         },
@@ -2174,7 +2218,9 @@
         "information": {
             "en": { "first": "Ayumu", "last": "Uehara" },
             "es": { "first": "Ayumu", "last": "Uehara" },
-            "jp": { "first": "Ayumu", "last": "Uehara" },
+            "jp": { "first": "歩夢", "last": "上原" },
+            "zh_tw": { "first": "步夢", "last": "上原" },
+            "zh_cn": { "first": "步梦", "last": "上原" },
             "group": "Nijigasaki",
             "year": "2nd"
         },
@@ -2283,7 +2329,9 @@
         "information": {
             "en": { "first": "Chika", "last": "Takami" },
             "es": { "first": "Chika", "last": "Takami" },
-            "jp": { "first": "Chika", "last": "Takami" },
+            "jp": { "first": "千歌", "last": "高海" },
+            "zh_tw": { "first": "千歌", "last": "高海" },
+            "zh_cn": { "first": "千歌", "last": "高海" },
             "group": "Aqours",
             "year": "2nd"
         },
@@ -2381,7 +2429,9 @@
         "information": {
             "en": { "first": "Kanata", "last": "Konoe" },
             "es": { "first": "Kanata", "last": "Konoe" },
-            "jp": { "first": "Kanata", "last": "Konoe" },
+            "jp": { "first": "彼方", "last": "近江" },
+            "zh_tw": { "first": "彼方", "last": "近江" },
+            "zh_cn": { "first": "彼方", "last": "近江" },
             "group": "Nijigasaki",
             "year": "3rd"
         },
@@ -2482,7 +2532,9 @@
         "information": {
             "en": { "first": "Kasumi", "last": "Nakasu" },
             "es": { "first": "Kasumi", "last": "Nakasu" },
-            "jp": { "first": "Kasumi", "last": "Nakasu" },
+            "jp": { "first": "かすみ", "last": "中須" },
+            "zh_tw": { "first": "霞", "last": "中須" },
+            "zh_cn": { "first": "霞", "last": "中须" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -2586,7 +2638,9 @@
         "information": {
             "en": { "first": "Karin", "last": "Asaka" },
             "es": { "first": "Karin", "last": "Asaka" },
-            "jp": { "first": "Karin", "last": "Asaka" },
+            "jp": { "first": "果林", "last": "朝香" },
+            "zh_tw": { "first": "果林", "last": "朝香" },
+            "zh_cn": { "first": "果林", "last": "朝香" },
             "group": "Nijigasaki",
             "year": "3rd"
         },
@@ -2684,7 +2738,9 @@
         "information": {
             "en": { "first": "Rina", "last": "Tennouji" },
             "es": { "first": "Rina", "last": "Tennouji" },
-            "jp": { "first": "Rina", "last": "Tennouji" },
+            "jp": { "first": "璃奈", "last": "天王寺" },
+            "zh_tw": { "first": "璃奈", "last": "天王寺" },
+            "zh_cn": { "first": "璃奈", "last": "天王寺" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -2734,7 +2790,9 @@
         "information": {
             "en": { "first": "Ruby", "last": "Kurosawa" },
             "es": { "first": "Ruby", "last": "Kurosawa" },
-            "jp": { "first": "Ruby", "last": "Kurosawa" },
+            "jp": { "first": "ルビィ", "last": "黒澤" },
+            "zh_tw": { "first": "露比", "last": "黑澤" },
+            "zh_cn": { "first": "露比", "last": "黑泽" },
             "group": "Aqours",
             "year": "1st"
         },
@@ -2830,7 +2888,9 @@
         "information": {
             "en": { "first": "Shioriko", "last": "Mifune" },
             "es": { "first": "Shioriko", "last": "Mifune" },
-            "jp": { "first": "Shioriko", "last": "Mifune" },
+            "jp": { "first": "栞子", "last": "三船" },
+            "zh_tw": { "first": "栞子", "last": "三船" },
+            "zh_cn": { "first": "栞子", "last": "三船" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -2936,7 +2996,9 @@
         "information": {
             "en": { "first": "Nico", "last": "Yazawa" },
             "es": { "first": "Nico", "last": "Yazawa" },
-            "jp": { "first": "Nico", "last": "Yazawa" },
+            "jp": { "first": "にこ", "last": "矢澤" },
+            "zh_tw": { "first": "妮可", "last": "矢澤" },
+            "zh_cn": { "first": "妮可", "last": "矢泽" },
             "group": "μ's",
             "year": "3rd"
         },
