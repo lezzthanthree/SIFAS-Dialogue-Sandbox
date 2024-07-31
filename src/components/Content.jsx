@@ -7,6 +7,7 @@ import drawText from "../js/drawText";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { useTranslation } from "react-i18next";
+import MusicPlayer from "./MusicPlayer";
 
 const Content = () => {
     const { i18n, t } = useTranslation();
@@ -118,7 +119,7 @@ const Content = () => {
                 <select
                     name="i18n"
                     id="i18n"
-                    className="sel-small"
+                    className="sel-small  bottom-10"
                     value={i18n.language}
                     onChange={(e) => {
                         changeLanguage(e.target.value);
@@ -129,6 +130,7 @@ const Content = () => {
                     <option value="es">Español</option>
                     {/* <option value="jp">日本語</option> */}
                 </select>
+                <MusicPlayer />
             </div>
             <div className="absolute bottom-right hide-sidebar button-icons">
                 <button

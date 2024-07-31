@@ -457,13 +457,13 @@ input[type=text].txt-white {
 }
 
 @media (width <= 1500px) {
-  #i18n {
+  .localization {
     width: 120px;
     z-index: 5;
   }
 }
 @media (width > 1500px) {
-  #i18n {
+  .localization {
     width: 180px;
   }
 }
