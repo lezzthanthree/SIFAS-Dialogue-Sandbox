@@ -1,26 +1,21 @@
 async function drawBackground(ctx, background) {
-    if (!background) {
+    if (!background || !background.img) {
         console.warn("No background found!");
         return;
     }
+    const img = background.img;
 
-    const hRatio = ctx.canvas.width / background.width;
-    const vRatio = ctx.canvas.height / background.height;
+    const hRatio = ctx.canvas.width / img.width;
+    const vRatio = ctx.canvas.height / img.height;
     const ratio = Math.max(hRatio, vRatio);
 
-    const scaledWidth = background.width * ratio;
-    const scaledHeight = background.height * ratio;
+    const scaledWidth = img.width * ratio;
+    const scaledHeight = img.height * ratio;
 
     const x = (ctx.canvas.width - scaledWidth) / 2;
     const y = (ctx.canvas.height - scaledHeight) / 2;
 
-    ctx.drawImage(
-        background,
-        x,
-        y,
-        scaledWidth,
-        scaledHeight
-    );
+    ctx.drawImage(img, x, y, scaledWidth, scaledHeight);
 
     console.info("Background drawn!");
 }

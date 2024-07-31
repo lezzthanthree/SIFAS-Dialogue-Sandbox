@@ -56,7 +56,7 @@ const BackgroundPicker = ({ background, setBackground }) => {
                 </div>
             )}
             <img
-                src={background ? background.img.src : ""}
+                src={background.img ? background.img.src : ""}
                 id="background-picker"
                 className="image-picker setting"
                 onClick={() => {

@@ -29,7 +29,12 @@ export const AppProvider = ({ children }) => {
     useEffect(() => {
         setSprites(null);
         loadImage("/img/background/6olyyw_0.jpg")
-            .then((img) => setBackground(img))
+            .then((img) =>
+                setBackground({
+                    img: img,
+                    id: "6olyyw_0.jpg",
+                })
+            )
             .catch((error) => console.error(error));
 
         loadImage("/img/char_icon/honoka.png")
