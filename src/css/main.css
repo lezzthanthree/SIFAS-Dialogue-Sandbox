@@ -881,6 +881,12 @@ input[type=text].txt-white {
   left: 0;
 }
 
+.fixed-bottom-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 .underline {
   text-decoration: underline;
 }

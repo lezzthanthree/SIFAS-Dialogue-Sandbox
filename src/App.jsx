@@ -10,18 +10,25 @@ function App() {
         <main>
             {!read && (
                 <div
-                    className="absolute top-left justify-center white column fixed-0-0 w-100"
+                    className="absolute bottom-left justify-center white column fixed-bottom-left w-100"
                     id="mobile"
                     onClick={() => {
                         setRead(true);
                     }}
                 >
                     <p className="bottom-10">
-                        Contributions for localization are now available!
+                        Spanish Localization is now available! Special thanks to{" "}
+                        <a
+                            className="text-orange"
+                            href="https://github.com/SantosAlarcon"
+                        >
+                            SantosAlarcon
+                        </a>
+                        .
                     </p>
                     <p className="bottom-10">
-                        If you wish to contribute, you can check this
-                        information on{" "}
+                        If you wish to contribute for localization, you can
+                        check this information on{" "}
                         <a
                             href="https://github.com/lezzthanthree/SIFAS-Dialogue-Sandbox/blob/i18n/README.md#the-localization-branch"
                             className="text-orange"
