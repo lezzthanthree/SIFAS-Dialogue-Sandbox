@@ -3,13 +3,15 @@ import loadImage from "../../js/loadImage";
 import BackgroundPicker from "../BackgroundPicker";
 import UploadImageButton from "../UploadImageButton";
 import { AppContext } from "../../AppContext";
+import { useTranslation } from "react-i18next";
 
 const BackgroundSidebar = () => {
     const { background, setBackground } = useContext(AppContext);
+    const { t } = useTranslation();
     return (
         <div id="background-sidebar">
             <div className="group">
-                <h1 className="white">Background</h1>
+                <h1 className="white"> {t("background-header")}</h1>
 
                 <BackgroundPicker
                     background={background}
@@ -25,7 +27,7 @@ const BackgroundSidebar = () => {
                     text={
                         <>
                             <i className="bi bi-upload right-10"> </i>
-                            Background
+                            {t("background-upload")}
                         </>
                     }
                 />

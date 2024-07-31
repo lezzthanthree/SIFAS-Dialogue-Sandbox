@@ -6,15 +6,18 @@ import Checkbox from "../Checkbox";
 import Slider from "../Slider";
 import UploadImageButton from "../UploadImageButton";
 import { AppContext } from "../../AppContext";
+import { useTranslation } from "react-i18next";
 const SpriteSidebar = () => {
+    const { t, i18n } = useTranslation();
     const { sprites, setSprites, nextLayer, setNextLayer } =
         useContext(AppContext);
     const [currentLayer, setCurrentLayer] = useState(Object.keys(sprites)[0]);
+    const language = i18n.language;
     return (
         <div id="sprite-sidebar">
             <div className="group">
                 <h1 className="white align-center">
-                    Sprites
+                    {t("sprites-header")}
                     <i
                         className="bi bi-plus-circle sprite-setting-icon"
                         onClick={async () => {
@@ -27,7 +30,9 @@ const SpriteSidebar = () => {
                             setSprites({
                                 ...sprites,
                                 [`sprite-layer-${nextLayer}`]: {
-                                    layerName: `Layer ${nextLayer}: Honoka`,
+                                    layerName: `${t(
+                                        "layer"
+                                    )} ${nextLayer}: Honoka`,
                                     layerNumber: nextLayer,
                                     character: "honoka",
                                     costume: "3c2bnw",
@@ -54,9 +59,7 @@ const SpriteSidebar = () => {
                         className="bi bi-trash-fill sprite-setting-icon"
                         onClick={() => {
                             if (Object.keys(sprites).length == 1) {
-                                alert(
-                                    "This is the only layer and cannot be deleted. Use the 'Hidden' option instead."
-                                );
+                                alert(t("delete-layer-warn"));
                                 return;
                             }
                             const newSprites = { ...sprites };
@@ -74,13 +77,15 @@ const SpriteSidebar = () => {
                                 sprites[currentLayer].character == "custom"
                                     ? "Custom"
                                     : data[sprites[currentLayer].character]
-                                          .information.first;
+                                          .information[language].first;
 
                             setSprites({
                                 ...sprites,
                                 [currentLayer]: {
                                     ...sprites[currentLayer],
-                                    layerName: `Layer ${newLayer}: ${character}`,
+                                    layerName: `${t(
+                                        "layer"
+                                    )} ${newLayer}: ${character}`,
                                     layerNumber: newLayer,
                                 },
                             });
@@ -98,12 +103,14 @@ const SpriteSidebar = () => {
                                 sprites[currentLayer].character == "custom"
                                     ? "Custom"
                                     : data[sprites[currentLayer].character]
-                                          .information.first;
+                                          .information[language].first;
                             setSprites({
                                 ...sprites,
                                 [currentLayer]: {
                                     ...sprites[currentLayer],
-                                    layerName: `Layer ${newLayer}: ${character}`,
+                                    layerName: `${t(
+                                        "layer"
+                                    )} ${newLayer}: ${character}`,
                                     layerNumber: newLayer,
                                 },
                             });
@@ -142,7 +149,9 @@ const SpriteSidebar = () => {
                             ...sprites,
                             [currentLayer]: {
                                 ...sprites[currentLayer],
-                                layerName: `Layer ${sprites[currentLayer].layerNumber}: Custom`,
+                                layerName: `${t("layer")} ${
+                                    sprites[currentLayer].layerNumber
+                                }: Custom`,
                                 character: "custom",
                                 position: "custom",
                                 costume: null,
@@ -157,14 +166,15 @@ const SpriteSidebar = () => {
                     }}
                     text={
                         <>
-                            <i className="bi bi-upload right-10"></i> Sprite
+                            <i className="bi bi-upload right-10"></i>{" "}
+                            {t("sprites-upload")}
                         </>
                     }
-                    alertMsg="You are uploading a custom sprite. For best experience, upload sprites that are 512x1024 or 1024x1024 in size."
+                    alertMsg={t("sprites-upload-info")}
                 ></UploadImageButton>
             </div>
             <div className="group">
-                <h1 className="white">Character</h1>
+                <h1 className="white">{t("character-header")}</h1>
                 <select
                     name="character-sprite-select"
                     id="character-sprite-select"
@@ -191,7 +201,9 @@ const SpriteSidebar = () => {
                             ...sprites,
                             [currentLayer]: {
                                 ...sprites[currentLayer],
-                                layerName: `Layer ${layerNumber}: ${data[newChar].information.first}`,
+                                layerName: `${t("layer")} ${layerNumber}: ${
+                                    data[newChar].information[language].first
+                                }`,
                                 character: newChar,
                                 position: "front",
                                 costume: firstCostume,
@@ -211,18 +223,19 @@ const SpriteSidebar = () => {
                             return (
                                 <option key={c} value={c}>
                                     {c === "rina_board"
-                                        ? data[c].information.first + " (Board)"
-                                        : data[c].information.first}
+                                        ? data[c].information[language].first +
+                                          " (Board)"
+                                        : data[c].information[language].first}
                                 </option>
                             );
                         })}
                     <option key="custom" value="custom">
-                        Custom
+                        {t("custom")}
                     </option>
                 </select>
             </div>
             <div className="group">
-                <h1 className="white">Costume</h1>
+                <h1 className="white">{t("costume-header")}</h1>
 
                 <div
                     className={
@@ -258,7 +271,7 @@ const SpriteSidebar = () => {
                             });
                         }}
                     >
-                        Front
+                        {t("front")}
                     </button>
                     <button
                         className={
@@ -285,7 +298,7 @@ const SpriteSidebar = () => {
                             });
                         }}
                     >
-                        Back
+                        {t("back")}
                     </button>
                 </div>
                 <CostumePicker
@@ -299,7 +312,7 @@ const SpriteSidebar = () => {
                     sprites[currentLayer].position == "front" ? "group" : "hide"
                 }
             >
-                <h1 className="white">Expression</h1>
+                <h1 className="white">{t("expression-header")}</h1>
                 <div className="setting row center">
                     <div className="column right-20">
                         <i className="bi bi-eye-fill white icon-expression"></i>
@@ -418,11 +431,13 @@ const SpriteSidebar = () => {
                 </div>
             </div>
             <div className="group">
-                <h1 className="white">Options</h1>
+                <h1 className="white">{t("options-header")}</h1>
                 <div className="column">
                     <Slider
                         id="x-offset"
-                        text={`X-Offset (${sprites[currentLayer].options.x}px)`}
+                        text={`${t("x-offset")} (${
+                            sprites[currentLayer].options.x
+                        }px)`}
                         value={sprites[currentLayer].options.x}
                         onChange={(number) => {
                             setSprites({
@@ -442,7 +457,9 @@ const SpriteSidebar = () => {
                     />
                     <Slider
                         id="y-offset"
-                        text={`Y-Offset (${sprites[currentLayer].options.y}px)`}
+                        text={`${t("y-offset")} (${
+                            sprites[currentLayer].options.y
+                        }px)`}
                         value={sprites[currentLayer].options.y}
                         onChange={(number) => {
                             setSprites({
@@ -462,7 +479,9 @@ const SpriteSidebar = () => {
                     />
                     <Slider
                         id="scale"
-                        text={`Scale (${sprites[currentLayer].options.scale}px)`}
+                        text={`${t("scale")} (${
+                            sprites[currentLayer].options.scale
+                        }px)`}
                         value={sprites[currentLayer].options.scale}
                         onChange={(number) => {
                             setSprites({
@@ -483,7 +502,7 @@ const SpriteSidebar = () => {
                 </div>
                 <Checkbox
                     id="sprite-hide"
-                    text="Hidden"
+                    text={t("hidden")}
                     onChange={(e) => {
                         setSprites({
                             ...sprites,

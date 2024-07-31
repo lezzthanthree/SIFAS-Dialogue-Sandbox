@@ -1,9 +1,11 @@
 import { useState } from "react";
 import data from "../characters.json";
 import loadImage from "../js/loadImage";
+import { useTranslation } from "react-i18next";
 
 const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
     const [show, setShow] = useState(false);
+    const { t } = useTranslation();
     return (
         <>
             {show && (
@@ -91,7 +93,7 @@ const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
                 className="image-picker setting"
                 onClick={() => {
                     if (sprites[currentLayer].character == "custom") {
-                        alert("This is a custom sprite.");
+                        alert(t("custom-sprite-warn"));
                         return;
                     }
                     setShow(!show);

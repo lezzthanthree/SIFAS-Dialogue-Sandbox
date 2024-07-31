@@ -1,8 +1,9 @@
 {
     "maki": {
         "information": {
-            "first": "Maki",
-            "last": "Nishikino",
+            "en": { "first": "Maki", "last": "Nishikino" },
+            "es": { "first": "Maki", "last": "Nishikino" },
+            "jp": { "first": "Maki", "last": "Nishikino" },
             "group": "μ's",
             "year": "1st"
         },
@@ -97,8 +98,9 @@
     },
     "hanayo": {
         "information": {
-            "first": "Hanayo",
-            "last": "Koizumi",
+            "en": { "first": "Hanayo", "last": "Koizumi" },
+            "es": { "first": "Hanayo", "last": "Koizumi" },
+            "jp": { "first": "Hanayo", "last": "Koizumi" },
             "group": "μ's",
             "year": "1st"
         },
@@ -197,8 +199,9 @@
     },
     "rin": {
         "information": {
-            "first": "Rin",
-            "last": "Hoshizora",
+            "en": { "first": "Rin", "last": "Hoshizora" },
+            "es": { "first": "Rin", "last": "Hoshizora" },
+            "jp": { "first": "Rin", "last": "Hoshizora" },
             "group": "μ's",
             "year": "1st"
         },
@@ -297,8 +300,9 @@
     },
     "umi": {
         "information": {
-            "first": "Umi",
-            "last": "Sonoda",
+            "en": { "first": "Umi", "last": "Sonoda" },
+            "es": { "first": "Umi", "last": "Sonoda" },
+            "jp": { "first": "Umi", "last": "Sonoda" },
             "group": "μ's",
             "year": "2nd"
         },
@@ -388,8 +392,9 @@
     },
     "lanzhu": {
         "information": {
-            "first": "Lanzhu",
-            "last": "Zhong",
+            "en": { "first": "Lanzhu", "last": "Zhong" },
+            "es": { "first": "Lanzhu", "last": "Zhong" },
+            "jp": { "first": "Lanzhu", "last": "Zhong" },
             "group": "Nijigasaki",
             "year": "2nd"
         },
@@ -487,8 +492,9 @@
     },
     "mari": {
         "information": {
-            "first": "Mari",
-            "last": "Ohara",
+            "en": { "first": "Mari", "last": "Ohara" },
+            "es": { "first": "Mari", "last": "Ohara" },
+            "jp": { "first": "Mari", "last": "Ohara" },
             "group": "Aqours",
             "year": "3rd"
         },
@@ -587,8 +593,9 @@
     },
     "mia": {
         "information": {
-            "first": "Mia",
-            "last": "Taylor",
+            "en": { "first": "Mia", "last": "Taylor" },
+            "es": { "first": "Mia", "last": "Taylor" },
+            "jp": { "first": "Mia", "last": "Taylor" },
             "group": "Nijigasaki",
             "year": "3rd"
         },
@@ -687,8 +694,9 @@
     },
     "dia": {
         "information": {
-            "first": "Dia",
-            "last": "Kurosawa",
+            "en": { "first": "Dia", "last": "Kurosawa" },
+            "es": { "first": "Dia", "last": "Kurosawa" },
+            "jp": { "first": "Dia", "last": "Kurosawa" },
             "group": "Aqours",
             "year": "3rd"
         },
@@ -787,8 +795,9 @@
     },
     "ai": {
         "information": {
-            "first": "Ai",
-            "last": "Miyashita",
+            "en": { "first": "Ai", "last": "Miyashita" },
+            "es": { "first": "Ai", "last": "Miyashita" },
+            "jp": { "first": "Ai", "last": "Miyashita" },
             "group": "Nijigasaki",
             "year": "2nd"
         },
@@ -886,8 +895,9 @@
     },
     "hanamaru": {
         "information": {
-            "first": "Hanamaru",
-            "last": "Kunikida",
+            "en": { "first": "Hanamaru", "last": "Kunikida" },
+            "es": { "first": "Hanamaru", "last": "Kunikida" },
+            "jp": { "first": "Hanamaru", "last": "Kunikida" },
             "group": "Aqours",
             "year": "1st"
         },
@@ -978,8 +988,9 @@
     },
     "you": {
         "information": {
-            "first": "You",
-            "last": "Watanabe",
+            "en": { "first": "You", "last": "Watanabe" },
+            "es": { "first": "You", "last": "Watanabe" },
+            "jp": { "first": "You", "last": "Watanabe" },
             "group": "Aqours",
             "year": "2nd"
         },
@@ -1079,8 +1090,9 @@
     },
     "setsuna": {
         "information": {
-            "first": "Setsuna",
-            "last": "Yuki",
+            "en": { "first": "Setsuna", "last": "Yuki" },
+            "es": { "first": "Setsuna", "last": "Yuki" },
+            "jp": { "first": "Setsuna", "last": "Yuki" },
             "group": "Nijigasaki",
             "year": "2nd"
         },
@@ -1180,8 +1192,9 @@
     },
     "yoshiko": {
         "information": {
-            "first": "Yoshiko",
-            "last": "Tsushima",
+            "en": { "first": "Yoshiko", "last": "Tsushima" },
+            "es": { "first": "Yoshiko", "last": "Tsushima" },
+            "jp": { "first": "Yoshiko", "last": "Tsushima" },
             "group": "Aqours",
             "year": "1st"
         },
@@ -1281,8 +1294,9 @@
     },
     "kotori": {
         "information": {
-            "first": "Kotori",
-            "last": "Minami",
+            "en": { "first": "Kotori", "last": "Minami" },
+            "es": { "first": "Kotori", "last": "Minami" },
+            "jp": { "first": "Kotori", "last": "Minami" },
             "group": "μ's",
             "year": "2nd"
         },
@@ -1373,8 +1387,9 @@
     },
     "emma": {
         "information": {
-            "first": "Emma",
-            "last": "Verde",
+            "en": { "first": "Emma", "last": "Verde" },
+            "es": { "first": "Emma", "last": "Verde" },
+            "jp": { "first": "Emma", "last": "Verde" },
             "group": "Nijigasaki",
             "year": "3rd"
         },
@@ -1483,8 +1498,9 @@
     },
     "honoka": {
         "information": {
-            "first": "Honoka",
-            "last": "Kousaka",
+            "en": { "first": "Honoka", "last": "Kousaka" },
+            "es": { "first": "Honoka", "last": "Kousaka" },
+            "jp": { "first": "Honoka", "last": "Kousaka" },
             "group": "μ's",
             "year": "2nd"
         },
@@ -1579,8 +1595,9 @@
     },
     "rina_board": {
         "information": {
-            "first": "Rina",
-            "last": "Tennouji",
+            "en": { "first": "Rina", "last": "Tennouji" },
+            "es": { "first": "Rina", "last": "Tennouji" },
+            "jp": { "first": "Rina", "last": "Tennouji" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -1679,8 +1696,9 @@
     },
     "shizuku": {
         "information": {
-            "first": "Shizuku",
-            "last": "Osaka",
+            "en": { "first": "Shizuku", "last": "Osaka" },
+            "es": { "first": "Shizuku", "last": "Osaka" },
+            "jp": { "first": "Shizuku", "last": "Osaka" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -1777,8 +1795,9 @@
     },
     "kanan": {
         "information": {
-            "first": "Kanan",
-            "last": "Matsuura",
+            "en": { "first": "Kanan", "last": "Matsuura" },
+            "es": { "first": "Kanan", "last": "Matsuura" },
+            "jp": { "first": "Kanan", "last": "Matsuura" },
             "group": "Aqours",
             "year": "3rd"
         },
@@ -1870,8 +1889,9 @@
     },
     "nozomi": {
         "information": {
-            "first": "Nozomi",
-            "last": "Tojo",
+            "en": { "first": "Nozomi", "last": "Tojo" },
+            "es": { "first": "Nozomi", "last": "Tojo" },
+            "jp": { "first": "Nozomi", "last": "Tojo" },
             "group": "μ's",
             "year": "3rd"
         },
@@ -1961,8 +1981,9 @@
     },
     "riko": {
         "information": {
-            "first": "Riko",
-            "last": "Sakurauchi",
+            "en": { "first": "Riko", "last": "Sakurauchi" },
+            "es": { "first": "Riko", "last": "Sakurauchi" },
+            "jp": { "first": "Riko", "last": "Sakurauchi" },
             "group": "Aqours",
             "year": "2nd"
         },
@@ -2053,8 +2074,9 @@
     },
     "eli": {
         "information": {
-            "first": "Eli",
-            "last": "Ayase",
+            "en": { "first": "Eli", "last": "Ayase" },
+            "es": { "first": "Eli", "last": "Ayase" },
+            "jp": { "first": "Eli", "last": "Ayase" },
             "group": "μ's",
             "year": "3rd"
         },
@@ -2150,8 +2172,9 @@
     },
     "ayumu": {
         "information": {
-            "first": "Ayumu",
-            "last": "Uehara",
+            "en": { "first": "Ayumu", "last": "Uehara" },
+            "es": { "first": "Ayumu", "last": "Uehara" },
+            "jp": { "first": "Ayumu", "last": "Uehara" },
             "group": "Nijigasaki",
             "year": "2nd"
         },
@@ -2258,8 +2281,9 @@
     },
     "chika": {
         "information": {
-            "first": "Chika",
-            "last": "Takami",
+            "en": { "first": "Chika", "last": "Takami" },
+            "es": { "first": "Chika", "last": "Takami" },
+            "jp": { "first": "Chika", "last": "Takami" },
             "group": "Aqours",
             "year": "2nd"
         },
@@ -2355,8 +2379,9 @@
     },
     "kanata": {
         "information": {
-            "first": "Kanata",
-            "last": "Konoe",
+            "en": { "first": "Kanata", "last": "Konoe" },
+            "es": { "first": "Kanata", "last": "Konoe" },
+            "jp": { "first": "Kanata", "last": "Konoe" },
             "group": "Nijigasaki",
             "year": "3rd"
         },
@@ -2455,8 +2480,9 @@
     },
     "kasumi": {
         "information": {
-            "first": "Kasumi",
-            "last": "Nakasu",
+            "en": { "first": "Kasumi", "last": "Nakasu" },
+            "es": { "first": "Kasumi", "last": "Nakasu" },
+            "jp": { "first": "Kasumi", "last": "Nakasu" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -2558,8 +2584,9 @@
     },
     "karin": {
         "information": {
-            "first": "Karin",
-            "last": "Asaka",
+            "en": { "first": "Karin", "last": "Asaka" },
+            "es": { "first": "Karin", "last": "Asaka" },
+            "jp": { "first": "Karin", "last": "Asaka" },
             "group": "Nijigasaki",
             "year": "3rd"
         },
@@ -2655,8 +2682,9 @@
     },
     "rina": {
         "information": {
-            "first": "Rina",
-            "last": "Tennouji",
+            "en": { "first": "Rina", "last": "Tennouji" },
+            "es": { "first": "Rina", "last": "Tennouji" },
+            "jp": { "first": "Rina", "last": "Tennouji" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -2704,8 +2732,9 @@
     },
     "ruby": {
         "information": {
-            "first": "Ruby",
-            "last": "Kurosawa",
+            "en": { "first": "Ruby", "last": "Kurosawa" },
+            "es": { "first": "Ruby", "last": "Kurosawa" },
+            "jp": { "first": "Ruby", "last": "Kurosawa" },
             "group": "Aqours",
             "year": "1st"
         },
@@ -2799,8 +2828,9 @@
     },
     "shioriko": {
         "information": {
-            "first": "Shioriko",
-            "last": "Mifune",
+            "en": { "first": "Shioriko", "last": "Mifune" },
+            "es": { "first": "Shioriko", "last": "Mifune" },
+            "jp": { "first": "Shioriko", "last": "Mifune" },
             "group": "Nijigasaki",
             "year": "1st"
         },
@@ -2904,8 +2934,9 @@
     },
     "nico": {
         "information": {
-            "first": "Nico",
-            "last": "Yazawa",
+            "en": { "first": "Nico", "last": "Yazawa" },
+            "es": { "first": "Nico", "last": "Yazawa" },
+            "jp": { "first": "Nico", "last": "Yazawa" },
             "group": "μ's",
             "year": "3rd"
         },

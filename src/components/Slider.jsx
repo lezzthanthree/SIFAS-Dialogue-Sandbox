@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 const Slider = ({
     id,
     text,
@@ -9,10 +10,11 @@ const Slider = ({
     description,
     resetToDefault,
 }) => {
+    const { t } = useTranslation();
     const promptNumber = () => {
-        const number = prompt("Enter a value");
+        const number = prompt(t("enter-a-value"));
         if (isNaN(number) || number == null) {
-            alert("Please input a valid number... *honk*");
+            alert(t("enter-a-value-error"));
             return NaN;
         }
         return number;
