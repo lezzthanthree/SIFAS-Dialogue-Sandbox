@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import data from "../background.json";
 import loadImage from "../js/loadImage";
 
 const BackgroundPicker = ({ background, setBackground }) => {
     const [show, setShow] = useState(false);
+    const selected = useRef(null);
+
+    useEffect(() => {
+        if (selected.current) {
+            selected.current.scrollIntoView({ top: -45, behavior: "smooth" });
+        }
+    }, [show]);
     return (
         <>
             {show && (
@@ -26,13 +33,21 @@ const BackgroundPicker = ({ background, setBackground }) => {
                         return (
                             <img
                                 key={bg}
-                                className="picker-item background-picker-item"
+                                ref={bg == background.id ? selected : null}
+                                className={
+                                    bg == background.id
+                                        ? "picker-item item-selected background-picker-item"
+                                        : "picker-item background-picker-item"
+                                }
                                 src={`/img/background/${bg}`}
                                 onClick={async () => {
                                     const bgImage = await loadImage(
                                         `/img/background/${bg}`
                                     );
-                                    setBackground(bgImage);
+                                    setBackground({
+                                        img: bgImage,
+                                        id: bg,
+                                    });
                                     setShow(false);
                                 }}
                             />
@@ -41,7 +56,7 @@ const BackgroundPicker = ({ background, setBackground }) => {
                 </div>
             )}
             <img
-                src={background ? background.src : ""}
+                src={background ? background.img.src : ""}
                 id="background-picker"
                 className="image-picker setting"
                 onClick={() => {
