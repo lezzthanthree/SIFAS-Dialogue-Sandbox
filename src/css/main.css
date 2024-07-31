@@ -553,6 +553,7 @@ input[type=text].txt-white {
   left: 25px;
   margin: inherit;
   filter: drop-shadow(0px 0px 2px #000);
+  z-index: 1001;
 }
 
 .tabs {
@@ -589,6 +590,11 @@ input[type=text].txt-white {
   }
 }
 
+.picker-item.item-selected {
+  border: 10px #ffb637 solid;
+  box-sizing: border-box;
+}
+
 @media (width <= 768px) {
   #char-icon-img {
     height: 30px;
@@ -618,6 +624,7 @@ input[type=text].txt-white {
     aspect-ratio: 1/1;
     margin: 5px;
     cursor: pointer;
+    box-sizing: border-box;
   }
   .icon-expression {
     font-size: 30px;
@@ -656,6 +663,7 @@ input[type=text].txt-white {
     aspect-ratio: 1/1;
     margin: 10px;
     cursor: pointer;
+    box-sizing: border-box;
   }
   .icon-expression {
     font-size: 30px;
@@ -694,6 +702,7 @@ input[type=text].txt-white {
     aspect-ratio: 1/1;
     margin: 10px;
     cursor: pointer;
+    box-sizing: border-box;
   }
   .icon-expression {
     font-size: 35px;

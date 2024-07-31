@@ -119,6 +119,7 @@
     left: 25px;
     margin: inherit;
     filter: $shadow;
+    z-index: 1001;
 }
 
 .tabs {
@@ -147,6 +148,11 @@
     @media (width > 768px) {
         display: block;
     }
+}
+
+.picker-item.item-selected {
+    border: 10px $orange solid;
+    box-sizing: border-box;
 }
 
 @media (width <= 768px) {
@@ -182,6 +188,7 @@
         aspect-ratio: 1/1;
         margin: 5px;
         cursor: pointer;
+        box-sizing: border-box;
     }
 
     .icon-expression {
@@ -227,6 +234,7 @@
         aspect-ratio: 1/1;
         margin: 10px;
         cursor: pointer;
+        box-sizing: border-box;
     }
 
     .icon-expression {
@@ -272,6 +280,7 @@
         aspect-ratio: 1/1;
         margin: 10px;
         cursor: pointer;
+        box-sizing: border-box;
     }
 
     .icon-expression {
