@@ -127,7 +127,7 @@ const Content = () => {
                 >
                     <option value="en">English</option>
                     <option value="es">Español</option>
-                    <option value="jp">日本語</option>
+                    {/* <option value="jp">日本語</option> */}
                 </select>
             </div>
             <div className="absolute bottom-right hide-sidebar button-icons">
