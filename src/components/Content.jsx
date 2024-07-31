@@ -6,8 +6,14 @@ import drawNameTag from "../js/drawNameTag";
 import drawText from "../js/drawText";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
+import { useTranslation } from "react-i18next";
 
 const Content = () => {
+    const { i18n, t } = useTranslation();
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     const {
         tabState,
         hideState,
@@ -108,6 +114,22 @@ const Content = () => {
                     <i className="bi bi-person-fill icon-btn"></i>
                 </button>
             </div>
+            <div className="absolute top-left button-icons localization">
+                <select
+                    name="i18n"
+                    id="i18n"
+                    className="sel-small"
+                    value={i18n.language}
+                    onChange={(e) => {
+                        changeLanguage(e.target.value);
+                        localStorage.setItem("language", e.target.value);
+                    }}
+                >
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="jp">日本語</option>
+                </select>
+            </div>
             <div className="absolute bottom-right hide-sidebar button-icons">
                 <button
                     className="icon btn-white"
@@ -127,21 +149,19 @@ const Content = () => {
                         save();
                     }}
                 >
-                    Save
+                    {t("save")}
                 </button>
                 <button
                     className="btn-small btn-white btn-192"
                     onClick={() => {
-                        const confirmation = confirm(
-                            "You are about to clear the canvas! Any progress will be lost. \nPressing 'OK' will proceed the action."
-                        );
+                        const confirmation = confirm(t("clear-warn"));
                         console.log(confirmation);
                         if (confirmation) {
                             setClearTimes(clearTimes + 1);
                         }
                     }}
                 >
-                    Clear
+                    {t("clear")}
                 </button>
             </div>
             <div className="absolute bottom-center black font-20">

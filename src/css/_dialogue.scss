@@ -36,6 +36,16 @@
     overflow-x: hidden;
 }
 
+#i18n {
+    @media (width <= 1500px) {
+        width: 120px;
+        z-index: 5;
+    }
+    @media (width > 1500px) {
+        width: 180px;
+    }
+}
+
 .notice-p {
     @media (width > 768px) and (width <= 1500px) {
         font-size: 14px;
