@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import data from "../../characters.json";
 import loadImage from "../../js/loadImage";
 import Checkbox from "../Checkbox";
@@ -19,6 +19,7 @@ const TextSidebar = () => {
     const { t, i18n } = useTranslation();
     const language = i18n.language;
     const [fart, setFart] = useState(false);
+    const defaultColor = useRef(null);
     return (
         <div id="text-sidebar">
             <div className="group">
@@ -101,8 +102,7 @@ const TextSidebar = () => {
                                     ...nameTag,
                                     primary: e.target.value,
                                 });
-                                document.getElementById("default-color").value =
-                                    "custom";
+                                defaultColor.current.value = "custom";
                                 sessionStorage.setItem(
                                     "customPrimary",
                                     e.target.value
@@ -120,8 +120,7 @@ const TextSidebar = () => {
                                     ...nameTag,
                                     secondary: e.target.value,
                                 });
-                                document.getElementById("default-color").value =
-                                    "custom";
+                                defaultColor.current.value = "custom";
                                 sessionStorage.setItem(
                                     "customSecondary",
                                     e.target.value
@@ -131,6 +130,7 @@ const TextSidebar = () => {
                     </div>
                     <select
                         id="default-color"
+                        ref={defaultColor}
                         className="sel-small w-100"
                         onChange={(e) => {
                             let value = e.target.value;
