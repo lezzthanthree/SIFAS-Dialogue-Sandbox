@@ -18,7 +18,7 @@ function App() {
                 >
                     <p className="bottom-10">
                         Japanese, Chinese (Traditional), and Chinese
-                        (Simplified) are now available!
+                        (Simplified) are now available! Special thanks to{" "}
                         <a
                             className="text-orange"
                             href="https://github.com/canaria3406"
