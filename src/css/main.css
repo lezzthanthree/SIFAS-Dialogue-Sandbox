@@ -1,11 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
 @font-face {
   font-family: "FOT-Skip Std";
   src: local("FOT-Skip Std"), url("../fonts/FOT-SkipStd-B.otf") format("opentype");
 }
-* {
+.latin {
   font-family: "Arsenal", sans-serif;
   font-weight: 700;
+}
+
+.cjk {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+}
+
+input,
+button,
+select,
+textarea,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
 }
 
 canvas {
