@@ -4,7 +4,7 @@ import drawBackground from "../js/drawBackground";
 import drawSprites from "../js/drawSprites";
 import drawNameTag from "../js/drawNameTag";
 import drawText from "../js/drawText";
-import { useContext } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { AppContext } from "../AppContext";
 import { useTranslation } from "react-i18next";
 import MusicPlayer from "./MusicPlayer";
@@ -14,6 +14,7 @@ const Content = () => {
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
+    const contentBackground = useRef(null);
 
     const {
         tabState,
@@ -78,8 +79,15 @@ const Content = () => {
         await drawText(ctx, text, experimental);
         await drawNameTag(ctx, nameTag, experimental);
     };
+
+    useEffect(() => {
+        contentBackground.current.style.backgroundImage = background
+            ? `url(${background.src})`
+            : "";
+    }, [background]);
     return (
         <div id="content" className="center relative">
+            <div id="content-background" ref={contentBackground}></div>
             <div
                 className={hideState ? "hide" : "absolute tabs button-icons"}
                 id="tabs"
