@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "../bgm.json";
 
 const MusicPlayer = () => {
@@ -20,9 +20,6 @@ const MusicPlayer = () => {
         }
 
         current.volume = 0.2;
-        current.addEventListener("ended", () => {
-            nextSong();
-        });
 
         return current;
     };
@@ -30,7 +27,6 @@ const MusicPlayer = () => {
     const [player, setPlayer] = useState({
         playing: false,
         current: setUpAudio(null),
-        next: getRandom(),
     });
 
     const toggle = () => {
@@ -42,13 +38,12 @@ const MusicPlayer = () => {
     };
 
     const nextSong = () => {
-        const current = setUpAudio(player.next);
+        const current = setUpAudio(getRandom());
         // player.current.pause();
 
         setPlayer({
             playing: true,
             current: current,
-            next: getRandom(),
         });
 
         player.current.load();
@@ -56,20 +51,26 @@ const MusicPlayer = () => {
         console.log(player);
     };
 
+    useEffect(() => {
+        player.current.addEventListener("ended", () => {
+            nextSong();
+        });
+    }, []);
+
     return (
         <div className="w-100 row">
             <button
                 className="btn-small btn-white right-10"
                 onClick={() => toggle()}
             >
-                {player.playing && <i className="bi bi-pause-fill"></i>}
-                {!player.playing && <i className="bi bi-play-fill"></i>}
+                {player.playing && <i className="center bi bi-pause-fill"></i>}
+                {!player.playing && <i className="center bi bi-play-fill"></i>}
             </button>
             <button
                 className="btn-small btn-white right-10"
                 onClick={() => nextSong()}
             >
-                <i className="bi bi-skip-end-fill"></i>
+                <i className="center bi bi-skip-end-fill"></i>
             </button>
         </div>
     );
