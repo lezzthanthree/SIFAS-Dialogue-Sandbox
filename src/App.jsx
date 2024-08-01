@@ -17,12 +17,13 @@ function App() {
                     }}
                 >
                     <p className="bottom-10">
-                        Spanish Localization is now available! Special thanks to{" "}
+                        Japanese, Chinese (Traditional), and Chinese
+                        (Simplified) are now available! Special thanks to{" "}
                         <a
                             className="text-orange"
-                            href="https://github.com/SantosAlarcon"
+                            href="https://github.com/canaria3406"
                         >
-                            SantosAlarcon
+                            canaria3406
                         </a>
                         .
                     </p>

@@ -28,17 +28,17 @@ export const AppProvider = ({ children }) => {
 
     useEffect(() => {
         setSprites(null);
-        loadImage("/img/background/6olyyw_0.jpg")
+        loadImage("/img/background/birthdays/ixmw9d_4394634.jpg")
             .then((img) => setBackground(img))
             .catch((error) => console.error(error));
 
-        loadImage("/img/char_icon/honoka.png")
+        loadImage("/img/char_icon/chika.png")
             .then((img) =>
                 setNameTag({
-                    primary: "#ff79cd",
-                    secondary: "#ffcdec",
-                    name: "Honoka",
-                    iconValue: "honoka",
+                    primary: "#7bc8ff",
+                    secondary: "#cdeaff",
+                    name: "Chika",
+                    iconValue: "chika",
                     icon: img,
                     hidden: false,
                 })
@@ -46,31 +46,32 @@ export const AppProvider = ({ children }) => {
             .catch((error) => console.error(error));
 
         setText({
-            dialogue: "kyou no pan ga umai!",
+            dialogue:
+                "Thanks! *giggle* I'm really happy you wanted to \ncelebrate my birthday with me!",
             hidden: false,
             fontSize: 35,
         });
 
         Promise.all([
-            loadImage("/img/sprites/honoka/3c2bnw_0.png"),
-            loadImage("/img/sprites/honoka/3c2bnw_1.png"),
+            loadImage("/img/sprites/chika/8xo2u7_0.png"),
+            loadImage("/img/sprites/chika/8xo2u7_1.png"),
         ])
             .then(([bodyImage, expressionImage]) => {
                 setSprites({
                     "sprite-layer-1": {
-                        layerName: "Layer 1: Honoka",
+                        layerName: "Layer 1: Chika",
                         layerNumber: 1,
-                        character: "honoka",
-                        costume: "3c2bnw",
+                        character: "chika",
+                        costume: "8xo2u7",
                         position: "front",
                         bodyImage: bodyImage,
                         expressionImage: expressionImage,
                         expression: {
-                            eye: 1,
-                            mouth: 1,
+                            eye: 9,
+                            mouth: 6,
                         },
                         options: {
-                            x: 0,
+                            x: 520,
                             y: 0,
                             scale: 0,
                             hidden: false,
