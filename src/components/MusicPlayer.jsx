@@ -29,6 +29,8 @@ const MusicPlayer = () => {
         current: setUpAudio(null),
     });
 
+    const [userInteracted, setUserInteracted] = useState(false);
+
     const toggle = () => {
         player.playing ? player.current.pause() : player.current.play();
         setPlayer({
@@ -48,14 +50,31 @@ const MusicPlayer = () => {
 
         player.current.load();
         player.current.play();
-        console.log(player);
     };
 
     useEffect(() => {
         player.current.addEventListener("ended", () => {
             nextSong();
         });
-    }, []);
+
+        const handleUserInteraction = () => {
+            if (!userInteracted) {
+                toggle();
+                setUserInteracted(true);
+
+                window.removeEventListener("click", handleUserInteraction);
+                window.removeEventListener("keypress", handleUserInteraction);
+            }
+        };
+
+        window.addEventListener("click", handleUserInteraction);
+        window.addEventListener("keypress", handleUserInteraction);
+
+        return () => {
+            window.removeEventListener("click", handleUserInteraction);
+            window.removeEventListener("keypress", handleUserInteraction);
+        };
+    }, [userInteracted, player]);
 
     return (
         <div className="w-100 row">
