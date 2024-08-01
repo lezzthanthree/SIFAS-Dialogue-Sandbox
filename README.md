@@ -49,6 +49,8 @@ npm run dev
 ### The Localization Contributors
 A huge thanks to our translators!
 - **Spanish Team**: [SantosAlarcon](https://github.com/SantosAlarcon)
+- **Japanese Team**: [canaria3406](https://github.com/canaria3406)
+- **Chinese Team**: [canaria3406](https://github.com/canaria3406)
 
 ### Love Live Hax
 - [LLAS Decryptor](https://github.com/nosyrbllewe/LLASDecryptor) by [nosyrbllewe](https://github.com/nosyrbllewe/)
