@@ -496,6 +496,28 @@ input[type=text].txt-white {
   }
 }
 
+#content-background {
+  position: absolute;
+  filter: blur(25px);
+  -webkit-filter: blur(25px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+@media (width <= 768px) {
+  #content-background {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media (width > 768px) {
+  #content-background {
+    width: 100%;
+    height: 100dvh;
+  }
+}
+
 .group {
   margin-bottom: 16px;
 }
