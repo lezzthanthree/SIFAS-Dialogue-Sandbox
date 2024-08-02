@@ -27,7 +27,7 @@ const BackgroundPicker = ({ background, setBackground }) => {
                             <img
                                 key={bg}
                                 className="picker-item background-picker-item"
-                                src={`/img/background/${bg}`}
+                                src={`/img/background_low/${bg}`}
                                 onClick={async () => {
                                     const bgImage = await loadImage(
                                         `/img/background/${bg}`
