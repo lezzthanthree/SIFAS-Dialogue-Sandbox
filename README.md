@@ -1,5 +1,12 @@
 # School Idol Festival: All Stars Dialogue Sandbox
+### THIS BRANCH IS DISCONTINUED
+Because BGMs have high file sizes, it spikes up Vercel's File Transfer. I may continue this branch when I have the money.
+
+For archivals, the BGMs are saved in the [bgm](./public/snd/bgm) folder using mp3 format.
+
+---
 A Dialogue Sandbox for generating fan-made stories from the now-shut down game, [Love Live! School Idol Festival All Stars](https://lovelive-as-global.com/)
+
 
 ![](./public/screenshot.png)
 
