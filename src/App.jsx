@@ -11,7 +11,7 @@ function App() {
     const language = i18n.language;
     return (
         <main className={["en", "es"].includes(language) ? "latin" : "cjk"}>
-            {!read && (
+            {/* {!read && (
                 <div
                     className="absolute bottom-left justify-center white column fixed-bottom-left w-100"
                     id="mobile"
@@ -44,7 +44,7 @@ function App() {
                     </p>
                     <p>Tap this section to close.</p>
                 </div>
-            )}
+            )} */}
 
             <Content></Content>
             {hideState === false && <Sidebar></Sidebar>}
