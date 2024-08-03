@@ -7,7 +7,20 @@
             "zh_tw": { "first": "真姬", "last": "西木野" },
             "zh_cn": { "first": "真姬", "last": "西木野" },
             "group": "μ's",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "04-19"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -106,7 +119,20 @@
             "zh_tw": { "first": "花陽", "last": "小泉" },
             "zh_cn": { "first": "花阳", "last": "小泉" },
             "group": "μ's",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "01-17"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -209,7 +235,20 @@
             "zh_tw": { "first": "凜", "last": "星空" },
             "zh_cn": { "first": "凛", "last": "星空" },
             "group": "μ's",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "11-01"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -312,7 +351,20 @@
             "zh_tw": { "first": "海未", "last": "園田" },
             "zh_cn": { "first": "海未", "last": "园田" },
             "group": "μ's",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "03-15"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -406,7 +458,20 @@
             "zh_tw": { "first": "嵐珠", "last": "鐘" },
             "zh_cn": { "first": "岚珠", "last": "钟" },
             "group": "Nijigasaki",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "02-15"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "ylpyki",
@@ -508,7 +573,20 @@
             "zh_tw": { "first": "鞠莉", "last": "小原" },
             "zh_cn": { "first": "鞠莉", "last": "小原" },
             "group": "Aqours",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "06-13"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -611,7 +689,20 @@
             "zh_tw": { "first": "米雅", "last": "泰勒" },
             "zh_cn": { "first": "米娅", "last": "泰勒" },
             "group": "Nijigasaki",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "12-06"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "ylpyki",
@@ -714,7 +805,20 @@
             "zh_tw": { "first": "黛雅", "last": "黑澤" },
             "zh_cn": { "first": "黛雅", "last": "黑泽" },
             "group": "Aqours",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "01-01"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -817,7 +921,20 @@
             "zh_tw": { "first": "愛", "last": "宮下" },
             "zh_cn": { "first": "爱", "last": "宫下" },
             "group": "Nijigasaki",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "05-30"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -919,7 +1036,20 @@
             "zh_tw": { "first": "花丸", "last": "國木田" },
             "zh_cn": { "first": "花丸", "last": "国木田" },
             "group": "Aqours",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "03-04"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1014,7 +1144,20 @@
             "zh_tw": { "first": "曜", "last": "渡邊" },
             "zh_cn": { "first": "曜", "last": "渡边" },
             "group": "Aqours",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "04-17"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1118,7 +1261,20 @@
             "zh_tw": { "first": "雪菜", "last": "優木" },
             "zh_cn": { "first": "雪菜", "last": "优木" },
             "group": "Nijigasaki",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "08-08"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1222,7 +1378,20 @@
             "zh_tw": { "first": "善子", "last": "津島" },
             "zh_cn": { "first": "善子", "last": "津岛" },
             "group": "Aqours",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "07-13"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1326,7 +1495,20 @@
             "zh_tw": { "first": "小鳥", "last": "南" },
             "zh_cn": { "first": "小鸟", "last": "南" },
             "group": "μ's",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "09-12"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1421,7 +1603,20 @@
             "zh_tw": { "first": "艾瑪", "last": "薇蒂" },
             "zh_cn": { "first": "艾玛", "last": "维尔德" },
             "group": "Nijigasaki",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "02-05"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "sc7poi",
@@ -1534,7 +1729,20 @@
             "zh_tw": { "first": "穗乃果", "last": "高坂" },
             "zh_cn": { "first": "穗乃果", "last": "高坂" },
             "group": "μ's",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "08-03"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Thank you! I'm so happy that you could celebrate my \nbirthday with me.",
+            "background-src": "/img/birthday/a27wrn_1152847.jpg",
+            "costume": "umckb2",
+            "expression": {
+                "eye": 3,
+                "mouth": 2
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1633,7 +1841,20 @@
             "zh_tw": { "first": "璃奈", "last": "天王寺" },
             "zh_cn": { "first": "璃奈", "last": "天王寺" },
             "group": "Nijigasaki",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "00-00"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "dw01bx",
@@ -1736,7 +1957,20 @@
             "zh_tw": { "first": "雫", "last": "櫻坂" },
             "zh_cn": { "first": "雫", "last": "樱坂" },
             "group": "Nijigasaki",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "04-03"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1837,7 +2071,20 @@
             "zh_tw": { "first": "果南", "last": "松浦" },
             "zh_cn": { "first": "果南", "last": "松浦" },
             "group": "Aqours",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "02-10"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1933,7 +2180,20 @@
             "zh_tw": { "first": "希", "last": "東條" },
             "zh_cn": { "first": "希", "last": "东条" },
             "group": "μ's",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "06-09"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2027,7 +2287,20 @@
             "zh_tw": { "first": "梨子", "last": "櫻內" },
             "zh_cn": { "first": "梨子", "last": "樱内" },
             "group": "Aqours",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "09-19"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2122,7 +2395,20 @@
             "zh_tw": { "first": "繪里", "last": "絢瀨" },
             "zh_cn": { "first": "绘里", "last": "绚濑" },
             "group": "μ's",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "10-21"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2222,7 +2508,20 @@
             "zh_tw": { "first": "步夢", "last": "上原" },
             "zh_cn": { "first": "步梦", "last": "上原" },
             "group": "Nijigasaki",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "03-01"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2333,7 +2632,20 @@
             "zh_tw": { "first": "千歌", "last": "高海" },
             "zh_cn": { "first": "千歌", "last": "高海" },
             "group": "Aqours",
-            "year": "2nd"
+            "year": "2nd",
+            "birthday": "08-01"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2433,7 +2745,20 @@
             "zh_tw": { "first": "彼方", "last": "近江" },
             "zh_cn": { "first": "彼方", "last": "近江" },
             "group": "Nijigasaki",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "12-16"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2536,7 +2861,20 @@
             "zh_tw": { "first": "霞", "last": "中須" },
             "zh_cn": { "first": "霞", "last": "中须" },
             "group": "Nijigasaki",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "01-23"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2642,7 +2980,20 @@
             "zh_tw": { "first": "果林", "last": "朝香" },
             "zh_cn": { "first": "果林", "last": "朝香" },
             "group": "Nijigasaki",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "06-29"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2742,7 +3093,20 @@
             "zh_tw": { "first": "璃奈", "last": "天王寺" },
             "zh_cn": { "first": "璃奈", "last": "天王寺" },
             "group": "Nijigasaki",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "11-13"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "2p3chq",
@@ -2794,7 +3158,20 @@
             "zh_tw": { "first": "露比", "last": "黑澤" },
             "zh_cn": { "first": "露比", "last": "黑泽" },
             "group": "Aqours",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "09-21"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2892,7 +3269,20 @@
             "zh_tw": { "first": "栞子", "last": "三船" },
             "zh_cn": { "first": "栞子", "last": "三船" },
             "group": "Nijigasaki",
-            "year": "1st"
+            "year": "1st",
+            "birthday": "10-05"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "p04f8w",
@@ -3000,7 +3390,20 @@
             "zh_tw": { "first": "妮可", "last": "矢澤" },
             "zh_cn": { "first": "妮可", "last": "矢泽" },
             "group": "μ's",
-            "year": "3rd"
+            "year": "3rd",
+            "birthday": "07-22"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
