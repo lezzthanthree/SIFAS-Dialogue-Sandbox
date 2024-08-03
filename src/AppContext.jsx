@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import loadImage from "./js/loadImage";
+import data from "./characters.json";
 import "./css/main.css";
 
 export const AppContext = createContext();
@@ -25,20 +26,54 @@ export const AppProvider = ({ children }) => {
     sessionStorage.setItem("dictionary", {
         Test: "test again",
     });
-
+    const checkBirthday = () => {
+        const today = new Date(
+            Date.now() + (new Date().getTimezoneOffset() + 540) * 60 * 1000
+        );
+        console.log(today);
+        const characters = Object.keys(data);
+        console.log(characters);
+        for (const c in characters) {
+            const char = characters[c];
+            const birthday = data[char].information.birthday;
+            const [month, day] = birthday.split("-").map(Number);
+            console.log(month, day);
+            if (today.getMonth() + 1 == month && today.getDate() == day) {
+                return data[char].birthday;
+            }
+        }
+        return null;
+    };
     useEffect(() => {
+        let data = checkBirthday();
+
+        if (!data) {
+            data = {
+                name: "Honoka",
+                id: "honoka",
+                tag: "μ's",
+                message: "kyou no pan ga umai!",
+                "background-src": "/img/background/6olyyw_0.jpg",
+                costume: "3c2bnw",
+                expression: {
+                    eye: 3,
+                    mouth: 2,
+                },
+            };
+        }
+
         setSprites(null);
-        loadImage("/img/background/6olyyw_0.jpg")
+        loadImage(data["background-src"])
             .then((img) => setBackground(img))
             .catch((error) => console.error(error));
 
-        loadImage("/img/char_icon/honoka.png")
+        loadImage(`/img/char_icon/${data.id}.png`)
             .then((img) =>
                 setNameTag({
                     primary: "#ff79cd",
                     secondary: "#ffcdec",
-                    name: "Honoka",
-                    iconValue: "honoka",
+                    name: data.name,
+                    iconValue: data.id,
                     icon: img,
                     hidden: false,
                 })
@@ -46,22 +81,22 @@ export const AppProvider = ({ children }) => {
             .catch((error) => console.error(error));
 
         setText({
-            dialogue: "kyou no pan ga umai!",
+            dialogue: data.message,
             hidden: false,
             fontSize: 35,
         });
 
         Promise.all([
-            loadImage("/img/sprites/honoka/3c2bnw_0.png"),
-            loadImage("/img/sprites/honoka/3c2bnw_1.png"),
+            loadImage(`/img/sprites/${data.id}/${data.costume}_0.png`),
+            loadImage(`/img/sprites/${data.id}/${data.costume}_1.png`),
         ])
             .then(([bodyImage, expressionImage]) => {
                 setSprites({
                     "sprite-layer-1": {
-                        layerName: "Layer 1: Honoka",
+                        layerName: `Layer 1: ${data.name}`,
                         layerNumber: 1,
-                        character: "honoka",
-                        costume: "3c2bnw",
+                        character: data.id,
+                        costume: data.id,
                         position: "front",
                         bodyImage: bodyImage,
                         expressionImage: expressionImage,
@@ -70,7 +105,7 @@ export const AppProvider = ({ children }) => {
                             mouth: 1,
                         },
                         options: {
-                            x: 0,
+                            x: 540,
                             y: 0,
                             scale: 0,
                             hidden: false,

@@ -11,7 +11,11 @@
             "birthday": "04-19"
         },
         "birthday": {
-            "message": "",
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
             "costume": "",
             "expression": {
                 "eye": 1,
@@ -118,6 +122,18 @@
             "year": "1st",
             "birthday": "01-17"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "g39jyf",
@@ -221,6 +237,18 @@
             "group": "μ's",
             "year": "1st",
             "birthday": "11-01"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -326,6 +354,18 @@
             "year": "2nd",
             "birthday": "03-15"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "ctve4p",
@@ -420,6 +460,18 @@
             "group": "Nijigasaki",
             "year": "2nd",
             "birthday": "02-15"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "ylpyki",
@@ -523,6 +575,18 @@
             "group": "Aqours",
             "year": "3rd",
             "birthday": "06-13"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -628,6 +692,18 @@
             "year": "3rd",
             "birthday": "12-06"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "ylpyki",
             "p4sunk",
@@ -731,6 +807,18 @@
             "group": "Aqours",
             "year": "3rd",
             "birthday": "01-01"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -836,6 +924,18 @@
             "year": "2nd",
             "birthday": "05-30"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "wqq76a",
@@ -939,6 +1039,18 @@
             "year": "1st",
             "birthday": "03-04"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "gibbhl",
@@ -1034,6 +1146,18 @@
             "group": "Aqours",
             "year": "2nd",
             "birthday": "04-17"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1140,6 +1264,18 @@
             "year": "2nd",
             "birthday": "08-08"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "56nnej",
@@ -1244,6 +1380,18 @@
             "group": "Aqours",
             "year": "1st",
             "birthday": "07-13"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -1350,6 +1498,18 @@
             "year": "2nd",
             "birthday": "09-12"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "yx3xiq",
@@ -1445,6 +1605,18 @@
             "group": "Nijigasaki",
             "year": "3rd",
             "birthday": "02-05"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "sc7poi",
@@ -1560,6 +1732,18 @@
             "year": "2nd",
             "birthday": "08-03"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Thank you! I'm so happy that you could celebrate my \nbirthday with me.",
+            "background-src": "/img/birthday/a27wrn_1152847.jpg",
+            "costume": "umckb2",
+            "expression": {
+                "eye": 3,
+                "mouth": 2
+            }
+        },
         "costumes": [
             "0dn3eg",
             "48iom6",
@@ -1658,7 +1842,19 @@
             "zh_cn": { "first": "璃奈", "last": "天王寺" },
             "group": "Nijigasaki",
             "year": "1st",
-            "birthday": null
+            "birthday": "00-00"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "dw01bx",
@@ -1764,6 +1960,18 @@
             "year": "1st",
             "birthday": "04-03"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "hjwlfp",
@@ -1866,6 +2074,18 @@
             "year": "3rd",
             "birthday": "02-10"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "m5x9ak",
@@ -1963,6 +2183,18 @@
             "year": "3rd",
             "birthday": "06-09"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "n5vztx",
@@ -2057,6 +2289,18 @@
             "group": "Aqours",
             "year": "2nd",
             "birthday": "09-19"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2153,6 +2397,18 @@
             "group": "μ's",
             "year": "3rd",
             "birthday": "10-21"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2254,6 +2510,18 @@
             "group": "Nijigasaki",
             "year": "2nd",
             "birthday": "03-01"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2367,6 +2635,18 @@
             "year": "2nd",
             "birthday": "08-01"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "x3ztah",
@@ -2467,6 +2747,18 @@
             "group": "Nijigasaki",
             "year": "3rd",
             "birthday": "12-16"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2571,6 +2863,18 @@
             "group": "Nijigasaki",
             "year": "1st",
             "birthday": "01-23"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2679,6 +2983,18 @@
             "year": "3rd",
             "birthday": "06-29"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "0dn3eg",
             "09cllb",
@@ -2780,6 +3096,18 @@
             "year": "1st",
             "birthday": "11-13"
         },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
+        },
         "costumes": [
             "2p3chq",
             "n9j2nm",
@@ -2832,6 +3160,18 @@
             "group": "Aqours",
             "year": "1st",
             "birthday": "09-21"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
@@ -2931,6 +3271,18 @@
             "group": "Nijigasaki",
             "year": "1st",
             "birthday": "10-05"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "p04f8w",
@@ -3040,6 +3392,18 @@
             "group": "μ's",
             "year": "3rd",
             "birthday": "07-22"
+        },
+        "birthday": {
+            "name": "Honoka",
+            "id": "honoka",
+            "tag": "μ's",
+            "message": "Oh, wow! You remembered? \nThank you!",
+            "background-src": "",
+            "costume": "",
+            "expression": {
+                "eye": 1,
+                "mouth": 1
+            }
         },
         "costumes": [
             "0dn3eg",
