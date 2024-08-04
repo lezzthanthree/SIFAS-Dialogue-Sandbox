@@ -41,9 +41,9 @@ body:
       required: true
   - type: textarea 
     attributes:
-      label: Screenshot
-      description: Add a screenshot of the sprite
-      placeholder: Drag and drop the screenshots into this box.
+      label: Details/Screenshot
+      description: Add a screenshot of the sprite or provide screenshots.
+      placeholder: You can drag and drop screenshots into this box.
     validations:
       required: true
   - type: input
