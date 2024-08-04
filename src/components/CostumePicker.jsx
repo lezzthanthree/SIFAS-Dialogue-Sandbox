@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import data from "../characters.json";
 import loadImage from "../js/loadImage";
 import { useTranslation } from "react-i18next";
+import { AppContext } from "../AppContext";
 
 const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
     const [show, setShow] = useState(false);
+    const { idDebug } = useContext(AppContext);
+
     const { t } = useTranslation();
     return (
         <>
@@ -29,31 +32,43 @@ const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
                         ? data[sprites[currentLayer].character].costumes.map(
                               (cos) => {
                                   return (
-                                      <img
+                                      <div
                                           key={cos}
-                                          className="picker-item costume-picker-item"
-                                          src={`/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`}
-                                          onClick={async () => {
-                                              const bodyImage = await loadImage(
-                                                  `/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`
-                                              );
-                                              const expressionImage =
-                                                  await loadImage(
-                                                      `/img/sprites/${sprites[currentLayer].character}/${cos}_1.png`
-                                                  );
-                                              setSprites({
-                                                  ...sprites,
-                                                  [currentLayer]: {
-                                                      ...sprites[currentLayer],
-                                                      costume: cos,
-                                                      bodyImage: bodyImage,
-                                                      expressionImage:
-                                                          expressionImage,
-                                                  },
-                                              });
-                                              setShow(false);
-                                          }}
-                                      />
+                                          className="relative center picker-div"
+                                      >
+                                          {idDebug && (
+                                              <p className="id-debug absolute white">
+                                                  {cos}
+                                              </p>
+                                          )}
+                                          <img
+                                              className="picker-item costume-picker-item"
+                                              src={`/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`}
+                                              onClick={async () => {
+                                                  const bodyImage =
+                                                      await loadImage(
+                                                          `/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`
+                                                      );
+                                                  const expressionImage =
+                                                      await loadImage(
+                                                          `/img/sprites/${sprites[currentLayer].character}/${cos}_1.png`
+                                                      );
+                                                  setSprites({
+                                                      ...sprites,
+                                                      [currentLayer]: {
+                                                          ...sprites[
+                                                              currentLayer
+                                                          ],
+                                                          costume: cos,
+                                                          bodyImage: bodyImage,
+                                                          expressionImage:
+                                                              expressionImage,
+                                                      },
+                                                  });
+                                                  setShow(false);
+                                              }}
+                                          />
+                                      </div>
                                   );
                               }
                           )
@@ -87,18 +102,21 @@ const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
                           )}
                 </div>
             )}
-            <img
-                src={sprites ? sprites[currentLayer].bodyImage.src : ""}
-                id="costume-picker"
-                className="image-picker setting"
-                onClick={() => {
-                    if (sprites[currentLayer].character == "custom") {
-                        alert(t("custom-sprite-warn"));
-                        return;
-                    }
-                    setShow(!show);
-                }}
-            />
+            <div className="relative center picker-div">
+                {idDebug && <p className="id-debug absolute white">{sprites[currentLayer].costume}</p>}
+                <img
+                    src={sprites ? sprites[currentLayer].bodyImage.src : ""}
+                    id="costume-picker"
+                    className="image-picker setting"
+                    onClick={() => {
+                        if (sprites[currentLayer].character == "custom") {
+                            alert(t("custom-sprite-warn"));
+                            return;
+                        }
+                        setShow(!show);
+                    }}
+                />
+            </div>
         </>
     );
 };

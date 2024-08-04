@@ -146,6 +146,7 @@
     left: 25px;
     margin: inherit;
     filter: $shadow;
+    z-index: 10000;
 }
 
 .tabs {
@@ -209,6 +210,10 @@
         aspect-ratio: 1/1;
         margin: 5px;
         cursor: pointer;
+    }
+
+    .picker-div {
+        width: 100%;
     }
 
     .icon-expression {
@@ -309,4 +314,9 @@
         font-size: 30px;
         font-weight: bold;
     }
+}
+
+.id-debug {
+    background-color: #000000bb;
+    padding: 10px;
 }

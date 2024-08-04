@@ -26,6 +26,7 @@ export const AppProvider = ({ children }) => {
     sessionStorage.setItem("dictionary", {
         Test: "test again",
     });
+    const [idDebug, setIdDebug] = useState(false);
     const checkBirthday = () => {
         const today = new Date(
             Date.now() + (new Date().getTimezoneOffset() + 540) * 60 * 1000
@@ -102,7 +103,9 @@ export const AppProvider = ({ children }) => {
                             mouth: data.expression.mouth,
                         },
                         options: {
-                            x: data["background-src"].includes("birthday") ? 520 : 0,
+                            x: data["background-src"].includes("birthday")
+                                ? 520
+                                : 0,
                             y: 0,
                             scale: 0,
                             hidden: false,
@@ -138,6 +141,8 @@ export const AppProvider = ({ children }) => {
                 setRead,
                 clearTimes,
                 setClearTimes,
+                idDebug,
+                setIdDebug
             }}
         >
             {children}

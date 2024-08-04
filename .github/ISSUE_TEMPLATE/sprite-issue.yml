@@ -48,6 +48,12 @@ body:
       required: true
   - type: input
     attributes:
+      label: Costume ID
+      description: The ID of the costume. The IDs will be provided for you after clicking the "report an issue" link.
+    validations:
+      required: false
+  - type: input
+    attributes:
       label: Eye Expression.
       description: The value of the eye expression used.
     validations:

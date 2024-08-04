@@ -174,15 +174,7 @@ const Content = () => {
                     {t("clear")}
                 </button>
             </div>
-            <div className="absolute bottom-center black font-20">
-                <a
-                    href="https://github.com/lezzthanthree/SIFAS-Dialogue-Sandbox/blob/master/README.md#report-an-issue"
-                    target="_blank"
-                    className="black"
-                >
-                   report an issue
-                </a>
-            </div>
+            
             <Canvas draw={drawCanvas}></Canvas>
         </div>
     );
