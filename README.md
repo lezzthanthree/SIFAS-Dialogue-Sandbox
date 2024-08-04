@@ -44,6 +44,10 @@ Once done, you can start the application
 ```
 npm run dev
 ```
+
+## Report an issue
+If you think there's a problem on using the sandbox, please submit a report by opening an issue on the [issues](https://github.com/lezzthanthree/SIFAS-Dialogue-Sandbox/issues) tab.
+
 ## Special Thanks
 
 ### The Localization Contributors
