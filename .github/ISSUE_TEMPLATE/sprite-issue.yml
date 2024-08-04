@@ -42,7 +42,7 @@ body:
   - type: textarea 
     attributes:
       label: Details/Screenshot
-      description: Add a screenshot of the sprite or provide screenshots.
+      description: Add details or provide screenshots of the sprite.
       placeholder: You can drag and drop screenshots into this box.
     validations:
       required: true
