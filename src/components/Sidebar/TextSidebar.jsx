@@ -240,7 +240,10 @@ const TextSidebar = () => {
                                 return (
                                     c != "rina_board" && (
                                         <option key={c} value={c}>
-                                            {data[c].information[language].first}
+                                            {
+                                                data[c].information[language]
+                                                    .first
+                                            }
                                         </option>
                                     )
                                 );
@@ -298,6 +301,7 @@ const TextSidebar = () => {
                             ...experimental,
                             fontOffset: number,
                         });
+                        localStorage.setItem("fontOffset", number);
                     }}
                     range={[-30, 30]}
                     allowEdit={false}

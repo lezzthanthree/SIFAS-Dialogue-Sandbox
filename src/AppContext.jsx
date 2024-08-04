@@ -6,6 +6,7 @@ import "./css/main.css";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
+    const savedOffset = localStorage.getItem("fontOffset");
     const [hideState, setHideState] = useState(false);
     const [tabState, setTabState] = useState("background");
     const [background, setBackground] = useState(null);
@@ -17,7 +18,7 @@ export const AppProvider = ({ children }) => {
     });
     const [sprites, setSprites] = useState(null);
     const [experimental, setExperimental] = useState({
-        fontOffset: 0,
+        fontOffset: savedOffset ? savedOffset : 0,
         shadow: true,
     });
     const [nextLayer, setNextLayer] = useState(2);
@@ -142,7 +143,7 @@ export const AppProvider = ({ children }) => {
                 clearTimes,
                 setClearTimes,
                 idDebug,
-                setIdDebug
+                setIdDebug,
             }}
         >
             {children}
