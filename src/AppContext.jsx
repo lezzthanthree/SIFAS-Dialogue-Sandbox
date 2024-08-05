@@ -48,17 +48,33 @@ export const AppProvider = ({ children }) => {
 
         if (!data) {
             data = {
-                name: "Honoka",
-                id: "honoka",
-                tag: "μ's",
-                message: "kyou no pan ga umai!",
-                "background-src": "/img/background/6olyyw_0.jpg",
-                costume: "3c2bnw",
+                name: "Lanzhu",
+                id: "lanzhu",
+                tag: "Nijigasaki",
+                message: "she's just like me fr.",
+                "background-src": "/img/background_special/GUIrAt8acAABVbO.jpg",
+                costume: "p4sunk",
                 expression: {
-                    eye: 3,
-                    mouth: 2,
+                    eye: 1,
+                    mouth: 7,
                 },
             };
+        }
+
+        let colors;
+        switch (data.tag) {
+            case "μ's":
+                colors = ["#ff79cd", "#ffcdec"];
+                break;
+            case "Aqours":
+                colors = ["#7bc8ff", "#cdeaff"];
+                break;
+            case "Nijigasaki":
+                colors = ["#ffed45", "#fff8b7"];
+                break;
+            default:
+                colors = ["#ff79cd", "#ffcdec"];
+                break;
         }
 
         setSprites(null);
@@ -69,8 +85,8 @@ export const AppProvider = ({ children }) => {
         loadImage(`/img/char_icon/${data.id}.png`)
             .then((img) =>
                 setNameTag({
-                    primary: "#ff79cd",
-                    secondary: "#ffcdec",
+                    primary: colors[0],
+                    secondary: colors[1],
                     name: data.name,
                     iconValue: data.id,
                     icon: img,
@@ -106,7 +122,7 @@ export const AppProvider = ({ children }) => {
                         options: {
                             x: data["background-src"].includes("birthday")
                                 ? 520
-                                : 0,
+                                : 520,
                             y: 0,
                             scale: 0,
                             hidden: false,
