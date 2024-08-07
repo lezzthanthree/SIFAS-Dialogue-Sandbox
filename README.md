@@ -1,7 +1,10 @@
 # School Idol Festival: All Stars Dialogue Sandbox
 A Dialogue Sandbox for generating fan-made stories from the now-shut down game, [Love Live! School Idol Festival All Stars](https://lovelive-as-global.com/)
 
-![](./public/screenshot.png)
+![](./public/screenshot-2.png)
+
+## Try the Sandbox!
+[<img src="./public/netlify.png" alt="smilie pop" width="250"/>](https://sifas-dialogue-sandbox.netlify.app/)[<img src="./public/vercel.png" alt="lezzthanthree" width="250"/>](https://sifas-dialogue-sandbox.vercel.app/)
 
 ## Features
 ### Choose the Background
