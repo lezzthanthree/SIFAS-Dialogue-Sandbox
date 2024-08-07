@@ -28,7 +28,7 @@ const Announcement = () => {
                         href="https://sifas-dialogue-sandbox.netlify.app/"
                         className="text-orange"
                     >
-                        Netlify App
+                        Netlify App{" "}
                     </a>
                 </p>
                 <p>Tap this section to close.</p>
