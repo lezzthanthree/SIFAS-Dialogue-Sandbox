@@ -16,18 +16,21 @@ const Announcement = () => {
                 <p className="bottom-10">
                     SIFAS Dialogue Sandbox now has two links.
                 </p>
-                <a
-                    href="https://sifas-dialogue-sandbox.vercel.app/"
-                    className="text-orange"
-                >
-                    Vercel App
-                </a>
-                <a
-                    href="https://sifas-dialogue-sandbox.netlify.app/"
-                    className="text-orange bottom-10"
-                >
-                    Netlify App
-                </a>
+                <p className="bottom-10">
+                    <a
+                        href="https://sifas-dialogue-sandbox.vercel.app/"
+                        className="text-orange"
+                    >
+                        Vercel App
+                    </a>{" "}
+                    and{" "}
+                    <a
+                        href="https://sifas-dialogue-sandbox.netlify.app/"
+                        className="text-orange"
+                    >
+                        Netlify App
+                    </a>
+                </p>
                 <p>Tap this section to close.</p>
             </div>
         );
