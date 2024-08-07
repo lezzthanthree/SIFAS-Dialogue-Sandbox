@@ -51,6 +51,8 @@ const i18nInit = () => {
                     "clear-warn":
                         "You are about to clear the canvas! Any progress will be lost. \nPressing 'OK' will proceed the action.",
                     layer: "Layer",
+		    "please-wait": "Please wait",
+		    "report-issue": "Report an issue"
                 },
             },
             es: {
@@ -99,7 +101,9 @@ const i18nInit = () => {
                     "clear-warn":
                         "¡Estás a punto de borrar el canvas! Se perderá todo el progreso que se ha hecho. \nAl pulsar 'OK' se procederá a la acción.",
                     layer: "Capa",
-                },
+   		    "please-wait": "Espera, por favor...",
+		    "report-issue": "Informar un fallo"
+             },
             },
             ja: {
                 translation: {

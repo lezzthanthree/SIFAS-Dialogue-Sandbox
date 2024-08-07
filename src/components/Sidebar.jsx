@@ -3,6 +3,7 @@ import TextSidebar from "./Sidebar/TextSidebar";
 import SpriteSidebar from "./Sidebar/SpriteSidebar";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
+import { useTranslation } from "react-i18next";
 
 const Sidebar = () => {
     const {
@@ -14,6 +15,7 @@ const Sidebar = () => {
         sprites,
         setIdDebug,
     } = useContext(AppContext);
+	const { t } = useTranslation();
     return (
         <div id="sidebar" className={hideState ? "hide" : ""}>
             {tabState === "background" && background && <BackgroundSidebar />}
@@ -27,7 +29,7 @@ const Sidebar = () => {
                 text === undefined ||
                 !nameTag ||
                 !sprites) && (
-                <div className="center white font-20">Please wait</div>
+                <div className="center white font-20">{t("please-wait")}</div>
             )}
             <a
                 href="https://github.com/lezzthanthree/SIFAS-Dialogue-Sandbox/blob/master/README.md#report-an-issue"
@@ -37,7 +39,7 @@ const Sidebar = () => {
                     setIdDebug(true);
                 }}
             >
-                report an issue
+		{t("report-issue")}
             </a>
         </div>
     );
