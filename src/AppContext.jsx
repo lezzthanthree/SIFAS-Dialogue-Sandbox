@@ -24,10 +24,8 @@ export const AppProvider = ({ children }) => {
     const [nextLayer, setNextLayer] = useState(2);
     const [clearTimes, setClearTimes] = useState(0);
     const [read, setRead] = useState(false);
-    sessionStorage.setItem("dictionary", {
-        Test: "test again",
-    });
     const [idDebug, setIdDebug] = useState(false);
+
     const checkBirthday = () => {
         const today = new Date(
             Date.now() + (new Date().getTimezoneOffset() + 540) * 60 * 1000
@@ -43,6 +41,7 @@ export const AppProvider = ({ children }) => {
         }
         return null;
     };
+
     useEffect(() => {
         let data = checkBirthday();
 
@@ -91,6 +90,7 @@ export const AppProvider = ({ children }) => {
                     iconValue: data.id,
                     icon: img,
                     hidden: false,
+                    selection: data.tag,
                 })
             )
             .catch((error) => console.error(error));

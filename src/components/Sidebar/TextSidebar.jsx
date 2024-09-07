@@ -101,8 +101,9 @@ const TextSidebar = () => {
                                 setNameTag({
                                     ...nameTag,
                                     primary: e.target.value,
+                                    selection: "Custom",
                                 });
-                                defaultColor.current.value = "custom";
+                                defaultColor.current.value = "Custom";
                                 sessionStorage.setItem(
                                     "customPrimary",
                                     e.target.value
@@ -119,8 +120,9 @@ const TextSidebar = () => {
                                 setNameTag({
                                     ...nameTag,
                                     secondary: e.target.value,
+                                    selection: "Custom",
                                 });
-                                defaultColor.current.value = "custom";
+                                defaultColor.current.value = "Custom";
                                 sessionStorage.setItem(
                                     "customSecondary",
                                     e.target.value
@@ -132,6 +134,7 @@ const TextSidebar = () => {
                         id="default-color"
                         ref={defaultColor}
                         className="sel-small w-100"
+                        value={nameTag.selection}
                         onChange={(e) => {
                             let value = e.target.value;
                             const primary =
@@ -139,59 +142,65 @@ const TextSidebar = () => {
                             const secondary =
                                 sessionStorage.getItem("customSecondary");
                             switch (value) {
-                                case "muse":
+                                case "μ's":
                                     setNameTag({
                                         ...nameTag,
                                         primary: "#ff79cd",
                                         secondary: "#ffcdec",
+                                        selection: "μ's",
                                     });
                                     break;
-                                case "aqours":
+                                case "Aqours":
                                     setNameTag({
                                         ...nameTag,
                                         primary: "#7bc8ff",
                                         secondary: "#cdeaff",
+                                        selection: "Aqours",
                                     });
                                     break;
-                                case "niji":
+                                case "Nijigasaki":
                                     setNameTag({
                                         ...nameTag,
                                         primary: "#ffed45",
                                         secondary: "#fff8b7",
+                                        selection: "Nijigasaki",
                                     });
                                     break;
-                                case "you":
+                                case "You":
                                     setNameTag({
                                         ...nameTag,
                                         primary: "#c6cee5",
                                         secondary: "#ebebf3",
+                                        selection: "You",
                                     });
                                     break;
-                                case "others":
+                                case "Others":
                                     setNameTag({
                                         ...nameTag,
                                         primary: "#bcecab",
                                         secondary: "#e5f8df",
+                                        selection: "Others",
                                     });
                                     break;
-                                case "custom":
+                                case "Custom":
                                     setNameTag({
                                         ...nameTag,
                                         primary: primary ? primary : "#ff79cd",
                                         secondary: secondary
                                             ? secondary
                                             : "#ffcdec",
+                                        selection: "Custom",
                                     });
                                     break;
                             }
                         }}
                     >
-                        <option value="muse">μ&apos;s</option>
-                        <option value="aqours">Aqours</option>
-                        <option value="niji">Nijigasaki</option>
-                        <option value="you">{t("you")}</option>
-                        <option value="others">{t("others")}</option>
-                        <option value="custom">{t("custom")}</option>
+                        <option value="μ's">μ&apos;s</option>
+                        <option value="Aqours">Aqours</option>
+                        <option value="Nijigasaki">Nijigasaki</option>
+                        <option value="You">{t("you")}</option>
+                        <option value="Others">{t("others")}</option>
+                        <option value="Custom">{t("custom")}</option>
                     </select>
                 </div>
                 <div className="setting row center">
