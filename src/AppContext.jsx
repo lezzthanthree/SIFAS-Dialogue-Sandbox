@@ -77,11 +77,11 @@ export const AppProvider = ({ children }) => {
         }
 
         setSprites(null);
-        loadImage(data["background-src"])
+        loadImage(data["background-src"], "Changed background")
             .then((img) => setBackground(img))
             .catch((error) => console.error(error));
 
-        loadImage(`/img/char_icon/${data.id}.png`)
+        loadImage(`/img/char_icon/${data.id}.png`, "Changed character icon")
             .then((img) =>
                 setNameTag({
                     primary: colors[0],
@@ -102,8 +102,8 @@ export const AppProvider = ({ children }) => {
         });
 
         Promise.all([
-            loadImage(`/img/sprites/${data.id}/${data.costume}_0.png`),
-            loadImage(`/img/sprites/${data.id}/${data.costume}_1.png`),
+            loadImage(`/img/sprites/${data.id}/${data.costume}_0.png`, "Changed sprite: body"),
+            loadImage(`/img/sprites/${data.id}/${data.costume}_1.png`, "Changed sprite: face"),
         ])
             .then(([bodyImage, expressionImage]) => {
                 setSprites({

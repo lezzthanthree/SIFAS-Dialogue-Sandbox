@@ -231,7 +231,8 @@ const TextSidebar = () => {
                                 return;
                             }
                             const image = await loadImage(
-                                `img/char_icon/${newValue}.png`
+                                `img/char_icon/${newValue}.png`,
+                                "Changed character icon"
                             );
                             setNameTag({
                                 ...nameTag,
@@ -272,7 +273,10 @@ const TextSidebar = () => {
                     }
                     uploadFunction={async (file) => {
                         const imageSrc = URL.createObjectURL(file);
-                        const image = await loadImage(imageSrc);
+                        const image = await loadImage(
+                            imageSrc,
+                            "Changed character icon: custom"
+                        );
                         setNameTag({
                             ...nameTag,
                             iconValue: "custom",

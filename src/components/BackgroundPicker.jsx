@@ -26,7 +26,10 @@ const BackgroundPicker = ({ background, setBackground }) => {
                     </button>
                     {data["backgrounds"].map((bg) => {
                         return (
-                            <div key={bg} className="picker-div relative center">
+                            <div
+                                key={bg}
+                                className="picker-div relative center"
+                            >
                                 {idDebug && (
                                     <p className="id-debug absolute white">
                                         {bg}
@@ -37,7 +40,8 @@ const BackgroundPicker = ({ background, setBackground }) => {
                                     src={`/img/background_low/${bg}`}
                                     onClick={async () => {
                                         const bgImage = await loadImage(
-                                            `/img/background/${bg}`
+                                            `/img/background/${bg}`,
+                                            "Changed background"
                                         );
                                         setBackground(bgImage);
                                         setShow(false);

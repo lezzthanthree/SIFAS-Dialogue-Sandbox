@@ -47,11 +47,13 @@ const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
                                               onClick={async () => {
                                                   const bodyImage =
                                                       await loadImage(
-                                                          `/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`
+                                                          `/img/sprites/${sprites[currentLayer].character}/${cos}_0.png`,
+                                                          "Changed sprite: body"
                                                       );
                                                   const expressionImage =
                                                       await loadImage(
-                                                          `/img/sprites/${sprites[currentLayer].character}/${cos}_1.png`
+                                                          `/img/sprites/${sprites[currentLayer].character}/${cos}_1.png`,
+                                                          "Changed sprite: face"
                                                       );
                                                   setSprites({
                                                       ...sprites,
@@ -81,7 +83,8 @@ const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
                                           src={`/img/sprites_back/${sprites[currentLayer].character}/${cos}_0.png`}
                                           onClick={async () => {
                                               const bodyImage = await loadImage(
-                                                  `/img/sprites_back/${sprites[currentLayer].character}/${cos}_0.png`
+                                                  `/img/sprites_back/${sprites[currentLayer].character}/${cos}_0.png`,
+                                                  "Changed sprite: body"
                                               );
                                               const expressionImage = null;
                                               setSprites({
@@ -103,7 +106,11 @@ const CostumePicker = ({ sprites, setSprites, currentLayer }) => {
                 </div>
             )}
             <div className="relative center picker-div">
-                {idDebug && <p className="id-debug absolute white">{sprites[currentLayer].costume}</p>}
+                {idDebug && (
+                    <p className="id-debug absolute white">
+                        {sprites[currentLayer].costume}
+                    </p>
+                )}
                 <img
                     src={sprites ? sprites[currentLayer].bodyImage.src : ""}
                     id="costume-picker"

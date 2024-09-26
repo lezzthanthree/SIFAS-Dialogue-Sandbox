@@ -22,10 +22,12 @@ const SpriteSidebar = () => {
                         className="bi bi-plus-circle sprite-setting-icon"
                         onClick={async () => {
                             const bodyImage = await loadImage(
-                                "/img/sprites/honoka/3c2bnw_0.png"
+                                "/img/sprites/honoka/3c2bnw_0.png",
+                                "Changed sprite: body"
                             );
                             const expressionImage = await loadImage(
-                                "/img/sprites/honoka/3c2bnw_1.png"
+                                "/img/sprites/honoka/3c2bnw_1.png",
+                                "Changed sprite: face"
                             );
                             setSprites({
                                 ...sprites,
@@ -144,7 +146,10 @@ const SpriteSidebar = () => {
                     id="sprite-upload"
                     uploadFunction={async (file) => {
                         const imageSrc = URL.createObjectURL(file);
-                        const image = await loadImage(imageSrc);
+                        const image = await loadImage(
+                            imageSrc,
+                            "Changed sprite: custom"
+                        );
                         setSprites({
                             ...sprites,
                             [currentLayer]: {
@@ -191,10 +196,12 @@ const SpriteSidebar = () => {
 
                         const firstCostume = data[newChar].costumes[0];
                         const bodyImage = await loadImage(
-                            `/img/sprites/${newChar}/${firstCostume}_0.png`
+                            `/img/sprites/${newChar}/${firstCostume}_0.png`,
+                            "Changed sprite: body"
                         );
                         const expressionImage = await loadImage(
-                            `/img/sprites/${newChar}/${firstCostume}_1.png`
+                            `/img/sprites/${newChar}/${firstCostume}_1.png`,
+                            "Changed sprite: face"
                         );
                         const layerNumber = sprites[currentLayer].layerNumber;
                         setSprites({
@@ -254,10 +261,12 @@ const SpriteSidebar = () => {
                             const character = sprites[currentLayer].character;
                             const firstCostume = data[character].costumes[0];
                             const bodyImage = await loadImage(
-                                `/img/sprites/${character}/${firstCostume}_0.png`
+                                `/img/sprites/${character}/${firstCostume}_0.png`,
+                                "Changed sprite: body"
                             );
                             const expressionImage = await loadImage(
-                                `/img/sprites/${character}/${firstCostume}_1.png`
+                                `/img/sprites/${character}/${firstCostume}_1.png`,
+                                "Changed sprite: face"
                             );
                             setSprites({
                                 ...sprites,
@@ -283,7 +292,7 @@ const SpriteSidebar = () => {
                             const character = sprites[currentLayer].character;
                             const firstCostume = data[character].back[0];
                             const bodyImage = await loadImage(
-                                `/img/sprites_back/${character}/${firstCostume}_0.png`
+                                `/img/sprites_back/${character}/${firstCostume}_0.png`, "Changed sprite: body"
                             );
                             const expressionImage = null;
                             setSprites({

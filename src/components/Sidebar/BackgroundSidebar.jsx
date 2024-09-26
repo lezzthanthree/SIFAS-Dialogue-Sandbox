@@ -21,7 +21,7 @@ const BackgroundSidebar = () => {
                     id="background-upload"
                     uploadFunction={async (file) => {
                         const imageSrc = URL.createObjectURL(file);
-                        const image = await loadImage(imageSrc);
+                        const image = await loadImage(imageSrc, "Changed sprite: background");
                         setBackground(image);
                     }}
                     text={
