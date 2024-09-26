@@ -47,15 +47,15 @@ export const AppProvider = ({ children }) => {
 
         if (!data) {
             data = {
-                name: "Lanzhu",
-                id: "lanzhu",
+                name: "Setsuna",
+                id: "setsuna",
                 tag: "Nijigasaki",
-                message: "she's just like me fr.",
-                "background-src": "/img/background_special/GUIrAt8acAABVbO.jpg",
-                costume: "p4sunk",
+                message: "ermmm... what the sigma?",
+                "background-src": "/img/background_special/25ji-sekai.png",
+                costume: "0dn3eg",
                 expression: {
-                    eye: 1,
-                    mouth: 7,
+                    eye: 11,
+                    mouth: 9,
                 },
             };
         }
@@ -122,7 +122,7 @@ export const AppProvider = ({ children }) => {
                         options: {
                             x: data["background-src"].includes("birthday")
                                 ? 520
-                                : 520,
+                                : 0,
                             y: 0,
                             scale: 0,
                             hidden: false,
