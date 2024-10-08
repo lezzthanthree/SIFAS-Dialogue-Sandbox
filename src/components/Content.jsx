@@ -152,6 +152,7 @@ const Content = () => {
                     )}
                 </button>
             </div>
+            <div className="absolute bottom-center white">Mind the spoilers when posting!</div>
             <div className="absolute bottom-left button-icons save" id="save">
                 <button
                     className="btn-small btn-green btn-192 bottom-20"
@@ -174,7 +175,7 @@ const Content = () => {
                     {t("clear")}
                 </button>
             </div>
-            
+
             <Canvas draw={drawCanvas}></Canvas>
         </div>
     );
