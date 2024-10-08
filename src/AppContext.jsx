@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import loadImage from "./js/loadImage";
-import data from "./characters.json";
+import chars from "./characters.json";
 import "./css/main.css";
 
 export const AppContext = createContext();
@@ -23,30 +23,42 @@ export const AppProvider = ({ children }) => {
     });
     const [nextLayer, setNextLayer] = useState(2);
     const [clearTimes, setClearTimes] = useState(0);
-    const [read, setRead] = useState(false);
+    const [read, setRead] = useState(true);
     const [idDebug, setIdDebug] = useState(false);
 
-    const checkBirthday = () => {
-        const today = new Date(
-            Date.now() + (new Date().getTimezoneOffset() + 540) * 60 * 1000
-        );
-        const characters = Object.keys(data);
-        for (const c in characters) {
-            const char = characters[c];
-            const birthday = data[char].information.birthday;
-            const [month, day] = birthday.split("-").map(Number);
-            if (today.getMonth() + 1 == month && today.getDate() == day) {
-                return data[char].birthday;
-            }
-        }
-        return null;
-    };
-
     useEffect(() => {
-        let data = checkBirthday();
+        const checkDate = () => {
+            const today = new Date(
+                Date.now() + (new Date().getTimezoneOffset() + 540) * 60 * 1000
+            );
+            // birthday
+            const characters = Object.keys(chars);
+            for (const c in characters) {
+                const char = characters[c];
+                const birthday = chars[char].information.birthday;
+                const [month, day] = birthday.split("-").map(Number);
+                if (today.getMonth() + 1 == month && today.getDate() == day) {
+                    return chars[char].birthday;
+                }
+            }
+            // halloween
+            if (today.getMonth() + 1 == 10 && !clearTimes) {
+                return {
+                    name: "Ayumu",
+                    id: "ayumu",
+                    tag: "Nijigasaki",
+                    message: "老人がとなりでじっとみてたよ. ",
+                    "background-src": "/img/background_special/halloween.jpg",
+                    costume: "17kstk",
+                    expression: {
+                        eye: 7,
+                        mouth: 17,
+                    },
+                };
+            }
 
-        if (!data) {
-            data = {
+            // default
+            return {
                 name: "Setsuna",
                 id: "setsuna",
                 tag: "Nijigasaki",
@@ -58,7 +70,9 @@ export const AppProvider = ({ children }) => {
                     mouth: 9,
                 },
             };
-        }
+        };
+
+        let data = checkDate();
 
         let colors;
         switch (data.tag) {
@@ -102,8 +116,14 @@ export const AppProvider = ({ children }) => {
         });
 
         Promise.all([
-            loadImage(`/img/sprites/${data.id}/${data.costume}_0.png`, "Changed sprite: body"),
-            loadImage(`/img/sprites/${data.id}/${data.costume}_1.png`, "Changed sprite: face"),
+            loadImage(
+                `/img/sprites/${data.id}/${data.costume}_0.png`,
+                "Changed sprite: body"
+            ),
+            loadImage(
+                `/img/sprites/${data.id}/${data.costume}_1.png`,
+                "Changed sprite: face"
+            ),
         ])
             .then(([bodyImage, expressionImage]) => {
                 setSprites({
