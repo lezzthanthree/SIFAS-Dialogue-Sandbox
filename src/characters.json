@@ -11,15 +11,15 @@
             "birthday": "04-19"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
+            "name": "Maki",
+            "id": "maki",
             "tag": "μ's",
             "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "background-src": "/img/birthday/dy7enq_290059.jpg",
+            "costume": "9nm29j",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 5,
+                "mouth": 5
             }
         },
         "costumes": [
@@ -123,15 +123,15 @@
             "birthday": "01-17"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
+            "name": "Hanayo",
+            "id": "hanayo",
             "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "message": "Thanks. I really appreciate having you celebrate \nmy birthday with me.",
+            "background-src": "/img/birthday/dsbdab_650590.jpg",
+            "costume": "pcspxt",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 8,
+                "mouth": 5
             }
         },
         "costumes": [
@@ -239,15 +239,15 @@
             "birthday": "11-01"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
+            "name": "Rin",
+            "id": "rin",
             "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "message": "Thanks! It means a lot to hear \"happy birthday\" from you!",
+            "background-src": "/img/birthday/zliddd_669534.jpg",
+            "costume": "isa2x7",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 3,
+                "mouth": 5
             }
         },
         "costumes": [
@@ -355,15 +355,15 @@
             "birthday": "03-15"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
+            "name": "Umi",
+            "id": "umi",
             "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "message": "Thanky you very much for celebrating my birthday with me. \n I really enjoyed it.",
+            "background-src": "/img/birthday/wbhkrt_0.jpg",
+            "costume": "7ffj9f",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 2,
+                "mouth": 8
             }
         },
         "costumes": [
@@ -462,15 +462,15 @@
             "birthday": "02-15"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Lanzhu",
+            "id": "lanzhu",
+            "tag": "Nijigasaki",
+            "message": "Thank you for celebrating my birthday. I had a \nfeeling you'd definitely want to celebrate it.",
+            "background-src": "/img/birthday/ojvgm2_877137.jpg",
+            "costume": "f9j3z3",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 5,
+                "mouth": 7
             }
         },
         "costumes": [
@@ -577,15 +577,15 @@
             "birthday": "06-13"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Mari",
+            "id": "mari",
+            "tag": "Aqours",
+            "message": "You remembered my birthday? I'm so happy!",
+            "background-src": "/img/birthday/e5dc0f_0.jpg",
+            "costume": "1yud5i",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 3,
+                "mouth": 2
             }
         },
         "costumes": [
@@ -693,15 +693,15 @@
             "birthday": "12-06"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Mia",
+            "id": "mia",
+            "tag": "Nijigasaki",
+            "message": "Hehe, I'm a bit embarrassed. Thanks.",
+            "background-src": "/img/birthday/lrq6k2_768932.jpg",
+            "costume": "4n7vhu",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 10,
+                "mouth": 2
             }
         },
         "costumes": [
@@ -809,15 +809,15 @@
             "birthday": "01-01"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Dia",
+            "id": "dia",
+            "tag": "Aqours",
+            "message": "Thank you. I really appreciate you being here to \ncelebrate with me.",
+            "background-src": "/img/birthday/do7hz4_947570.jpg",
+            "costume": "937b8r",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 5,
+                "mouth": 15
             }
         },
         "costumes": [
@@ -925,15 +925,15 @@
             "birthday": "05-30"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Ai",
+            "id": "ai",
+            "tag": "Nijigasaki",
+            "message": "Thanks! Your birthday wishes make me so happy!",
+            "background-src": "/img/birthday/6hf7xv_273724.jpg",
+            "costume": "ez31wv",
             "expression": {
                 "eye": 1,
-                "mouth": 1
+                "mouth": 2
             }
         },
         "costumes": [
@@ -1040,15 +1040,15 @@
             "birthday": "03-04"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Hanamaru",
+            "id": "hanamaru",
+            "tag": "Aqours",
+            "message": "Huh? You remembered my birthday? Thank you, zura!",
+            "background-src": "/img/birthday/ddx52m_475775.jpg",
+            "costume": "u0ym5x",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 2,
+                "mouth": 6
             }
         },
         "costumes": [
@@ -1148,15 +1148,15 @@
             "birthday": "04-17"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "You",
+            "id": "you",
+            "tag": "Aqours",
+            "message": "Thanks. I'm really glad that you chose to celebrate \nmy birthday with me.",
+            "background-src": "/img/birthday/bxkrz6_559653.jpg",
+            "costume": "hqzwu1",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 6,
+                "mouth": 3
             }
         },
         "costumes": [
@@ -1265,14 +1265,14 @@
             "birthday": "08-08"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Setsuna",
+            "id": "setsuna",
+            "tag": "Nijigasaki",
+            "message": "You remembered my birthday? Thank you! \nI'm so happy!",
+            "background-src": "/img/birthday/2yvdye_0.jpg",
+            "costume": "hq4z40",
             "expression": {
-                "eye": 1,
+                "eye": 2,
                 "mouth": 1
             }
         },
@@ -1382,15 +1382,15 @@
             "birthday": "07-13"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Yoshiko",
+            "id": "yoshiko",
+            "tag": "Aqours",
+            "message": "That's right! Today is my birthday! \nCelebrate, my little demon!",
+            "background-src": "/img/birthday/isusor_5131924_special.jpg",
+            "costume": "tvy0t3",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 3,
+                "mouth": 2
             }
         },
         "costumes": [
@@ -1499,15 +1499,15 @@
             "birthday": "09-12"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
+            "name": "Kotori",
+            "id": "kotori",
             "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "message": "Did you remember my birthday? Thank you!",
+            "background-src": "/img/birthday/fuzlc1_596076.jpg",
+            "costume": "ued41p",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 2,
+                "mouth": 5
             }
         },
         "costumes": [
@@ -1607,15 +1607,15 @@
             "birthday": "02-05"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Emma",
+            "id": "emma",
+            "tag": "Nijigasaki",
+            "message": "Wow, thank you. Your birthday wishes mean a lot.",
+            "background-src": "/img/birthday/j6hzg4_5842262.jpg",
+            "costume": "jjqpt9",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 3,
+                "mouth": 7
             }
         },
         "costumes": [
@@ -1845,12 +1845,12 @@
             "birthday": "00-00"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Rina",
+            "id": "rina",
+            "tag": "Nijigasaki",
+            "message": "Error: Use 'rina' as id for birthdays instead.",
+            "background-src": "/img/background/0dn3eg_841097.jpg",
+            "costume": "n9j2nm",
             "expression": {
                 "eye": 1,
                 "mouth": 1
@@ -1961,15 +1961,15 @@
             "birthday": "04-03"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Shizuku",
+            "id": "shizuku",
+            "tag": "Nijigasaki",
+            "message": "You remembered my birthday? Thank you!",
+            "background-src": "/img/birthday/3fmj4u_1826453.jpg",
+            "costume": "3mrmdb",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 2,
+                "mouth": 13
             }
         },
         "costumes": [
@@ -2075,15 +2075,15 @@
             "birthday": "02-10"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Kanan",
+            "id": "kanan",
+            "tag": "Aqours",
+            "message": "Wait. You remembered today is my birthday? \nThanks. I'm so happy.",
+            "background-src": "/img/birthday/j6hzg4_5296465.jpg",
+            "costume": "qfvm0g",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 7,
+                "mouth": 5
             }
         },
         "costumes": [
@@ -2184,15 +2184,15 @@
             "birthday": "06-09"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
+            "name": "Nozomi",
+            "id": "nozomi",
             "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "message": "Thanks. I really appreciate having you \ncelebrate my birthday like this.",
+            "background-src": "/img/birthday/a65x4b_1554082.jpg",
+            "costume": "qeeqg6",
             "expression": {
                 "eye": 1,
-                "mouth": 1
+                "mouth": 4
             }
         },
         "costumes": [
@@ -2291,15 +2291,15 @@
             "birthday": "09-19"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Riko",
+            "id": "riko",
+            "tag": "Aqours",
+            "message": "Wow! You remembered my birthday? Thanks!",
+            "background-src": "/img/birthday/dy69qh_516868.jpg",
+            "costume": "nxrfow",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 3,
+                "mouth": 4
             }
         },
         "costumes": [
@@ -2399,15 +2399,15 @@
             "birthday": "10-21"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
+            "name": "Eli",
+            "id": "eli",
             "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "message": "Did you remember my birthday? Thank you!",
+            "background-src": "/img/birthday/4x4rrf_1731077.jpg",
+            "costume": "nepyac",
             "expression": {
                 "eye": 1,
-                "mouth": 1
+                "mouth": 5
             }
         },
         "costumes": [
@@ -2512,15 +2512,15 @@
             "birthday": "03-01"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
+            "name": "Ayumu",
+            "id": "ayumu",
             "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "message": "Thank you for celebrating my birthday with me. I'm so happy.",
+            "background-src": "/img/birthday/ou9aka_2955428.jpg",
+            "costume": "4uchsq",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 2,
+                "mouth": 2
             }
         },
         "costumes": [
@@ -2636,15 +2636,15 @@
             "birthday": "08-01"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Chika",
+            "id": "chika",
+            "tag": "Aqours",
+            "message": "Thanks! *giggle* I'm really happy you wanted to \ncelebrate my birthday with me!",
+            "background-src": "/img/birthday/ixmw9d_4394634.jpg",
+            "costume": "hqzwu1",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 9,
+                "mouth": 6
             }
         },
         "costumes": [
@@ -2749,15 +2749,15 @@
             "birthday": "12-16"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Kanata",
+            "id": "kanata",
+            "tag": "Nijigasaki",
+            "message": "Thanks for wishing me a happy birthday! I'm really happy.",
+            "background-src": "/img/birthday/mikpxc_1726002.jpg",
+            "costume": "lyq5tc",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 2,
+                "mouth": 3
             }
         },
         "costumes": [
@@ -2865,15 +2865,15 @@
             "birthday": "01-23"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Kasumi",
+            "id": "kasumi",
+            "tag": "Nijigasaki",
+            "message": "That's right! Today's my birthday! \nI expect good wishes from you!",
+            "background-src": "/img/birthday/oa4ovd_2630311.jpg",
+            "costume": "qpb4fu",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 5,
+                "mouth": 9
             }
         },
         "costumes": [
@@ -2984,15 +2984,15 @@
             "birthday": "06-29"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Karin",
+            "id": "karin",
+            "tag": "Nijigasaki",
+            "message": "You remembered my birthday? *Giggle* \nThank you!",
+            "background-src": "/img/birthday/8qsop5_2163709.jpg",
+            "costume": "laotun",
             "expression": {
                 "eye": 1,
-                "mouth": 1
+                "mouth": 8
             }
         },
         "costumes": [
@@ -3097,15 +3097,15 @@
             "birthday": "11-13"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Rina",
+            "id": "rina_board",
+            "tag": "Nijigasaki",
+            "message": "Thank you! I'm so happy you wished me a happy birthday.",
+            "background-src": "/img/birthday/wpn6n6_291926.jpg",
+            "costume": "13et7d",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 17,
+                "mouth": 9
             }
         },
         "costumes": [
@@ -3162,14 +3162,14 @@
             "birthday": "09-21"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Ruby",
+            "id": "ruby",
+            "tag": "Aqours",
+            "message": "Pigi! Thank you! I'm so happy you wished me \na happy birthday.",
+            "background-src": "/img/birthday/qtj2nn_308059.jpg",
+            "costume": "13et7d",
             "expression": {
-                "eye": 1,
+                "eye": 2,
                 "mouth": 1
             }
         },
@@ -3273,15 +3273,15 @@
             "birthday": "10-05"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
-            "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "name": "Shioriko",
+            "id": "shioriko",
+            "tag": "Nijigasaki",
+            "message": "Th-Thank you! It's truly delightful when someone \nwishes me a happy birthday.",
+            "background-src": "/img/birthday/2k78ul_2639148.jpg",
+            "costume": "ezuiqr",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 2,
+                "mouth": 3
             }
         },
         "costumes": [
@@ -3394,15 +3394,15 @@
             "birthday": "07-22"
         },
         "birthday": {
-            "name": "Honoka",
-            "id": "honoka",
+            "name": "Nico",
+            "id": "nico",
             "tag": "μ's",
-            "message": "Oh, wow! You remembered? \nThank you!",
-            "background-src": "",
-            "costume": "",
+            "message": "That's right! Today's my birthday! It's time to celebrate!",
+            "background-src": "/img/birthday/hhf2ad_3520218.jpg",
+            "costume": "13et7d",
             "expression": {
-                "eye": 1,
-                "mouth": 1
+                "eye": 2,
+                "mouth": 6
             }
         },
         "costumes": [

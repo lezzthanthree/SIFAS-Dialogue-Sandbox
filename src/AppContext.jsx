@@ -30,14 +30,11 @@ export const AppProvider = ({ children }) => {
         const today = new Date(
             Date.now() + (new Date().getTimezoneOffset() + 540) * 60 * 1000
         );
-        console.log(today);
         const characters = Object.keys(data);
-        console.log(characters);
         for (const c in characters) {
             const char = characters[c];
             const birthday = data[char].information.birthday;
             const [month, day] = birthday.split("-").map(Number);
-            console.log(month, day);
             if (today.getMonth() + 1 == month && today.getDate() == day) {
                 return data[char].birthday;
             }
@@ -101,11 +98,11 @@ export const AppProvider = ({ children }) => {
                         bodyImage: bodyImage,
                         expressionImage: expressionImage,
                         expression: {
-                            eye: 1,
-                            mouth: 1,
+                            eye: data.expression.eye,
+                            mouth: data.expression.mouth,
                         },
                         options: {
-                            x: 540,
+                            x: data["background-src"].includes("birthday") ? 520 : 0,
                             y: 0,
                             scale: 0,
                             hidden: false,
